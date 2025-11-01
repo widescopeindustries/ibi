@@ -12,47 +12,65 @@ interface RepProfilePageProps {
 }
 
 export default async function RepProfilePage({ params }: RepProfilePageProps) {
-  const supabase = await createClient()
+  let profile: any = null
+  let reviews: any[] = []
+  let fullName = 'Anonymous'
+  let location = ''
+  let averageRating = 0
+  let companies: any[] = []
 
-  // Fetch rep profile with companies
-  const { data: profile } = await supabase
-    .from('profiles')
-    .select(`
-      *,
-      rep_companies (
-        companies (
-          id,
-          name,
-          slug,
-          category,
-          logo_url
+  try {
+    const supabase = await createClient()
+
+    // Fetch rep profile with companies
+    const { data: profileData, error: profileError } = await supabase
+      .from('profiles')
+      .select(`
+        *,
+        rep_companies (
+          companies (
+            id,
+            name,
+            slug,
+            category,
+            logo_url
+          )
         )
-      )
-    `)
-    .eq('id', params.profileId)
-    .single()
+      `)
+      .eq('id', params.profileId)
+      .single()
 
-  if (!profile) {
+    if (profileError || !profileData) {
+      notFound()
+    }
+
+    profile = profileData
+
+    // Fetch approved reviews
+    const { data: reviewsData, error: reviewsError } = await supabase
+      .from('reviews')
+      .select('*')
+      .eq('rep_id', params.profileId)
+      .eq('is_approved', true)
+      .order('created_at', { ascending: false })
+
+    if (!reviewsError && reviewsData) {
+      reviews = reviewsData
+    }
+
+    fullName = `${profile.first_name || ''} ${profile.last_name || ''}`.trim() || 'Anonymous'
+    location = [profile.city, profile.state, profile.zip_code].filter(Boolean).join(', ')
+
+    // Calculate average rating
+    averageRating = reviews && reviews.length > 0
+      ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
+      : 0
+
+    companies = profile.rep_companies?.map((rc: any) => rc.companies) || []
+  } catch (error) {
+    console.error('Error loading rep profile:', error)
     notFound()
   }
-
-  // Fetch approved reviews
-  const { data: reviews } = await supabase
-    .from('reviews')
-    .select('*')
-    .eq('rep_id', params.profileId)
-    .eq('is_approved', true)
-    .order('created_at', { ascending: false })
-
-  const fullName = `${profile.first_name || ''} ${profile.last_name || ''}`.trim() || 'Anonymous'
-  const location = [profile.city, profile.state, profile.zip_code].filter(Boolean).join(', ')
-
-  // Calculate average rating
-  const averageRating = reviews && reviews.length > 0
-    ? reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
-    : 0
-
-  const companies = profile.rep_companies?.map((rc: any) => rc.companies) || []
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">

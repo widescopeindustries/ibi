@@ -5,27 +5,43 @@ import Link from 'next/link'
 import { ProfileWithCompanies, Company } from '@/types/database'
 
 export default async function Home() {
-  const supabase = await createClient()
+  let companies: Company[] = []
+  let featuredReps: any[] = []
 
-  // Fetch featured companies
-  const { data: companies } = await supabase
-    .from('companies')
-    .select('*')
-    .limit(8)
+  try {
+    const supabase = await createClient()
 
-  // Fetch featured pro reps with their companies
-  const { data: featuredReps } = await supabase
-    .from('profiles')
-    .select(`
-      *,
-      rep_companies (
-        companies (
-          name
+    // Fetch featured companies
+    const { data: companiesData, error: companiesError } = await supabase
+      .from('companies')
+      .select('*')
+      .limit(8)
+
+    if (!companiesError && companiesData) {
+      companies = companiesData
+    }
+
+    // Fetch featured pro reps with their companies
+    const { data: repsData, error: repsError } = await supabase
+      .from('profiles')
+      .select(`
+        *,
+        rep_companies (
+          companies (
+            name
+          )
         )
-      )
-    `)
-    .eq('is_pro_subscriber', true)
-    .limit(6)
+      `)
+      .eq('is_pro_subscriber', true)
+      .limit(6)
+
+    if (!repsError && repsData) {
+      featuredReps = repsData
+    }
+  } catch (error) {
+    console.error('Error loading home page data:', error)
+    // Page will render with empty arrays if there's an error
+  }
 
   return (
     <div>
@@ -58,18 +74,24 @@ export default async function Home() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {companies?.map((company: Company) => (
-              <Link
-                key={company.id}
-                href={`/companies/${company.slug}`}
-                className="card text-center hover:shadow-lg transition-shadow"
-              >
-                <h3 className="font-semibold text-gray-900">{company.name}</h3>
-                {company.category && (
-                  <p className="text-sm text-gray-500 mt-1">{company.category}</p>
-                )}
-              </Link>
-            ))}
+            {companies.length > 0 ? (
+              companies.map((company: Company) => (
+                <Link
+                  key={company.id}
+                  href={`/companies/${company.slug}`}
+                  className="card text-center hover:shadow-lg transition-shadow"
+                >
+                  <h3 className="font-semibold text-gray-900">{company.name}</h3>
+                  {company.category && (
+                    <p className="text-sm text-gray-500 mt-1">{company.category}</p>
+                  )}
+                </Link>
+              ))
+            ) : (
+              <div className="col-span-2 md:col-span-4 text-center text-gray-500 py-8">
+                <p>No companies available at the moment.</p>
+              </div>
+            )}
           </div>
 
           <div className="text-center mt-8">
@@ -93,13 +115,19 @@ export default async function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featuredReps?.map((rep: any) => (
-              <RepCard
-                key={rep.id}
-                profile={rep}
-                companies={rep.rep_companies?.map((rc: any) => rc.companies.name) || []}
-              />
-            ))}
+            {featuredReps.length > 0 ? (
+              featuredReps.map((rep: any) => (
+                <RepCard
+                  key={rep.id}
+                  profile={rep}
+                  companies={rep.rep_companies?.map((rc: any) => rc.companies.name) || []}
+                />
+              ))
+            ) : (
+              <div className="col-span-1 md:col-span-2 lg:col-span-3 text-center text-gray-500 py-8">
+                <p>No featured representatives available yet.</p>
+              </div>
+            )}
           </div>
 
           <div className="text-center mt-8">
