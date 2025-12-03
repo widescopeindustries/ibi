@@ -42,7 +42,7 @@ export const NewReviewNotification = ({
   return (
     <Html>
       <Head />
-      <Preview>You have a new {rating}-star review!</Preview>
+      <Preview>{`You have a new ${rating}-star review!`}</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={header}>

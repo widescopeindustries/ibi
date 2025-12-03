@@ -33,10 +33,10 @@ export default function NotFound() {
             Page Not Found
           </h1>
           <p className="text-lg text-gray-600 mb-2">
-            Hmm, we couldn't find what you're looking for.
+            Hmm, we couldn&apos;t find what you&apos;re looking for.
           </p>
           <p className="text-gray-500 mb-8">
-            The page you're trying to reach doesn't exist or may have been moved.
+            The page you&apos;re trying to reach doesn&apos;t exist or may have been moved.
           </p>
 
           {/* Action Buttons */}
@@ -108,7 +108,7 @@ export default function NotFound() {
           {/* Help Section */}
           <div className="mt-8 pt-8 border-t border-gray-200">
             <p className="text-sm text-gray-600">
-              Still can't find what you need?{' '}
+              Still can&apos;t find what you need?{' '}
               <Link href="/contact" className="text-primary-600 hover:text-primary-700 font-medium underline">
                 Contact our support team
               </Link>

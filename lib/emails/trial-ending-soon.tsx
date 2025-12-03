@@ -30,7 +30,7 @@ export const TrialEndingSoonEmail = ({
   return (
     <Html>
       <Head />
-      <Preview>Your Pro trial ends in {daysRemaining} days - Don't lose your benefits!</Preview>
+      <Preview>{`Your Pro trial ends in ${daysRemaining} days - Don't lose your benefits!`}</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={header}>

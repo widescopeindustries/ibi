@@ -1,5 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
-import HeroSearch from '@/components/HeroSearch'
+import AdvancedSearch from '@/components/AdvancedSearch'
 import RepCard from '@/components/RepCard'
 import TrustSignals from '@/components/TrustSignals'
 import TestimonialSection from '@/components/TestimonialSection'
@@ -61,7 +61,7 @@ export default async function Home() {
               </p>
             </div>
 
-            <HeroSearch />
+            <AdvancedSearch />
           </div>
         </section>
 

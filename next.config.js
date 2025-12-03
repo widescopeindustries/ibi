@@ -8,16 +8,8 @@ const nextConfig = {
       },
     ],
   },
-  eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has type errors.
-    ignoreBuildErrors: true,
-  },
+  // ESLint and TypeScript checks are now enabled during builds
+  // This ensures code quality and catches errors early
 }
 
 module.exports = nextConfig

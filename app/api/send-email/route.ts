@@ -8,6 +8,7 @@ import {
   sendReviewNotification,
   sendTrialEndingReminder,
 } from '@/lib/email';
+import { checkRateLimit, getClientIdentifier, RATE_LIMITS } from '@/lib/rate-limit';
 
 // Email type definitions
 type EmailType =
@@ -50,6 +51,29 @@ interface EmailRequest {
  */
 export async function POST(request: NextRequest) {
   try {
+    // Rate limiting check
+    const clientId = getClientIdentifier(request);
+    const rateLimitResult = checkRateLimit(`email:${clientId}`, RATE_LIMITS.email);
+
+    if (!rateLimitResult.success) {
+      const retryAfterSeconds = Math.ceil((rateLimitResult.retryAfterMs || 60000) / 1000);
+      return NextResponse.json(
+        {
+          error: 'Rate limit exceeded',
+          message: `Too many email requests. Please try again in ${retryAfterSeconds} seconds.`,
+          retryAfter: retryAfterSeconds,
+        },
+        {
+          status: 429,
+          headers: {
+            'Retry-After': retryAfterSeconds.toString(),
+            'X-RateLimit-Remaining': '0',
+            'X-RateLimit-Reset': rateLimitResult.resetTime.toString(),
+          },
+        }
+      );
+    }
+
     // Parse request body
     const body: EmailRequest = await request.json();
     const { type, to, data } = body;
@@ -72,7 +96,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Initialize Supabase client for authentication check
-    const supabase = createClient();
+    const supabase = await createClient();
 
     // Get authenticated user (for user-specific email types)
     const {
@@ -93,9 +117,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Rate limiting check (TODO: Implement proper rate limiting in production)
-    // For now, we'll log the attempt
-    console.log(`Email send attempt: ${type} to ${to} by user ${user?.id || 'anonymous'}`);
+    // Log the email attempt
+    console.log(`Email send attempt: ${type} to ${to} by user ${user?.id || 'anonymous'} (${clientId})`);
+    console.log(`Rate limit remaining: ${rateLimitResult.remaining}`);
 
     // Send email based on type
     let result;

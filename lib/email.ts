@@ -1,4 +1,5 @@
 import { Resend } from 'resend';
+import { createClient } from '@supabase/supabase-js';
 import { WelcomeEmail } from './emails/welcome-email';
 import { ProfileIncompleteReminder } from './emails/profile-incomplete-reminder';
 import { UpgradeToProEmail } from './emails/upgrade-to-pro';
@@ -17,6 +18,18 @@ function getResend(): Resend {
     resendInstance = new Resend(process.env.RESEND_API_KEY);
   }
   return resendInstance;
+}
+
+// Create Supabase admin client for logging (uses service role key)
+function getSupabaseAdmin() {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+  if (!supabaseUrl || !supabaseServiceKey) {
+    return null;
+  }
+
+  return createClient(supabaseUrl, supabaseServiceKey);
 }
 
 // Default from address for all emails
@@ -41,24 +54,49 @@ interface EmailResult {
   error?: string;
 }
 
-// Log email activity (in production, you'd save this to database)
-function logEmailActivity(
-  type: string,
-  recipient: string,
-  success: boolean,
-  error?: string
-) {
-  const timestamp = new Date().toISOString();
-  console.log(`[${timestamp}] Email ${type} to ${recipient}: ${success ? 'SUCCESS' : 'FAILED'}`, error || '');
+interface EmailLogOptions {
+  type: string;
+  recipient: string;
+  success: boolean;
+  messageId?: string;
+  error?: string;
+  userId?: string;
+  metadata?: Record<string, unknown>;
+}
 
-  // TODO: In production, save to database for tracking and debugging
-  // Example: await supabase.from('email_logs').insert({
-  //   email_type: type,
-  //   recipient,
-  //   success,
-  //   error_message: error,
-  //   sent_at: timestamp
-  // });
+/**
+ * Log email activity to console and database
+ * Database logging fails silently to not affect email delivery
+ */
+async function logEmailActivity(options: EmailLogOptions): Promise<void> {
+  const { type, recipient, success, messageId, error, userId, metadata } = options;
+  const timestamp = new Date().toISOString();
+
+  // Always log to console
+  console.log(
+    `[${timestamp}] Email ${type} to ${recipient}: ${success ? 'SUCCESS' : 'FAILED'}`,
+    messageId ? `(ID: ${messageId})` : '',
+    error || ''
+  );
+
+  // Attempt to log to database (non-blocking)
+  try {
+    const supabase = getSupabaseAdmin();
+    if (supabase) {
+      await supabase.from('email_logs').insert({
+        email_type: type,
+        recipient,
+        success,
+        message_id: messageId,
+        error_message: error,
+        user_id: userId,
+        metadata: metadata || {},
+      });
+    }
+  } catch (dbError) {
+    // Log database error but don't throw - email delivery is the priority
+    console.error('Failed to log email to database:', dbError);
+  }
 }
 
 /**
@@ -66,7 +104,8 @@ function logEmailActivity(
  */
 export async function sendWelcomeEmail(
   userEmail: string,
-  userName: string
+  userName: string,
+  userId?: string
 ): Promise<EmailResult> {
   try {
     const { data, error } = await getResend().emails.send({
@@ -77,15 +116,36 @@ export async function sendWelcomeEmail(
     });
 
     if (error) {
-      logEmailActivity('welcome', userEmail, false, error.message);
+      await logEmailActivity({
+        type: 'welcome',
+        recipient: userEmail,
+        success: false,
+        error: error.message,
+        userId,
+        metadata: { userName },
+      });
       return { success: false, error: error.message };
     }
 
-    logEmailActivity('welcome', userEmail, true);
+    await logEmailActivity({
+      type: 'welcome',
+      recipient: userEmail,
+      success: true,
+      messageId: data?.id,
+      userId,
+      metadata: { userName },
+    });
     return { success: true, messageId: data?.id };
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-    logEmailActivity('welcome', userEmail, false, errorMessage);
+    await logEmailActivity({
+      type: 'welcome',
+      recipient: userEmail,
+      success: false,
+      error: errorMessage,
+      userId,
+      metadata: { userName },
+    });
     return { success: false, error: errorMessage };
   }
 }
@@ -96,7 +156,8 @@ export async function sendWelcomeEmail(
 export async function sendProfileIncompleteReminder(
   userEmail: string,
   userName: string,
-  profileUrl: string
+  profileUrl: string,
+  userId?: string
 ): Promise<EmailResult> {
   try {
     const { data, error } = await getResend().emails.send({
@@ -107,15 +168,33 @@ export async function sendProfileIncompleteReminder(
     });
 
     if (error) {
-      logEmailActivity('profile-reminder', userEmail, false, error.message);
+      await logEmailActivity({
+        type: 'profile-reminder',
+        recipient: userEmail,
+        success: false,
+        error: error.message,
+        userId,
+      });
       return { success: false, error: error.message };
     }
 
-    logEmailActivity('profile-reminder', userEmail, true);
+    await logEmailActivity({
+      type: 'profile-reminder',
+      recipient: userEmail,
+      success: true,
+      messageId: data?.id,
+      userId,
+    });
     return { success: true, messageId: data?.id };
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-    logEmailActivity('profile-reminder', userEmail, false, errorMessage);
+    await logEmailActivity({
+      type: 'profile-reminder',
+      recipient: userEmail,
+      success: false,
+      error: errorMessage,
+      userId,
+    });
     return { success: false, error: errorMessage };
   }
 }
@@ -126,7 +205,8 @@ export async function sendProfileIncompleteReminder(
 export async function sendUpgradeEmail(
   userEmail: string,
   userName: string,
-  pricingUrl: string
+  pricingUrl: string,
+  userId?: string
 ): Promise<EmailResult> {
   try {
     const { data, error } = await getResend().emails.send({
@@ -137,15 +217,33 @@ export async function sendUpgradeEmail(
     });
 
     if (error) {
-      logEmailActivity('upgrade-pro', userEmail, false, error.message);
+      await logEmailActivity({
+        type: 'upgrade-pro',
+        recipient: userEmail,
+        success: false,
+        error: error.message,
+        userId,
+      });
       return { success: false, error: error.message };
     }
 
-    logEmailActivity('upgrade-pro', userEmail, true);
+    await logEmailActivity({
+      type: 'upgrade-pro',
+      recipient: userEmail,
+      success: true,
+      messageId: data?.id,
+      userId,
+    });
     return { success: true, messageId: data?.id };
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-    logEmailActivity('upgrade-pro', userEmail, false, errorMessage);
+    await logEmailActivity({
+      type: 'upgrade-pro',
+      recipient: userEmail,
+      success: false,
+      error: errorMessage,
+      userId,
+    });
     return { success: false, error: errorMessage };
   }
 }
@@ -156,7 +254,8 @@ export async function sendUpgradeEmail(
 export async function sendSubscriptionConfirmation(
   userEmail: string,
   userName: string,
-  dashboardUrl: string
+  dashboardUrl: string,
+  userId?: string
 ): Promise<EmailResult> {
   try {
     const { data, error } = await getResend().emails.send({
@@ -167,15 +266,33 @@ export async function sendSubscriptionConfirmation(
     });
 
     if (error) {
-      logEmailActivity('subscription-confirmed', userEmail, false, error.message);
+      await logEmailActivity({
+        type: 'subscription-confirmed',
+        recipient: userEmail,
+        success: false,
+        error: error.message,
+        userId,
+      });
       return { success: false, error: error.message };
     }
 
-    logEmailActivity('subscription-confirmed', userEmail, true);
+    await logEmailActivity({
+      type: 'subscription-confirmed',
+      recipient: userEmail,
+      success: true,
+      messageId: data?.id,
+      userId,
+    });
     return { success: true, messageId: data?.id };
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-    logEmailActivity('subscription-confirmed', userEmail, false, errorMessage);
+    await logEmailActivity({
+      type: 'subscription-confirmed',
+      recipient: userEmail,
+      success: false,
+      error: errorMessage,
+      userId,
+    });
     return { success: false, error: errorMessage };
   }
 }
@@ -191,7 +308,8 @@ export async function sendReviewNotification(
     rating: number;
     comment: string;
     profileUrl: string;
-  }
+  },
+  userId?: string
 ): Promise<EmailResult> {
   try {
     const { data, error } = await getResend().emails.send({
@@ -202,15 +320,36 @@ export async function sendReviewNotification(
     });
 
     if (error) {
-      logEmailActivity('review-notification', userEmail, false, error.message);
+      await logEmailActivity({
+        type: 'review-notification',
+        recipient: userEmail,
+        success: false,
+        error: error.message,
+        userId,
+        metadata: { rating: reviewDetails.rating, reviewerName: reviewDetails.reviewerName },
+      });
       return { success: false, error: error.message };
     }
 
-    logEmailActivity('review-notification', userEmail, true);
+    await logEmailActivity({
+      type: 'review-notification',
+      recipient: userEmail,
+      success: true,
+      messageId: data?.id,
+      userId,
+      metadata: { rating: reviewDetails.rating, reviewerName: reviewDetails.reviewerName },
+    });
     return { success: true, messageId: data?.id };
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-    logEmailActivity('review-notification', userEmail, false, errorMessage);
+    await logEmailActivity({
+      type: 'review-notification',
+      recipient: userEmail,
+      success: false,
+      error: errorMessage,
+      userId,
+      metadata: { rating: reviewDetails.rating, reviewerName: reviewDetails.reviewerName },
+    });
     return { success: false, error: errorMessage };
   }
 }
@@ -222,7 +361,8 @@ export async function sendTrialEndingReminder(
   userEmail: string,
   userName: string,
   daysRemaining: number,
-  subscriptionUrl: string
+  subscriptionUrl: string,
+  userId?: string
 ): Promise<EmailResult> {
   try {
     const { data, error } = await getResend().emails.send({
@@ -233,15 +373,36 @@ export async function sendTrialEndingReminder(
     });
 
     if (error) {
-      logEmailActivity('trial-ending', userEmail, false, error.message);
+      await logEmailActivity({
+        type: 'trial-ending',
+        recipient: userEmail,
+        success: false,
+        error: error.message,
+        userId,
+        metadata: { daysRemaining },
+      });
       return { success: false, error: error.message };
     }
 
-    logEmailActivity('trial-ending', userEmail, true);
+    await logEmailActivity({
+      type: 'trial-ending',
+      recipient: userEmail,
+      success: true,
+      messageId: data?.id,
+      userId,
+      metadata: { daysRemaining },
+    });
     return { success: true, messageId: data?.id };
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-    logEmailActivity('trial-ending', userEmail, false, errorMessage);
+    await logEmailActivity({
+      type: 'trial-ending',
+      recipient: userEmail,
+      success: false,
+      error: errorMessage,
+      userId,
+      metadata: { daysRemaining },
+    });
     return { success: false, error: errorMessage };
   }
 }
@@ -253,7 +414,8 @@ export async function sendTrialEndingReminder(
 export async function sendCustomEmail(
   to: string,
   subject: string,
-  html: string
+  html: string,
+  userId?: string
 ): Promise<EmailResult> {
   try {
     const { data, error } = await getResend().emails.send({
@@ -264,15 +426,36 @@ export async function sendCustomEmail(
     });
 
     if (error) {
-      logEmailActivity('custom', to, false, error.message);
+      await logEmailActivity({
+        type: 'custom',
+        recipient: to,
+        success: false,
+        error: error.message,
+        userId,
+        metadata: { subject },
+      });
       return { success: false, error: error.message };
     }
 
-    logEmailActivity('custom', to, true);
+    await logEmailActivity({
+      type: 'custom',
+      recipient: to,
+      success: true,
+      messageId: data?.id,
+      userId,
+      metadata: { subject },
+    });
     return { success: true, messageId: data?.id };
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-    logEmailActivity('custom', to, false, errorMessage);
+    await logEmailActivity({
+      type: 'custom',
+      recipient: to,
+      success: false,
+      error: errorMessage,
+      userId,
+      metadata: { subject },
+    });
     return { success: false, error: errorMessage };
   }
 }

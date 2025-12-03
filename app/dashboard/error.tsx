@@ -41,7 +41,7 @@ export default function DashboardError({
             Dashboard Error
           </h1>
           <p className="text-gray-600 mb-2">
-            We couldn't load your dashboard data at this time.
+            We couldn&apos;t load your dashboard data at this time.
           </p>
           <p className="text-sm text-gray-500 mb-8">
             This might be a temporary issue. Please try again.
