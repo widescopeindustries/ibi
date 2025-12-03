@@ -3,17 +3,20 @@
 import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import Script from 'next/script';
+import { inject } from '@vercel/analytics';
 
 /**
  * Analytics Component
  *
  * This component handles the initialization and tracking for:
+ * - Vercel Web Analytics
  * - Google Analytics 4 (GA4)
  * - Meta Pixel (Facebook Pixel)
  *
  * It automatically tracks page views when routes change in the Next.js app.
  *
  * Features:
+ * - Vercel Web Analytics integration via inject()
  * - Lazy loading of analytics scripts for better performance
  * - Automatic page view tracking on route changes
  * - Proper handling of environment variables
@@ -22,6 +25,9 @@ import Script from 'next/script';
  * Environment Variables Required:
  * - NEXT_PUBLIC_GA_MEASUREMENT_ID: Your GA4 Measurement ID (e.g., G-XXXXXXXXXX)
  * - NEXT_PUBLIC_META_PIXEL_ID: Your Meta Pixel ID (e.g., 1234567890)
+ *
+ * Note: Vercel Web Analytics does not require environment variables.
+ * It's automatically enabled when deployed to Vercel.
  */
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
@@ -30,6 +36,11 @@ const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 export default function Analytics() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+
+  // Initialize Vercel Web Analytics
+  useEffect(() => {
+    inject();
+  }, []);
 
   // Track page views when the route changes
   useEffect(() => {
