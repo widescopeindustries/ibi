@@ -21,6 +21,10 @@ export interface Profile {
   personal_website_url: string | null;
   is_pro_subscriber: boolean;
   stripe_customer_id: string | null;
+  email_verified?: boolean;
+  avg_response_hours?: number;
+  latitude?: number;
+  longitude?: number;
 }
 
 export interface RepCompany {

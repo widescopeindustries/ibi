@@ -11,6 +11,15 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
     }
 
+    // Get billing period from request body (default to monthly)
+    let billingPeriod = 'monthly'
+    try {
+      const body = await request.json()
+      billingPeriod = body.billingPeriod || 'monthly'
+    } catch {
+      // No body or invalid JSON, use default
+    }
+
     const { data: profile } = await supabase
       .from('profiles')
       .select('stripe_customer_id, first_name, last_name')
@@ -38,6 +47,11 @@ export async function POST(request: Request) {
         .eq('id', user.id)
     }
 
+    // Select the correct price ID based on billing period
+    const priceId = billingPeriod === 'annual'
+      ? process.env.STRIPE_PRO_ANNUAL_PRICE_ID || process.env.STRIPE_PRO_MONTHLY_PRICE_ID!
+      : process.env.STRIPE_PRO_MONTHLY_PRICE_ID!
+
     // Create checkout session
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
@@ -45,20 +59,28 @@ export async function POST(request: Request) {
       payment_method_types: ['card'],
       line_items: [
         {
-          price: process.env.STRIPE_PRO_MONTHLY_PRICE_ID!,
+          price: priceId,
           quantity: 1,
         },
       ],
+      subscription_data: {
+        trial_period_days: 7,
+        metadata: {
+          billing_period: billingPeriod,
+        },
+      },
       success_url: `${process.env.NEXT_PUBLIC_APP_URL}/dashboard/subscription?success=true`,
       cancel_url: `${process.env.NEXT_PUBLIC_APP_URL}/dashboard/subscription?canceled=true`,
       metadata: {
         supabase_user_id: user.id,
+        billing_period: billingPeriod,
       },
     })
 
     return NextResponse.json({ sessionId: session.id })
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error(error)
-    return NextResponse.json({ error: error.message }, { status: 500 })
+    const errorMessage = error instanceof Error ? error.message : 'An error occurred'
+    return NextResponse.json({ error: errorMessage }, { status: 500 })
   }
 }

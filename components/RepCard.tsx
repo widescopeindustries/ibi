@@ -8,11 +8,29 @@ interface RepCardProps {
     average_rating?: number
     review_count?: number
     email_verified?: boolean
+    avg_response_hours?: number
+    distance_miles?: number
   }
   companies?: string[]
+  showDistance?: boolean
 }
 
-export default function RepCard({ profile, companies = [] }: RepCardProps) {
+// Helper to format response time
+function formatResponseTime(hours: number): string {
+  if (hours < 1) return 'Under 1 hour'
+  if (hours < 24) return `${Math.round(hours)} hour${hours >= 2 ? 's' : ''}`
+  const days = Math.round(hours / 24)
+  return `${days} day${days > 1 ? 's' : ''}`
+}
+
+// Helper to format distance
+function formatDistance(miles: number): string {
+  if (miles < 1) return 'Less than 1 mile'
+  if (miles < 10) return `${miles.toFixed(1)} miles`
+  return `${Math.round(miles)} miles`
+}
+
+export default function RepCard({ profile, companies = [], showDistance = false }: RepCardProps) {
   const fullName = `${profile.first_name || ''} ${profile.last_name || ''}`.trim() || 'Anonymous'
   const location = [profile.city, profile.state].filter(Boolean).join(', ') || 'Location not specified'
   const hasLocation = profile.city && profile.state
@@ -70,13 +88,28 @@ export default function RepCard({ profile, companies = [] }: RepCardProps) {
             {fullName}
           </h3>
 
-          {/* Location with Icon */}
+          {/* Location with Icon and Distance */}
           {hasLocation && (
             <div className="flex items-center gap-1.5 text-gray-600 mb-3">
               <svg className="w-4 h-4 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
               </svg>
               <p className="text-base font-medium">{location}</p>
+              {showDistance && profile.distance_miles !== undefined && (
+                <span className="text-sm text-primary-600 font-medium">
+                  ({formatDistance(profile.distance_miles)} away)
+                </span>
+              )}
+            </div>
+          )}
+
+          {/* Response Time Badge */}
+          {profile.avg_response_hours !== undefined && (
+            <div className="flex items-center gap-1.5 text-sm text-gray-500 mb-3">
+              <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>Typically responds in {formatResponseTime(profile.avg_response_hours)}</span>
             </div>
           )}
 
