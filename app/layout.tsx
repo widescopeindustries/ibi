@@ -2,10 +2,86 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Analytics from '@/components/Analytics'
+import { defaultSEO } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Direct Sales Rep Directory - Find Your Local Sales Representative',
-  description: 'Find direct sales representatives for Mary Kay, Pampered Chef, Avon, and more. Connect with local reps in your area.',
+  metadataBase: new URL(defaultSEO.siteUrl),
+  title: {
+    default: 'IBI Sales Rep Directory - Find Direct Sales Representatives Near You',
+    template: '%s | IBI Sales Rep Directory',
+  },
+  description: defaultSEO.description,
+  keywords: [
+    'direct sales',
+    'sales representatives',
+    'Mary Kay',
+    'Pampered Chef',
+    'Avon',
+    'Tupperware',
+    'Scentsy',
+    'doTERRA',
+    'Young Living',
+    'Norwex',
+    'Rodan Fields',
+    'Arbonne',
+    'find rep near me',
+    'local sales rep',
+    'direct sales directory',
+  ],
+  authors: [{ name: 'IBI Directory' }],
+  creator: 'IBI Directory',
+  publisher: 'IBI Directory',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: defaultSEO.siteUrl,
+    siteName: defaultSEO.siteName,
+    title: 'IBI Sales Rep Directory - Find Direct Sales Representatives Near You',
+    description: defaultSEO.description,
+    images: [
+      {
+        url: `${defaultSEO.siteUrl}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: defaultSEO.siteName,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: defaultSEO.twitter.site,
+    creator: defaultSEO.twitter.site,
+    title: 'IBI Sales Rep Directory - Find Direct Sales Representatives Near You',
+    description: defaultSEO.description,
+    images: [`${defaultSEO.siteUrl}/og-image.jpg`],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    // Add your verification codes here when available
+    // google: 'your-google-verification-code',
+    // yandex: 'your-yandex-verification-code',
+    // bing: 'your-bing-verification-code',
+  },
+  alternates: {
+    canonical: defaultSEO.siteUrl,
+  },
+  category: 'business',
 }
 
 export default function RootLayout({
@@ -15,7 +91,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+      </head>
       <body className="font-sans antialiased">
+        <Analytics />
         <Navbar />
         <main className="min-h-screen">
           {children}

@@ -1,9 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import HeroSearch from '@/components/HeroSearch'
 import RepCard from '@/components/RepCard'
-import TrustSignals from '@/components/TrustSignals'
-import TestimonialSection from '@/components/TestimonialSection'
-import { testimonials } from '@/data/testimonials'
 import Link from 'next/link'
 import { ProfileWithCompanies, Company } from '@/types/database'
 import { generateHomeMetadata } from '@/lib/seo'
@@ -64,9 +61,6 @@ export default async function Home() {
             <HeroSearch />
           </div>
         </section>
-
-        {/* Trust Signals */}
-        <TrustSignals />
 
         {/* Featured Companies */}
         <section className="py-16 bg-white">
@@ -132,9 +126,6 @@ export default async function Home() {
             </div>
           </div>
         </section>
-
-        {/* Testimonials Section */}
-        <TestimonialSection testimonials={testimonials} />
 
         {/* CTA Section for Reps */}
         <section className="bg-primary-700 text-white py-16">
