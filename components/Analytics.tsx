@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import Script from 'next/script';
 
@@ -27,7 +27,7 @@ import Script from 'next/script';
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 
-export default function Analytics() {
+function AnalyticsTracker() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -111,5 +111,14 @@ export default function Analytics() {
         </noscript>
       )}
     </>
+  );
+}
+
+// Wrap in Suspense to handle useSearchParams during static generation
+export default function Analytics() {
+  return (
+    <Suspense fallback={null}>
+      <AnalyticsTracker />
+    </Suspense>
   );
 }

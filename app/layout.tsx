@@ -44,14 +44,6 @@ export const metadata: Metadata = {
     siteName: defaultSEO.siteName,
     title: 'IBI Sales Rep Directory - Find Direct Sales Representatives Near You',
     description: defaultSEO.description,
-    images: [
-      {
-        url: `${defaultSEO.siteUrl}/og-image.jpg`,
-        width: 1200,
-        height: 630,
-        alt: defaultSEO.siteName,
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -59,7 +51,6 @@ export const metadata: Metadata = {
     creator: defaultSEO.twitter.site,
     title: 'IBI Sales Rep Directory - Find Direct Sales Representatives Near You',
     description: defaultSEO.description,
-    images: [`${defaultSEO.siteUrl}/og-image.jpg`],
   },
   robots: {
     index: true,
@@ -92,8 +83,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className="font-sans antialiased">

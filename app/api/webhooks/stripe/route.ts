@@ -3,19 +3,22 @@ import { stripe } from '@/lib/stripe'
 import { NextResponse } from 'next/server'
 import Stripe from 'stripe'
 
-// Initialize Supabase with service role key for admin access
-const supabaseAdmin = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!,
-  {
-    auth: {
-      autoRefreshToken: false,
-      persistSession: false
+// Create Supabase admin client lazily (inside request handler to avoid build-time initialization)
+function getSupabaseAdmin() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!,
+    {
+      auth: {
+        autoRefreshToken: false,
+        persistSession: false
+      }
     }
-  }
-)
+  )
+}
 
 export async function POST(request: Request) {
+  const supabaseAdmin = getSupabaseAdmin()
   const body = await request.text()
   const signature = request.headers.get('stripe-signature')!
 

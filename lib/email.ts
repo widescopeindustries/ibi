@@ -6,11 +6,20 @@ import { SubscriptionConfirmedEmail } from './emails/subscription-confirmed';
 import { NewReviewNotification } from './emails/new-review-notification';
 import { TrialEndingSoonEmail } from './emails/trial-ending-soon';
 
-// Initialize Resend with API key from environment variables
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy initialization to avoid build-time errors when env vars aren't available
+let resendInstance: Resend | null = null;
+
+function getResend(): Resend {
+  if (!resendInstance) {
+    resendInstance = new Resend(process.env.RESEND_API_KEY);
+  }
+  return resendInstance;
+}
 
 // Default from address for all emails
-const FROM_EMAIL = process.env.EMAIL_FROM_ADDRESS || 'IBI Directory <noreply@ibidirectory.com>';
+function getFromEmail(): string {
+  return process.env.EMAIL_FROM_ADDRESS || 'IBI Directory <noreply@ibidirectory.com>';
+}
 
 // Brand colors for IBI
 export const brandColors = {
@@ -59,8 +68,8 @@ export async function sendWelcomeEmail(
   userName: string
 ): Promise<EmailResult> {
   try {
-    const { data, error } = await resend.emails.send({
-      from: FROM_EMAIL,
+    const { data, error } = await getResend().emails.send({
+      from: getFromEmail(),
       to: userEmail,
       subject: 'Welcome to IBI Directory!',
       react: WelcomeEmail({ userName }),
@@ -89,8 +98,8 @@ export async function sendProfileIncompleteReminder(
   profileUrl: string
 ): Promise<EmailResult> {
   try {
-    const { data, error } = await resend.emails.send({
-      from: FROM_EMAIL,
+    const { data, error } = await getResend().emails.send({
+      from: getFromEmail(),
       to: userEmail,
       subject: 'Complete Your IBI Profile',
       react: ProfileIncompleteReminder({ userName, profileUrl }),
@@ -119,8 +128,8 @@ export async function sendUpgradeEmail(
   pricingUrl: string
 ): Promise<EmailResult> {
   try {
-    const { data, error } = await resend.emails.send({
-      from: FROM_EMAIL,
+    const { data, error } = await getResend().emails.send({
+      from: getFromEmail(),
       to: userEmail,
       subject: 'Unlock Pro Features and Boost Your Visibility',
       react: UpgradeToProEmail({ userName, pricingUrl }),
@@ -149,8 +158,8 @@ export async function sendSubscriptionConfirmation(
   dashboardUrl: string
 ): Promise<EmailResult> {
   try {
-    const { data, error } = await resend.emails.send({
-      from: FROM_EMAIL,
+    const { data, error } = await getResend().emails.send({
+      from: getFromEmail(),
       to: userEmail,
       subject: 'Welcome to Pro! Your Subscription is Confirmed',
       react: SubscriptionConfirmedEmail({ userName, dashboardUrl }),
@@ -184,8 +193,8 @@ export async function sendReviewNotification(
   }
 ): Promise<EmailResult> {
   try {
-    const { data, error } = await resend.emails.send({
-      from: FROM_EMAIL,
+    const { data, error } = await getResend().emails.send({
+      from: getFromEmail(),
       to: userEmail,
       subject: `New Review: ${reviewDetails.rating} Stars!`,
       react: NewReviewNotification(reviewDetails),
@@ -215,8 +224,8 @@ export async function sendTrialEndingReminder(
   subscriptionUrl: string
 ): Promise<EmailResult> {
   try {
-    const { data, error } = await resend.emails.send({
-      from: FROM_EMAIL,
+    const { data, error } = await getResend().emails.send({
+      from: getFromEmail(),
       to: userEmail,
       subject: `Your Pro Trial Ends in ${daysRemaining} Days`,
       react: TrialEndingSoonEmail({ userName, daysRemaining, subscriptionUrl }),
@@ -246,8 +255,8 @@ export async function sendCustomEmail(
   html: string
 ): Promise<EmailResult> {
   try {
-    const { data, error } = await resend.emails.send({
-      from: FROM_EMAIL,
+    const { data, error } = await getResend().emails.send({
+      from: getFromEmail(),
       to,
       subject,
       html,
@@ -267,5 +276,5 @@ export async function sendCustomEmail(
   }
 }
 
-// Export Resend instance for advanced use cases
-export { resend };
+// Export Resend getter for advanced use cases
+export { getResend };
