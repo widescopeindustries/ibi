@@ -6,8 +6,18 @@ import { SubscriptionConfirmedEmail } from './emails/subscription-confirmed';
 import { NewReviewNotification } from './emails/new-review-notification';
 import { TrialEndingSoonEmail } from './emails/trial-ending-soon';
 
-// Initialize Resend with API key from environment variables
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy initialization to prevent build-time errors when env vars aren't set
+let resendInstance: Resend | null = null;
+
+function getResend(): Resend {
+  if (!resendInstance) {
+    if (!process.env.RESEND_API_KEY) {
+      throw new Error('RESEND_API_KEY is not configured');
+    }
+    resendInstance = new Resend(process.env.RESEND_API_KEY);
+  }
+  return resendInstance;
+}
 
 // Default from address for all emails
 const FROM_EMAIL = process.env.EMAIL_FROM_ADDRESS || 'IBI Directory <noreply@ibidirectory.com>';
@@ -59,7 +69,7 @@ export async function sendWelcomeEmail(
   userName: string
 ): Promise<EmailResult> {
   try {
-    const { data, error } = await resend.emails.send({
+    const { data, error } = await getResend().emails.send({
       from: FROM_EMAIL,
       to: userEmail,
       subject: 'Welcome to IBI Directory!',
@@ -89,7 +99,7 @@ export async function sendProfileIncompleteReminder(
   profileUrl: string
 ): Promise<EmailResult> {
   try {
-    const { data, error } = await resend.emails.send({
+    const { data, error } = await getResend().emails.send({
       from: FROM_EMAIL,
       to: userEmail,
       subject: 'Complete Your IBI Profile',
@@ -119,7 +129,7 @@ export async function sendUpgradeEmail(
   pricingUrl: string
 ): Promise<EmailResult> {
   try {
-    const { data, error } = await resend.emails.send({
+    const { data, error } = await getResend().emails.send({
       from: FROM_EMAIL,
       to: userEmail,
       subject: 'Unlock Pro Features and Boost Your Visibility',
@@ -149,7 +159,7 @@ export async function sendSubscriptionConfirmation(
   dashboardUrl: string
 ): Promise<EmailResult> {
   try {
-    const { data, error } = await resend.emails.send({
+    const { data, error } = await getResend().emails.send({
       from: FROM_EMAIL,
       to: userEmail,
       subject: 'Welcome to Pro! Your Subscription is Confirmed',
@@ -184,7 +194,7 @@ export async function sendReviewNotification(
   }
 ): Promise<EmailResult> {
   try {
-    const { data, error } = await resend.emails.send({
+    const { data, error } = await getResend().emails.send({
       from: FROM_EMAIL,
       to: userEmail,
       subject: `New Review: ${reviewDetails.rating} Stars!`,
@@ -215,7 +225,7 @@ export async function sendTrialEndingReminder(
   subscriptionUrl: string
 ): Promise<EmailResult> {
   try {
-    const { data, error } = await resend.emails.send({
+    const { data, error } = await getResend().emails.send({
       from: FROM_EMAIL,
       to: userEmail,
       subject: `Your Pro Trial Ends in ${daysRemaining} Days`,
@@ -246,7 +256,7 @@ export async function sendCustomEmail(
   html: string
 ): Promise<EmailResult> {
   try {
-    const { data, error } = await resend.emails.send({
+    const { data, error } = await getResend().emails.send({
       from: FROM_EMAIL,
       to,
       subject,
@@ -267,5 +277,5 @@ export async function sendCustomEmail(
   }
 }
 
-// Export Resend instance for advanced use cases
-export { resend };
+// Export Resend getter for advanced use cases
+export { getResend };
