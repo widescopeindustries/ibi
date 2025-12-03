@@ -21,61 +21,74 @@ export async function generateMetadata({ searchParams }: SearchPageProps) {
 }
 
 export default async function SearchPage({ searchParams }: SearchPageProps) {
-  const supabase = await createClient()
+  let filteredReps: any[] = []
+  let companies: any[] = []
 
-  // Build the query
-  let query = supabase
-    .from('profiles')
-    .select(`
-      *,
-      rep_companies (
-        companies (
-          id,
-          name,
-          slug
+  try {
+    const supabase = await createClient()
+
+    // Build the query
+    let query = supabase
+      .from('profiles')
+      .select(`
+        *,
+        rep_companies (
+          companies (
+            id,
+            name,
+            slug
+          )
         )
-      )
-    `)
+      `)
 
-  // Filter by location (ZIP, city, or state)
-  if (searchParams.location) {
-    const location = searchParams.location.toLowerCase().trim()
+    // Filter by location (ZIP, city, or state)
+    if (searchParams.location) {
+      const location = searchParams.location.toLowerCase().trim()
 
-    // Check if it's a ZIP code (5 digits)
-    if (/^\d{5}$/.test(location)) {
-      query = query.eq('zip_code', location)
-    } else if (location.length === 2) {
-      // State code
-      query = query.ilike('state', location)
-    } else {
-      // City name
-      query = query.ilike('city', `%${location}%`)
+      // Check if it's a ZIP code (5 digits)
+      if (/^\d{5}$/.test(location)) {
+        query = query.eq('zip_code', location)
+      } else if (location.length === 2) {
+        // State code
+        query = query.ilike('state', location)
+      } else {
+        // City name
+        query = query.ilike('city', `%${location}%`)
+      }
     }
+
+    // Order by pro subscribers first
+    query = query.order('is_pro_subscriber', { ascending: false })
+    query = query.order('created_at', { ascending: false })
+
+    const { data: allReps, error: repsError } = await query
+
+    // Filter by company if specified (client-side since it's a join table)
+    if (!repsError && allReps) {
+      filteredReps = allReps
+      if (searchParams.company) {
+        const companySearch = searchParams.company.toLowerCase()
+        filteredReps = filteredReps.filter((rep: any) =>
+          rep.rep_companies?.some((rc: any) =>
+            rc.companies.name.toLowerCase().includes(companySearch) ||
+            rc.companies.slug.includes(companySearch)
+          )
+        )
+      }
+    }
+
+    // Get all companies for the filter sidebar
+    const { data: companiesData, error: companiesError } = await supabase
+      .from('companies')
+      .select('*')
+      .order('name')
+
+    if (!companiesError && companiesData) {
+      companies = companiesData
+    }
+  } catch (error) {
+    console.error('Error loading search results:', error)
   }
-
-  // Order by pro subscribers first
-  query = query.order('is_pro_subscriber', { ascending: false })
-  query = query.order('created_at', { ascending: false })
-
-  const { data: allReps } = await query
-
-  // Filter by company if specified (client-side since it's a join table)
-  let filteredReps = allReps || []
-  if (searchParams.company) {
-    const companySearch = searchParams.company.toLowerCase()
-    filteredReps = filteredReps.filter((rep: any) =>
-      rep.rep_companies?.some((rc: any) =>
-        rc.companies.name.toLowerCase().includes(companySearch) ||
-        rc.companies.slug.includes(companySearch)
-      )
-    )
-  }
-
-  // Get all companies for the filter sidebar
-  const { data: companies } = await supabase
-    .from('companies')
-    .select('*')
-    .order('name')
 
   // Generate breadcrumb structured data
   const breadcrumbItems = [

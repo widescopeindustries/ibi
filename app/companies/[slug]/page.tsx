@@ -9,42 +9,54 @@ interface CompanyPageProps {
 }
 
 export default async function CompanyPage({ params }: CompanyPageProps) {
-  const supabase = await createClient()
+  let company: any = null
+  let reps: any[] = []
 
-  // Fetch company info
-  const { data: company } = await supabase
-    .from('companies')
-    .select('*')
-    .eq('slug', params.slug)
-    .single()
+  try {
+    const supabase = await createClient()
 
-  if (!company) {
-    notFound()
-  }
+    // Fetch company info
+    const { data: companyData, error: companyError } = await supabase
+      .from('companies')
+      .select('*')
+      .eq('slug', params.slug)
+      .single()
 
-  // Fetch all reps for this company
-  const { data: repCompanies } = await supabase
-    .from('rep_companies')
-    .select(`
-      profiles (
-        *,
-        rep_companies (
-          companies (
-            name
+    if (companyError || !companyData) {
+      notFound()
+    }
+
+    company = companyData
+
+    // Fetch all reps for this company
+    const { data: repCompanies, error: repsError } = await supabase
+      .from('rep_companies')
+      .select(`
+        profiles (
+          *,
+          rep_companies (
+            companies (
+              name
+            )
           )
         )
-      )
-    `)
-    .eq('company_id', company.id)
+      `)
+      .eq('company_id', company.id)
 
-  const reps = repCompanies?.map((rc: any) => rc.profiles).filter(Boolean) || []
+    if (!repsError && repCompanies) {
+      reps = repCompanies.map((rc: any) => rc.profiles).filter(Boolean)
 
-  // Sort by pro subscribers first
-  reps.sort((a: any, b: any) => {
-    if (a.is_pro_subscriber && !b.is_pro_subscriber) return -1
-    if (!a.is_pro_subscriber && b.is_pro_subscriber) return 1
-    return 0
-  })
+      // Sort by pro subscribers first
+      reps.sort((a: any, b: any) => {
+        if (a.is_pro_subscriber && !b.is_pro_subscriber) return -1
+        if (!a.is_pro_subscriber && b.is_pro_subscriber) return 1
+        return 0
+      })
+    }
+  } catch (error) {
+    console.error('Error loading company page:', error)
+    notFound()
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">

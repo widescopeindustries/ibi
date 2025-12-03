@@ -8,19 +8,19 @@ export async function middleware(request: NextRequest) {
     },
   })
 
-  // Check if Supabase environment variables are available
+  // Check if required environment variables are set
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
-  if (!supabaseUrl || !supabaseAnonKey) {
-    console.error('Supabase environment variables not configured')
+  if (!supabaseUrl || !supabaseKey) {
+    console.error('Missing Supabase environment variables')
     return response
   }
 
   try {
     const supabase = createServerClient(
       supabaseUrl,
-      supabaseAnonKey,
+      supabaseKey,
       {
         cookies: {
           get(name: string) {
