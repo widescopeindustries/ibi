@@ -3,11 +3,13 @@
 import { useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import Script from 'next/script';
+import { inject } from '@vercel/analytics';
 
 /**
  * Analytics Component
  *
  * This component handles the initialization and tracking for:
+ * - Vercel Web Analytics
  * - Google Analytics 4 (GA4)
  * - Meta Pixel (Facebook Pixel)
  *
@@ -30,6 +32,11 @@ const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID;
 export default function Analytics() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+
+  // Initialize Vercel Analytics on component mount
+  useEffect(() => {
+    inject();
+  }, []);
 
   // Track page views when the route changes
   useEffect(() => {
