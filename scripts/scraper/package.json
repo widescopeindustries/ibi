@@ -1,0 +1,27 @@
+{
+  "name": "ibi-sales-rep-scraper",
+  "version": "1.0.0",
+  "description": "Web scraping agent to find direct sales rep emails for IBI outreach",
+  "type": "module",
+  "scripts": {
+    "scrape": "npx tsx src/index.ts",
+    "scrape:test": "npx tsx src/index.ts --test",
+    "scrape:company": "npx tsx src/index.ts --company"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "cheerio": "^1.0.0-rc.12",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.4.5",
+    "p-limit": "^5.0.0",
+    "puppeteer": "^22.8.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "user-agents": "^1.1.227"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "tsx": "^4.10.5",
+    "typescript": "^5.4.5"
+  }
+}

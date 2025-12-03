@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "scraper:install": "cd scripts/scraper && npm install",
+    "scraper:run": "cd scripts/scraper && npm run scrape",
+    "scraper:test": "cd scripts/scraper && npm run scrape -- --test",
+    "scraper:list": "cd scripts/scraper && npm run scrape -- --list"
   },
   "dependencies": {
     "@react-email/components": "^1.0.1",
