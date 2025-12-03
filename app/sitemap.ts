@@ -2,6 +2,11 @@ import { MetadataRoute } from 'next'
 import { createClient } from '@/lib/supabase/server'
 import { defaultSEO, US_STATES } from '@/lib/seo'
 
+// Convert state name to URL slug
+function stateNameToSlug(name: string): string {
+  return name.toLowerCase().replace(/\s+/g, '-')
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = defaultSEO.siteUrl
   const supabase = await createClient()
@@ -16,6 +21,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/search`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/find`,
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,
@@ -74,24 +85,25 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     })) || []
 
-  // State search pages
+  // State landing pages (clean URLs for better SEO)
   const stateRoutes: MetadataRoute.Sitemap = US_STATES.map(state => ({
-    url: `${baseUrl}/search?location=${state.code}`,
+    url: `${baseUrl}/find/${stateNameToSlug(state.name)}`,
     lastModified: new Date(),
     changeFrequency: 'daily' as const,
-    priority: 0.6,
+    priority: 0.8,
   }))
 
-  // Company + State combination pages (high-value SEO pages)
+  // Company + State combination pages (high-value SEO pages with clean URLs)
+  // URL structure: /find/[state]/[company] e.g., /find/california/mary-kay
   const companyStateRoutes: MetadataRoute.Sitemap = []
   if (companies && companies.length > 0) {
-    for (const company of companies) {
-      for (const state of US_STATES) {
+    for (const state of US_STATES) {
+      for (const company of companies) {
         companyStateRoutes.push({
-          url: `${baseUrl}/search?company=${company.slug}&location=${state.code}`,
+          url: `${baseUrl}/find/${stateNameToSlug(state.name)}/${company.slug}`,
           lastModified: new Date(),
           changeFrequency: 'weekly' as const,
-          priority: 0.5,
+          priority: 0.7,
         })
       }
     }

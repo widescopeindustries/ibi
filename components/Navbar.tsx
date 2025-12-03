@@ -19,6 +19,9 @@ export default async function Navbar() {
             <Link href="/search" className="text-gray-700 hover:text-primary-600">
               Find a Rep
             </Link>
+            <Link href="/find" className="text-gray-700 hover:text-primary-600">
+              Browse by Location
+            </Link>
             <Link href="/companies" className="text-gray-700 hover:text-primary-600">
               Companies
             </Link>
