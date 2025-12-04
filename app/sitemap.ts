@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 import { createClient } from '@/lib/supabase/server'
-import { defaultSEO, US_STATES } from '@/lib/seo'
+import { defaultSEO } from '@/lib/seo'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = defaultSEO.siteUrl
@@ -74,23 +74,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     })) || []
 
-  // State search pages
-  const stateRoutes: MetadataRoute.Sitemap = US_STATES.map(state => ({
-    url: `${baseUrl}/search?location=${state.code}`,
-    lastModified: new Date(),
-    changeFrequency: 'daily' as const,
-    priority: 0.6,
-  }))
-
   // Combine all routes
-  // Note: Removed companyStateRoutes (company+state combinations) because:
-  // 1. URLs with multiple query params (&) cause XML parsing errors in sitemaps
+  // Note: Removed query parameter URLs (stateRoutes, companyStateRoutes) because:
+  // 1. Query params can cause XML parsing errors in sitemaps
   // 2. Query parameter URLs have lower SEO value - Google discovers them via internal links
-  // 3. Keeps sitemap size manageable
+  // 3. Clean path-based URLs are preferred for sitemaps
   return [
     ...staticRoutes,
     ...companyRoutes,
     ...repRoutes,
-    ...stateRoutes,
   ]
 }
