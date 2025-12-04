@@ -19,11 +19,14 @@ export default function HeroSearch() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-4xl mx-auto">
-      <div className="bg-white rounded-lg shadow-lg p-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <form onSubmit={handleSubmit} className="w-full max-w-3xl mx-auto">
+      <div className="bg-white rounded-sm shadow-sm border border-gray-100 p-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+            <label
+              htmlFor="company"
+              className="block text-xs uppercase tracking-widest text-gray-500 mb-3"
+            >
               Company
             </label>
             <input
@@ -37,7 +40,10 @@ export default function HeroSearch() {
           </div>
 
           <div>
-            <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-2">
+            <label
+              htmlFor="location"
+              className="block text-xs uppercase tracking-widest text-gray-500 mb-3"
+            >
               Location
             </label>
             <input
@@ -51,10 +57,10 @@ export default function HeroSearch() {
           </div>
         </div>
 
-        <div className="mt-6">
+        <div className="mt-8">
           <button
             type="submit"
-            className="w-full btn btn-primary py-3 text-lg"
+            className="w-full btn btn-primary py-3"
           >
             Search Representatives
           </button>

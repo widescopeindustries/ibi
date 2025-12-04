@@ -4,53 +4,96 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 254 252 250;
+    --foreground: 55 49 40;
+    --font-inter: 'Inter', system-ui, sans-serif;
+    --font-playfair: 'Playfair Display', Georgia, serif;
   }
 
   body {
-    @apply bg-gray-50 text-gray-900;
+    @apply bg-cream-50 text-gray-800;
+  }
+
+  /* Elegant heading styles */
+  h1, h2, h3 {
+    @apply font-serif;
   }
 }
 
 @layer components {
+  /* Elegant button base */
   .btn {
-    @apply px-4 py-2 rounded-lg font-medium transition-colors;
+    @apply px-6 py-2.5 rounded-sm font-medium transition-all duration-300 tracking-wide text-sm uppercase;
   }
 
   .btn-primary {
-    @apply bg-primary-600 text-white hover:bg-primary-700;
+    @apply bg-gray-900 text-white hover:bg-gray-800 border border-gray-900;
   }
 
   .btn-secondary {
-    @apply bg-secondary-600 text-white hover:bg-secondary-700;
+    @apply bg-secondary-600 text-white hover:bg-secondary-700 border border-secondary-600;
   }
 
   .btn-outline {
-    @apply border-2 border-primary-600 text-primary-600 hover:bg-primary-50;
+    @apply border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white bg-transparent;
   }
 
   .btn-accent {
-    @apply bg-accent-600 text-white hover:bg-accent-700;
+    @apply bg-primary-600 text-white hover:bg-primary-700 border border-primary-600;
   }
 
+  /* Elegant input styling */
   .input {
-    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+    @apply w-full px-4 py-3 border border-gray-300 rounded-sm focus:ring-1 focus:ring-primary-400 focus:border-primary-400 bg-white transition-all duration-200;
   }
 
+  /* Minimal card styling */
   .card {
-    @apply bg-white rounded-lg shadow-md p-6;
+    @apply bg-white rounded-sm shadow-sm p-6 border border-gray-100;
   }
 
+  /* Elegant badges */
   .badge-primary {
-    @apply inline-block bg-primary-100 text-primary-700 text-xs px-2 py-1 rounded;
+    @apply inline-block bg-primary-50 text-primary-700 text-xs px-3 py-1 rounded-sm tracking-wide;
   }
 
   .badge-secondary {
-    @apply inline-block bg-secondary-100 text-secondary-700 text-xs px-2 py-1 rounded;
+    @apply inline-block bg-secondary-50 text-secondary-700 text-xs px-3 py-1 rounded-sm tracking-wide;
   }
 
   .badge-accent {
-    @apply inline-block bg-accent-100 text-accent-700 text-xs px-2 py-1 rounded;
+    @apply inline-block bg-accent-100 text-accent-800 text-xs px-3 py-1 rounded-sm tracking-wide;
   }
+
+  /* Section headings with elegant styling */
+  .section-title {
+    @apply font-serif text-3xl md:text-4xl text-gray-900 tracking-tight;
+  }
+
+  .section-subtitle {
+    @apply text-gray-600 text-lg font-light tracking-wide;
+  }
+
+  /* Elegant divider */
+  .elegant-divider {
+    @apply w-16 h-px bg-primary-400 mx-auto my-4;
+  }
+}
+
+/* Custom scrollbar for elegant feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdfbf7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d3d9ca;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b6c1a8;
 }
