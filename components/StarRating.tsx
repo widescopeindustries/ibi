@@ -13,7 +13,7 @@ export default function StarRating({ rating, maxStars = 5 }: StarRatingProps) {
         return (
           <svg
             key={index}
-            className={`w-5 h-5 ${isFilled ? 'text-yellow-400' : 'text-gray-300'}`}
+            className={`w-4 h-4 ${isFilled ? 'text-accent-500' : 'text-gray-200'}`}
             fill="currentColor"
             viewBox="0 0 20 20"
           >

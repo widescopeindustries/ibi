@@ -19,11 +19,11 @@ export default function Testimonial({ testimonial }: TestimonialProps) {
   const { quote, repName, company, rating, photoUrl, results } = testimonial
 
   return (
-    <div className="card h-full flex flex-col">
-      {/* Quote Icon */}
-      <div className="mb-4">
+    <div className="bg-white rounded-sm border border-gray-100 p-8 h-full flex flex-col">
+      {/* Quote Icon - Elegant */}
+      <div className="mb-6">
         <svg
-          className="w-10 h-10 text-primary-200"
+          className="w-8 h-8 text-primary-200"
           fill="currentColor"
           viewBox="0 0 24 24"
         >
@@ -33,46 +33,51 @@ export default function Testimonial({ testimonial }: TestimonialProps) {
 
       {/* Testimonial Quote */}
       <blockquote className="flex-grow mb-6">
-        <p className="text-gray-700 leading-relaxed italic">
+        <p className="text-gray-700 leading-relaxed font-light italic">
           "{quote}"
         </p>
       </blockquote>
 
-      {/* Results Highlight (if provided) */}
+      {/* Results Highlight */}
       {results && (
-        <div className="mb-4 bg-primary-50 border-l-4 border-primary-500 p-3 rounded">
-          <p className="text-sm font-semibold text-primary-900">
+        <div className="mb-6 bg-cream-100 border-l-2 border-primary-400 p-4">
+          <p className="text-sm font-medium text-gray-800">
             {results}
           </p>
         </div>
       )}
 
       {/* Rating */}
-      <div className="mb-4">
+      <div className="mb-6">
         <StarRating rating={rating} />
       </div>
 
+      {/* Divider */}
+      <div className="w-full border-t border-gray-100 mb-6"></div>
+
       {/* Rep Info */}
-      <div className="flex items-center gap-3 pt-4 border-t border-gray-200">
+      <div className="flex items-center gap-4">
         <div className="relative w-12 h-12 flex-shrink-0">
           {photoUrl ? (
             <Image
               src={photoUrl}
               alt={repName}
               fill
-              className="rounded-full object-cover"
+              className="rounded-full object-cover border border-cream-200"
             />
           ) : (
-            <div className="w-12 h-12 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center">
-              <span className="text-lg font-bold text-white">
+            <div className="w-12 h-12 bg-cream-100 rounded-full flex items-center justify-center border border-cream-200">
+              <span className="font-serif text-lg text-primary-600">
                 {repName.charAt(0).toUpperCase()}
               </span>
             </div>
           )}
         </div>
         <div className="flex-grow">
-          <p className="font-semibold text-gray-900">{repName}</p>
-          <p className="text-sm text-gray-600">{company} Representative</p>
+          <p className="font-medium text-gray-900">{repName}</p>
+          <p className="text-xs uppercase tracking-wide text-gray-500">
+            {company} Representative
+          </p>
         </div>
       </div>
     </div>

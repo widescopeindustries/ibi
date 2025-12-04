@@ -49,19 +49,49 @@ export default async function Home() {
       <StructuredDataScript data={[organizationSchema, websiteSchema]} />
 
       <div>
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Hero Section - Elegant minimal style */}
+        <section className="bg-cream-50 py-24 md:py-32 relative overflow-hidden">
+          {/* Subtle decorative elements */}
+          <div className="absolute top-20 left-10 w-32 h-32 bg-primary-100/30 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary-100/30 rounded-full blur-3xl"></div>
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div className="text-center mb-12">
-              <h1 className="text-5xl font-bold mb-4">
-                Find a Direct Sales Rep Near You
-              </h1>
-              <p className="text-xl text-primary-100">
-                Connect with local representatives from top direct sales companies
+              <p className="text-xs uppercase tracking-[0.3em] text-primary-600 mb-4">
+                Your Connection to Excellence
               </p>
+              <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-6 leading-tight">
+                Find Your Perfect
+                <br />
+                <span className="italic">Sales Representative</span>
+              </h1>
+              <p className="text-gray-600 text-lg max-w-2xl mx-auto font-light">
+                Connect with trusted local representatives from leading direct sales companies
+              </p>
+              <div className="elegant-divider mt-8"></div>
             </div>
 
             <HeroSearch />
+          </div>
+        </section>
+
+        {/* Value Propositions - Minimal strip */}
+        <section className="bg-white py-6 border-y border-gray-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-wrap justify-center items-center gap-4 md:gap-12 text-xs uppercase tracking-widest text-gray-500">
+              <span className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-secondary-400 rounded-full"></span>
+                Verified Profiles
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-secondary-400 rounded-full"></span>
+                Trusted Reviews
+              </span>
+              <span className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 bg-secondary-400 rounded-full"></span>
+                Local Representatives
+              </span>
+            </div>
           </div>
         </section>
 
@@ -69,33 +99,41 @@ export default async function Home() {
         <TrustSignals />
 
         {/* Featured Companies */}
-        <section className="py-16 bg-white">
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <p className="text-xs uppercase tracking-[0.3em] text-primary-600 mb-3">
+                Browse By Brand
+              </p>
+              <h2 className="section-title mb-4">
                 Popular Companies
               </h2>
-              <p className="text-gray-600">
-                Browse representatives from leading direct sales companies
+              <p className="section-subtitle max-w-xl mx-auto">
+                Discover representatives from leading direct sales brands
               </p>
+              <div className="elegant-divider"></div>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
               {companies?.map((company: Company) => (
                 <Link
                   key={company.id}
                   href={`/companies/${company.slug}`}
-                  className="card text-center hover:shadow-lg transition-shadow"
+                  className="group p-6 bg-cream-50 hover:bg-white border border-gray-100 hover:border-primary-200 rounded-sm text-center transition-all duration-300 hover:shadow-md"
                 >
-                  <h3 className="font-semibold text-gray-900">{company.name}</h3>
+                  <h3 className="font-medium text-gray-900 group-hover:text-primary-700 transition-colors">
+                    {company.name}
+                  </h3>
                   {company.category && (
-                    <p className="text-sm text-gray-500 mt-1">{company.category}</p>
+                    <p className="text-xs text-gray-500 mt-1 uppercase tracking-wide">
+                      {company.category}
+                    </p>
                   )}
                 </Link>
               ))}
             </div>
 
-            <div className="text-center mt-8">
+            <div className="text-center mt-10">
               <Link href="/companies" className="btn btn-outline">
                 View All Companies
               </Link>
@@ -104,15 +142,19 @@ export default async function Home() {
         </section>
 
         {/* Featured Representatives */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-20 bg-cream-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              <p className="text-xs uppercase tracking-[0.3em] text-primary-600 mb-3">
+                Premium Members
+              </p>
+              <h2 className="section-title mb-4">
                 Featured Representatives
               </h2>
-              <p className="text-gray-600">
-                Meet our premium members ready to serve you
+              <p className="section-subtitle max-w-xl mx-auto">
+                Meet our top-rated professionals ready to serve you
               </p>
+              <div className="elegant-divider"></div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -125,7 +167,7 @@ export default async function Home() {
               ))}
             </div>
 
-            <div className="text-center mt-8">
+            <div className="text-center mt-10">
               <Link href="/search" className="btn btn-primary">
                 Find More Representatives
               </Link>
@@ -136,20 +178,31 @@ export default async function Home() {
         {/* Testimonials Section */}
         <TestimonialSection testimonials={testimonials} />
 
-        {/* CTA Section for Reps */}
-        <section className="bg-primary-700 text-white py-16">
+        {/* CTA Section for Reps - Elegant dark section */}
+        <section className="bg-gray-900 text-white py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold mb-4">
-              Are You a Direct Sales Representative?
-            </h2>
-            <p className="text-xl text-primary-100 mb-8">
-              Join our directory and connect with customers in your area
+            <p className="text-xs uppercase tracking-[0.3em] text-primary-300 mb-4">
+              Join Our Community
             </p>
-            <div className="flex justify-center gap-4">
-              <Link href="/auth/signup" className="btn bg-white text-primary-700 hover:bg-gray-100">
+            <h2 className="font-serif text-3xl md:text-4xl mb-4">
+              Are You a Direct Sales
+              <br />
+              <span className="italic">Representative?</span>
+            </h2>
+            <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto font-light">
+              Showcase your expertise and connect with customers in your area
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link
+                href="/auth/signup"
+                className="btn bg-white text-gray-900 hover:bg-gray-100 border border-white"
+              >
                 Get Started Free
               </Link>
-              <Link href="/pricing" className="btn btn-outline border-white text-white hover:bg-primary-600">
+              <Link
+                href="/pricing"
+                className="btn border border-white text-white hover:bg-white hover:text-gray-900"
+              >
                 View Pricing
               </Link>
             </div>

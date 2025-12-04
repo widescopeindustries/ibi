@@ -6,37 +6,63 @@ export default async function Navbar() {
   const { data: { user } } = await supabase.auth.getUser()
 
   return (
-    <nav className="bg-white shadow-sm border-b border-gray-200">
+    <nav className="bg-white border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
-          <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-primary-600">
-              RepFinder
-            </Link>
-          </div>
-
+        <div className="flex justify-between h-20 items-center">
+          {/* Left Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/search" className="text-gray-700 hover:text-primary-600">
+            <Link
+              href="/"
+              className="text-xs uppercase tracking-widest text-gray-700 hover:text-primary-600 transition-colors"
+            >
+              Home
+            </Link>
+            <Link
+              href="/search"
+              className="text-xs uppercase tracking-widest text-gray-700 hover:text-primary-600 transition-colors"
+            >
               Find a Rep
             </Link>
-            <Link href="/companies" className="text-gray-700 hover:text-primary-600">
+            <Link
+              href="/companies"
+              className="text-xs uppercase tracking-widest text-gray-700 hover:text-primary-600 transition-colors"
+            >
               Companies
+            </Link>
+            <Link
+              href="/pricing"
+              className="text-xs uppercase tracking-widest text-gray-700 hover:text-primary-600 transition-colors"
+            >
+              Pricing
             </Link>
           </div>
 
-          <div className="flex items-center space-x-4">
+          {/* Center Logo */}
+          <div className="flex-1 md:flex-none flex justify-center">
+            <Link href="/" className="flex flex-col items-center">
+              <span className="font-serif text-2xl tracking-wider text-gray-900">
+                REPFINDER
+              </span>
+              <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500 mt-0.5">
+                Directory
+              </span>
+            </Link>
+          </div>
+
+          {/* Right Navigation */}
+          <div className="flex items-center space-x-6">
             {user ? (
               <>
                 <Link
                   href="/dashboard"
-                  className="text-gray-700 hover:text-primary-600"
+                  className="text-xs uppercase tracking-widest text-gray-700 hover:text-primary-600 transition-colors hidden md:block"
                 >
                   Dashboard
                 </Link>
                 <form action="/auth/signout" method="post">
                   <button
                     type="submit"
-                    className="btn btn-secondary"
+                    className="text-xs uppercase tracking-widest text-gray-700 hover:text-primary-600 transition-colors"
                   >
                     Sign Out
                   </button>
@@ -46,13 +72,14 @@ export default async function Navbar() {
               <>
                 <Link
                   href="/auth/login"
-                  className="text-gray-700 hover:text-primary-600"
+                  className="text-xs uppercase tracking-widest text-gray-700 hover:text-primary-600 transition-colors hidden sm:block"
                 >
-                  Login
+                  Log In
                 </Link>
+                <span className="text-gray-300 hidden sm:block">|</span>
                 <Link
                   href="/auth/signup"
-                  className="btn btn-primary"
+                  className="text-xs uppercase tracking-widest text-gray-700 hover:text-primary-600 transition-colors hidden sm:block"
                 >
                   Sign Up
                 </Link>
