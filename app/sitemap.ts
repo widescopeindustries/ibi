@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 import { createClient } from '@/lib/supabase/server'
-import { defaultSEO, US_STATES } from '@/lib/seo'
+import { defaultSEO } from '@/lib/seo'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = defaultSEO.siteUrl
@@ -74,23 +74,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.7,
     })) || []
 
-  // State search pages
-  const stateRoutes: MetadataRoute.Sitemap = US_STATES.map(state => ({
-    url: `${baseUrl}/search?location=${state.code}`,
-    lastModified: new Date(),
-    changeFrequency: 'daily' as const,
-    priority: 0.6,
-  }))
+  // Note: Removed state and company+state search URLs with query parameters
+  // Google Search Console has issues parsing sitemaps with query parameter URLs
+  // This was causing the "Parsing error" at line 400
+  //
+  // Query parameter URLs that were removed:
+  //   - /search?location=CA (50 state URLs)
+  //   - /search?company=slug&location=STATE (potentially thousands of URLs)
+  //
+  // If you need these URLs for SEO, create dedicated static routes instead:
+  //   - /states/[code] for state pages
+  //   - /companies/[slug]/states/[code] for company+state pages
 
   // Combine all routes
-  // Note: Removed companyStateRoutes (company+state combinations) because:
-  // 1. URLs with multiple query params (&) cause XML parsing errors in sitemaps
-  // 2. Query parameter URLs have lower SEO value - Google discovers them via internal links
-  // 3. Keeps sitemap size manageable
   return [
     ...staticRoutes,
     ...companyRoutes,
     ...repRoutes,
-    ...stateRoutes,
   ]
 }
