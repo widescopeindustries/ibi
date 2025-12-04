@@ -1,0 +1,9 @@
+{
+  "name": "IBI Sales Rep Directory",
+  "short_name": "IBI Directory",
+  "description": "Find direct sales representatives for Mary Kay, Pampered Chef, Avon, and more. Connect with local reps in your area.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6"
+}
