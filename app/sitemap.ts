@@ -82,27 +82,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }))
 
-  // Company + State combination pages (high-value SEO pages)
-  const companyStateRoutes: MetadataRoute.Sitemap = []
-  if (companies && companies.length > 0) {
-    for (const company of companies) {
-      for (const state of US_STATES) {
-        companyStateRoutes.push({
-          url: `${baseUrl}/search?company=${company.slug}&location=${state.code}`,
-          lastModified: new Date(),
-          changeFrequency: 'weekly' as const,
-          priority: 0.5,
-        })
-      }
-    }
-  }
-
   // Combine all routes
+  // Note: Removed companyStateRoutes (company+state combinations) because:
+  // 1. URLs with multiple query params (&) cause XML parsing errors in sitemaps
+  // 2. Query parameter URLs have lower SEO value - Google discovers them via internal links
+  // 3. Keeps sitemap size manageable
   return [
     ...staticRoutes,
     ...companyRoutes,
     ...repRoutes,
     ...stateRoutes,
-    ...companyStateRoutes,
   ]
 }
