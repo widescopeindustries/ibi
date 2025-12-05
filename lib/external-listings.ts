@@ -1,9 +1,11 @@
 import { ExternalListing } from '@/types/database'
 import avonListings from '@/data/external-listings/avon.json'
+import pamperedChefListings from '@/data/external-listings/pampered-chef.json'
 
 // Map of company slugs to their external listings
 const externalListingsByCompany: Record<string, ExternalListing[]> = {
   'avon': avonListings as ExternalListing[],
+  'pampered-chef': pamperedChefListings as ExternalListing[],
 }
 
 /**
