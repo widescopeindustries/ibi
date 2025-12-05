@@ -32,7 +32,7 @@ export const SubscriptionConfirmedEmail = ({
         <Container style={container}>
           <Section style={header}>
             <Text style={badge}>PRO</Text>
-            <Heading style={heading}>You're Now a Pro!</Heading>
+            <Heading style={heading}>You&apos;re Now a Pro!</Heading>
           </Section>
 
           <Section style={content}>
@@ -47,18 +47,18 @@ export const SubscriptionConfirmedEmail = ({
             <Section style={successBox}>
               <Text style={successTitle}>Your Pro Benefits Are Active</Text>
               <Text style={successDescription}>
-                Your profile has been upgraded and you're now enjoying all Pro features!
+                Your profile has been upgraded and you&apos;re now enjoying all Pro features!
               </Text>
             </Section>
 
             <Text style={paragraph}>
-              <strong>Here's what's now active on your account:</strong>
+              <strong>Here&apos;s what&apos;s now active on your account:</strong>
             </Text>
 
             <Section style={featureList}>
               <Text style={featureItem}>
                 <span style={checkmark}>✓</span> <strong>Priority Search Placement</strong> -
-                You'll appear at the top of search results
+                You&apos;ll appear at the top of search results
               </Text>
 
               <Text style={featureItem}>
@@ -68,7 +68,7 @@ export const SubscriptionConfirmedEmail = ({
 
               <Text style={featureItem}>
                 <span style={checkmark}>✓</span> <strong>Featured Homepage Placement</strong> -
-                You're now eligible for homepage features
+                You&apos;re now eligible for homepage features
               </Text>
 
               <Text style={featureItem}>
@@ -89,7 +89,7 @@ export const SubscriptionConfirmedEmail = ({
               <Text style={tipsHeading}>Pro Tips to Maximize Your Visibility</Text>
 
               <Text style={tipItem}>
-                1. <strong>Keep your profile updated</strong> - Regular updates show you're
+                1. <strong>Keep your profile updated</strong> - Regular updates show you&apos;re
                 active
               </Text>
 

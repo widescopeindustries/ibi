@@ -34,7 +34,7 @@ export default function Testimonial({ testimonial }: TestimonialProps) {
       {/* Testimonial Quote */}
       <blockquote className="flex-grow mb-6">
         <p className="text-gray-700 leading-relaxed font-light italic">
-          "{quote}"
+          &quot;{quote}&quot;
         </p>
       </blockquote>
 

@@ -42,7 +42,7 @@ export const NewReviewNotification = ({
   return (
     <Html>
       <Head />
-      <Preview>You have a new {rating}-star review!</Preview>
+      <Preview>You have a new {rating.toString()}-star review!</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={header}>
@@ -72,7 +72,7 @@ export const NewReviewNotification = ({
               {comment && (
                 <>
                   <Text style={reviewLabel}>Comment:</Text>
-                  <Text style={commentText}>"{comment}"</Text>
+                  <Text style={commentText}>&quot;{comment}&quot;</Text>
                 </>
               )}
             </Section>

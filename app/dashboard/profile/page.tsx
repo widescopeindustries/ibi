@@ -22,6 +22,7 @@ export default function ProfileEditPage() {
 
   useEffect(() => {
     loadProfile()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const loadProfile = async () => {
@@ -100,9 +101,8 @@ export default function ProfileEditPage() {
         <div className="bg-white rounded-lg shadow p-8">
           <form onSubmit={handleSubmit} className="space-y-6">
             {message && (
-              <div className={`p-4 rounded-lg ${
-                message.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'
-              }`}>
+              <div className={`p-4 rounded-lg ${message.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'
+                }`}>
                 {message.text}
               </div>
             )}

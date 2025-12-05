@@ -44,7 +44,7 @@ export default function Error({
             We encountered an unexpected error while loading this page.
           </p>
           <p className="text-sm text-gray-500 mb-8">
-            Don't worry, it's not your fault. Our team has been notified.
+            Don&apos;t worry, it&apos;s not your fault. Our team has been notified.
           </p>
 
           {/* Error Details (only in development) */}

@@ -30,7 +30,7 @@ export const TrialEndingSoonEmail = ({
   return (
     <Html>
       <Head />
-      <Preview>Your Pro trial ends in {daysRemaining} days - Don't lose your benefits!</Preview>
+      <Preview>Your Pro trial ends in {daysRemaining.toString()} days - Don&apos;t lose your benefits!</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={header}>
@@ -46,11 +46,11 @@ export const TrialEndingSoonEmail = ({
               <strong style={{ color: isUrgent ? '#EF4444' : '#F59E0B' }}>
                 {daysRemaining} {daysRemaining === 1 ? 'day' : 'days'}
               </strong>
-              . Don't lose access to the benefits that have been helping you stand out!
+              . Don&apos;t lose access to the benefits that have been helping you stand out!
             </Text>
 
             <Section style={warningBox}>
-              <Text style={warningTitle}>What You'll Lose:</Text>
+              <Text style={warningTitle}>What You&apos;ll Lose:</Text>
               <Text style={warningItem}>❌ Priority placement in search results</Text>
               <Text style={warningItem}>❌ Your PRO badge</Text>
               <Text style={warningItem}>❌ Featured homepage placement</Text>
@@ -88,8 +88,8 @@ export const TrialEndingSoonEmail = ({
 
             <Section style={testimonialBox}>
               <Text style={testimonialQuote}>
-                "I almost let my Pro subscription lapse, but I'm so glad I kept it. The
-                visibility and leads I get are absolutely worth it!"
+                &quot;I almost let my Pro subscription lapse, but I&apos;m so glad I kept it. The
+                visibility and leads I get are absolutely worth it!&quot;
               </Text>
               <Text style={testimonialAuthor}>- Jennifer K., Pampered Chef Consultant</Text>
             </Section>
@@ -97,13 +97,13 @@ export const TrialEndingSoonEmail = ({
             <Hr style={hr} />
 
             <Text style={paragraph}>
-              <strong>What happens if you don't renew?</strong>
+              <strong>What happens if you don&apos;t renew?</strong>
             </Text>
 
             <Text style={infoText}>
               • Your profile will remain active but lose Pro benefits
               <br />
-              • You'll drop in search rankings
+              • You&apos;ll drop in search rankings
               <br />
               • Your PRO badge will be removed
               <br />

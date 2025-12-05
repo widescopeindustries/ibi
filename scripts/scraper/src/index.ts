@@ -77,7 +77,7 @@ function parseArgs(): ScraperOptions {
 
       case '--format':
         if (args[i + 1] === 'json' || args[i + 1] === 'csv' || args[i + 1] === 'both') {
-          options.outputFormat = args[i + 1];
+          options.outputFormat = args[i + 1] as 'json' | 'csv' | 'both';
           i++;
         }
         break;
@@ -150,7 +150,7 @@ For more information, see the README.md file.
 
 function listCompanies(): void {
   console.log('\nAvailable Direct Sales Companies:\n');
-  console.log('=' .repeat(60));
+  console.log('='.repeat(60));
 
   const categories = [...new Set(COMPANIES.map(c => c.category))];
 

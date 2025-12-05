@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Initialize Supabase client for authentication check
-    const supabase = createClient();
+    const supabase = await createClient();
 
     // Get authenticated user (for user-specific email types)
     const {

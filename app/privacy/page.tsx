@@ -24,7 +24,7 @@ export default function PrivacyPage() {
                 Introduction
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                RepFinder ("we", "our", or "us") is committed to protecting your privacy. This Privacy
+                RepFinder (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your privacy. This Privacy
                 Policy explains how we collect, use, disclose, and safeguard your information when you
                 use our directory platform.
               </p>
@@ -121,7 +121,7 @@ export default function PrivacyPage() {
               </h2>
               <p className="text-gray-600 leading-relaxed">
                 We may update this Privacy Policy from time to time. We will notify you of any changes
-                by posting the new Privacy Policy on this page and updating the "Last Updated" date.
+                by posting the new Privacy Policy on this page and updating the &quot;Last Updated&quot; date.
               </p>
             </section>
 

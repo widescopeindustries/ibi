@@ -24,7 +24,7 @@ export const WelcomeEmail = ({ userName }: WelcomeEmailProps) => {
   return (
     <Html>
       <Head />
-      <Preview>Welcome to IBI Directory - Let's get you started!</Preview>
+      <Preview>Welcome to IBI Directory - Let&apos;s get you started!</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={header}>
@@ -35,13 +35,13 @@ export const WelcomeEmail = ({ userName }: WelcomeEmailProps) => {
             <Text style={paragraph}>Hi {userName},</Text>
 
             <Text style={paragraph}>
-              Welcome to IBI Directory! We're thrilled to have you join our community of
-              direct sales representatives. You're now part of a platform that connects you
+              Welcome to IBI Directory! We&apos;re thrilled to have you join our community of
+              direct sales representatives. You&apos;re now part of a platform that connects you
               with customers actively looking for representatives like you.
             </Text>
 
             <Text style={paragraph}>
-              <strong>Here's what to do next:</strong>
+              <strong>Here&apos;s what to do next:</strong>
             </Text>
 
             <Section style={stepContainer}>
@@ -56,7 +56,7 @@ export const WelcomeEmail = ({ userName }: WelcomeEmailProps) => {
               </Text>
 
               <Text style={step}>
-                <strong>3. Get Discovered</strong> - Once your profile is complete, you'll
+                <strong>3. Get Discovered</strong> - Once your profile is complete, you&apos;ll
                 appear in search results when customers look for representatives in your area.
               </Text>
             </Section>
