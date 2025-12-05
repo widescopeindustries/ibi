@@ -57,7 +57,12 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
   query = query.order('is_pro_subscriber', { ascending: false })
   query = query.order('created_at', { ascending: false })
 
-  const { data: allReps } = await query
+  const { data: allReps, error: repsError } = await query
+
+  // Log error in development, but don't crash the page
+  if (repsError) {
+    console.error('Error fetching reps:', repsError)
+  }
 
   // Filter by company if specified (client-side since it's a join table)
   let filteredReps = allReps || []
@@ -72,10 +77,15 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
   }
 
   // Get all companies for the filter sidebar
-  const { data: companies } = await supabase
+  const { data: companies, error: companiesError } = await supabase
     .from('companies')
     .select('*')
     .order('name')
+
+  // Log error in development
+  if (companiesError) {
+    console.error('Error fetching companies:', companiesError)
+  }
 
   // Generate breadcrumb structured data
   const breadcrumbItems = [
