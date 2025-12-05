@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -73,6 +74,14 @@ export async function generateMetadata({ params }: RepProfilePageProps) {
 
 export default async function RepProfilePage({ params }: RepProfilePageProps) {
   const supabase = await createClient()
+
+  // Fetch rep email (requires service role)
+  let repEmail = null
+  const adminSupabase = createAdminClient()
+  if (adminSupabase) {
+    const { data: { user } } = await adminSupabase.auth.admin.getUserById(params.profileId)
+    repEmail = user?.email
+  }
 
   // Fetch rep profile with companies
   const { data: profile } = await supabase
@@ -237,9 +246,11 @@ export default async function RepProfilePage({ params }: RepProfilePageProps) {
                       Shop My Site
                     </a>
                   )}
-                  <button className="btn btn-outline">
-                    Contact Me
-                  </button>
+                  {repEmail && (
+                    <a href={`mailto:${repEmail}`} className="btn btn-outline">
+                      Contact Me
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
