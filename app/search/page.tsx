@@ -21,7 +21,8 @@ export async function generateMetadata({ searchParams }: SearchPageProps) {
 }
 
 export default async function SearchPage({ searchParams }: SearchPageProps) {
-  const supabase = await createClient()
+  try {
+    const supabase = await createClient()
 
   // Build the query
   let query = supabase
@@ -201,4 +202,21 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
       </div>
     </>
   )
+  } catch (error) {
+    console.error('Search page error:', error)
+    // Return a fallback UI
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+        <div className="bg-white rounded-lg shadow p-8 max-w-md text-center">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Unable to load search</h2>
+          <p className="text-gray-600 mb-6">
+            We're experiencing technical difficulties. Please try again later.
+          </p>
+          <Link href="/" className="btn btn-primary">
+            Go to Home
+          </Link>
+        </div>
+      </div>
+    )
+  }
 }
