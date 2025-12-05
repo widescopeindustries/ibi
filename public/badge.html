@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOP CONSULTANT Badge - A Rep Near Me</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      padding: 40px 20px;
+      background: #f5f7fa;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #1a202c;
+      margin-bottom: 32px;
+    }
+    .badge-container {
+      background: white;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 32px;
+    }
+    .badge-preview {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .code-block {
+      background: #2d3748;
+      color: #68d391;
+      padding: 20px;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 13px;
+      overflow-x: auto;
+      position: relative;
+    }
+    .copy-btn {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .copy-btn:hover {
+      background: #764ba2;
+    }
+    .instructions {
+      background: #edf2f7;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 24px;
+    }
+    .instructions h3 {
+      margin-top: 0;
+      color: #2d3748;
+    }
+    .instructions ol {
+      margin: 12px 0;
+      padding-left: 24px;
+    }
+    .instructions li {
+      margin: 8px 0;
+      color: #4a5568;
+    }
+    /* Badge Styles */
+    .top-consultant-badge {
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 16px 24px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+      max-width: 240px;
+    }
+    .top-consultant-badge:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+    }
+    .badge-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .badge-subtitle {
+      font-size: 14px;
+      opacity: 0.95;
+    }
+    .badge-footer {
+      font-size: 12px;
+      opacity: 0.85;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏆 TOP CONSULTANT Badge</h1>
+  
+  <div class="badge-container">
+    <h2>Preview</h2>
+    <div class="badge-preview">
+      <a href="https://arepnearme.com" target="_blank" class="top-consultant-badge">
+        <div class="badge-title">⭐ TOP CONSULTANT</div>
+        <div class="badge-subtitle">Featured on A Rep Near Me</div>
+        <div class="badge-footer">Verified • Trusted • Local</div>
+      </a>
+    </div>
+    
+    <h2>Embed Code</h2>
+    <p>Copy this code and paste it anywhere on your website:</p>
+    
+    <div class="code-block">
+      <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+      <pre id="badge-code"><code>&lt;a href="https://arepnearme.com/reps/YOUR_REP_ID" target="_blank" style="display:inline-block;text-decoration:none;"&gt;
+  &lt;div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:16px 24px;border-radius:12px;font-family:Arial,sans-serif;text-align:center;box-shadow:0 4px 12px rgba(102,126,234,0.3);max-width:240px;transition:transform 0.2s,box-shadow 0.2s;"&gt;
+    &lt;div style="font-size:20px;font-weight:bold;margin-bottom:8px;"&gt;⭐ TOP CONSULTANT&lt;/div&gt;
+    &lt;div style="font-size:14px;opacity:0.95;"&gt;Featured on A Rep Near Me&lt;/div&gt;
+    &lt;div style="font-size:12px;opacity:0.85;margin-top:8px;"&gt;Verified • Trusted • Local&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/a&gt;</code></pre>
+    </div>
+    
+    <div class="instructions">
+      <h3>📋 Installation Instructions</h3>
+      
+      <h4>WordPress:</h4>
+      <ol>
+        <li>Edit the page or post where you want the badge</li>
+        <li>Add a "Custom HTML" block</li>
+        <li>Paste the code above</li>
+        <li>Replace <code>YOUR_REP_ID</code> with your actual rep ID from your email</li>
+        <li>Save and publish!</li>
+      </ol>
+      
+      <h4>Wix:</h4>
+      <ol>
+        <li>Click "+ Add" on any page</li>
+        <li>Select "Embed Code" → "Embed HTML"</li>
+        <li>Paste the code above</li>
+        <li>Replace <code>YOUR_REP_ID</code> with your actual rep ID</li>
+        <li>Position and publish!</li>
+      </ol>
+      
+      <h4>Squarespace:</h4>
+      <ol>
+        <li>Edit the page where you want the badge</li>
+        <li>Add a "Code" block</li>
+        <li>Paste the code above</li>
+        <li>Replace <code>YOUR_REP_ID</code> with your actual rep ID</li>
+        <li>Save and publish!</li>
+      </ol>
+      
+      <h4>Shopify:</h4>
+      <ol>
+        <li>Go to your theme editor</li>
+        <li>Find the section where you want the badge (footer, sidebar, etc.)</li>
+        <li>Paste the code in a "Custom Liquid" or "HTML" block</li>
+        <li>Replace <code>YOUR_REP_ID</code> with your actual rep ID</li>
+        <li>Save!</li>
+      </ol>
+      
+      <p><strong>Need help?</strong> Email us and we'll walk you through it personally!</p>
+    </div>
+  </div>
+  
+  <script>
+    function copyCode() {
+      const code = document.getElementById('badge-code').innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.querySelector('.copy-btn');
+        const originalText = btn.textContent;
+        btn.textContent = '✓ Copied!';
+        btn.style.background = '#48bb78';
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '#667eea';
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

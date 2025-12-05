@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ProfileWithCompanies } from '@/types/database'
 import StarRating from './StarRating'
+import { generateRepUrl } from '@/lib/utils/url'
 
 interface RepCardProps {
   profile: ProfileWithCompanies & {
@@ -16,9 +17,10 @@ export default function RepCard({ profile, companies = [] }: RepCardProps) {
   const fullName = `${profile.first_name || ''} ${profile.last_name || ''}`.trim() || 'Anonymous'
   const location = [profile.city, profile.state].filter(Boolean).join(', ') || 'Location not specified'
   const hasLocation = profile.city && profile.state
+  const repUrl = generateRepUrl(profile)
 
   return (
-    <Link href={`/reps/${profile.id}`} className="block group">
+    <Link href={repUrl} className="block group">
       <div className="relative bg-white rounded-sm border border-gray-100 hover:border-primary-200 transition-all duration-300 cursor-pointer h-full overflow-hidden hover:shadow-md">
         {/* PRO Badge - Elegant style */}
         {profile.is_pro_subscriber && (
