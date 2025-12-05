@@ -63,7 +63,8 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
         *,
         rep_companies (
           companies (
-            name
+            name,
+            slug
           )
         )
       )
