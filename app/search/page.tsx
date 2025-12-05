@@ -1,9 +1,11 @@
 import { createClient } from '@/lib/supabase/server'
 import RepCard from '@/components/RepCard'
+import ExternalListingCard from '@/components/ExternalListingCard'
 import Link from 'next/link'
 import { generateSearchMetadata } from '@/lib/seo'
 import { generateBreadcrumbSchema, StructuredDataScript } from '@/lib/structured-data'
 import { defaultSEO } from '@/lib/seo'
+import { searchExternalListings, getAllExternalListings } from '@/lib/external-listings'
 
 interface SearchPageProps {
   searchParams: {
@@ -71,6 +73,15 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
     )
   }
 
+  // Get external listings based on filters
+  let externalListings = searchParams.company
+    ? searchExternalListings({ companySlug: searchParams.company, location: searchParams.location })
+    : searchParams.location
+      ? searchExternalListings({ location: searchParams.location })
+      : getAllExternalListings()
+
+  const totalResults = filteredReps.length + externalListings.length
+
   // Get all companies for the filter sidebar
   const { data: companies } = await supabase
     .from('companies')
@@ -111,13 +122,11 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
             <h1 className="text-3xl font-bold text-gray-900">
               Find a Sales Representative
             </h1>
-            {(searchParams.company || searchParams.location) && (
-              <p className="text-gray-600 mt-2">
-                Showing {filteredReps.length} representative{filteredReps.length !== 1 ? 's' : ''}
-                {searchParams.company && ` for ${searchParams.company}`}
-                {searchParams.location && ` near ${searchParams.location}`}
-              </p>
-            )}
+            <p className="text-gray-600 mt-2">
+              Showing {totalResults} representative{totalResults !== 1 ? 's' : ''}
+              {searchParams.company && ` for ${searchParams.company}`}
+              {searchParams.location && ` near ${searchParams.location}`}
+            </p>
           </div>
         </div>
 
@@ -162,13 +171,21 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
 
             {/* Results */}
             <div className="lg:col-span-3">
-              {filteredReps.length > 0 ? (
+              {totalResults > 0 ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Database profiles first (pro subscribers prioritized) */}
                   {filteredReps.map((rep: any) => (
                     <RepCard
                       key={rep.id}
                       profile={rep}
                       companies={rep.rep_companies?.map((rc: any) => rc.companies.name) || []}
+                    />
+                  ))}
+                  {/* External listings */}
+                  {externalListings.map((listing) => (
+                    <ExternalListingCard
+                      key={listing.id}
+                      listing={listing}
                     />
                   ))}
                 </div>
