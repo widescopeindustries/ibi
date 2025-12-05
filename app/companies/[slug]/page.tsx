@@ -3,10 +3,54 @@ import { notFound } from 'next/navigation'
 import RepCard from '@/components/RepCard'
 import ExternalListingCard from '@/components/ExternalListingCard'
 import { getExternalListingsByCompany } from '@/lib/external-listings'
+import { Metadata } from 'next'
 
 interface CompanyPageProps {
   params: {
     slug: string
+  }
+}
+
+// Enable ISR - Regenerate page every hour
+export const revalidate = 3600
+
+// Pre-generate all company pages at build time
+export async function generateStaticParams() {
+  const supabase = await createClient()
+
+  const { data: companies } = await supabase
+    .from('companies')
+    .select('slug')
+
+  return companies?.map((company) => ({
+    slug: company.slug,
+  })) || []
+}
+
+// Generate dynamic metadata for SEO
+export async function generateMetadata({ params }: CompanyPageProps): Promise<Metadata> {
+  const supabase = await createClient()
+
+  const { data: company } = await supabase
+    .from('companies')
+    .select('*')
+    .eq('slug', params.slug)
+    .single()
+
+  if (!company) {
+    return {
+      title: 'Company Not Found',
+    }
+  }
+
+  return {
+    title: `Find ${company.name} Consultants Near You | A Rep Near Me`,
+    description: company.description || `Connect with verified ${company.name} independent consultants in your area. Browse profiles, read reviews, and shop with confidence.`,
+    openGraph: {
+      title: `${company.name} Consultants Directory`,
+      description: company.description || `Find local ${company.name} representatives`,
+      type: 'website',
+    },
   }
 }
 
