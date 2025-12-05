@@ -32,7 +32,7 @@ export interface SEOConfig {
 // Default SEO configuration
 export const defaultSEO = {
   siteName: 'IBI Sales Rep Directory',
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://ibidirectory.com',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://ibi-nu.vercel.app',
   titleTemplate: '%s | IBI Sales Rep Directory',
   description: 'Find direct sales representatives for Mary Kay, Pampered Chef, Avon, and more. Connect with local reps in your area.',
   twitter: {
