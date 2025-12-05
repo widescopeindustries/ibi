@@ -62,3 +62,23 @@ export interface SearchParams {
   state?: string;
   zipCode?: string;
 }
+
+// External listing from scraped data (Google Maps, etc.)
+export interface ExternalListing {
+  id: string;
+  title: string;
+  firstName: string;
+  lastName: string;
+  totalScore?: number;
+  reviewsCount: number;
+  street?: string;
+  city?: string;
+  state?: string;
+  countryCode: string;
+  website?: string;
+  phone?: string;
+  categoryName: string;
+  googleMapsUrl: string;
+  company: string;
+  source: string;
+}

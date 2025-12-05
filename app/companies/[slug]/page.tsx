@@ -1,6 +1,8 @@
 import { createClient } from '@/lib/supabase/server'
 import { notFound } from 'next/navigation'
 import RepCard from '@/components/RepCard'
+import ExternalListingCard from '@/components/ExternalListingCard'
+import { getExternalListingsByCompany } from '@/lib/external-listings'
 
 interface CompanyPageProps {
   params: {
@@ -22,7 +24,7 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
     notFound()
   }
 
-  // Fetch all reps for this company
+  // Fetch all reps for this company from database
   const { data: repCompanies } = await supabase
     .from('rep_companies')
     .select(`
@@ -39,12 +41,17 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
 
   const reps = repCompanies?.map((rc: any) => rc.profiles).filter(Boolean) || []
 
-  // Sort by pro subscribers first
+  // Get external listings for this company
+  const externalListings = getExternalListingsByCompany(params.slug)
+
+  // Sort database reps by pro subscribers first
   reps.sort((a: any, b: any) => {
     if (a.is_pro_subscriber && !b.is_pro_subscriber) return -1
     if (!a.is_pro_subscriber && b.is_pro_subscriber) return 1
     return 0
   })
+
+  const totalReps = reps.length + externalListings.length
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -74,17 +81,25 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
             Find a {company.name} Representative
           </h2>
           <p className="text-gray-600">
-            {reps.length} representative{reps.length !== 1 ? 's' : ''} in our directory
+            {totalReps} representative{totalReps !== 1 ? 's' : ''} in our directory
           </p>
         </div>
 
-        {reps.length > 0 ? (
+        {totalReps > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Database profiles first (pro subscribers prioritized) */}
             {reps.map((rep: any) => (
               <RepCard
                 key={rep.id}
                 profile={rep}
                 companies={rep.rep_companies?.map((rc: any) => rc.companies.name) || []}
+              />
+            ))}
+            {/* External listings */}
+            {externalListings.map((listing) => (
+              <ExternalListingCard
+                key={listing.id}
+                listing={listing}
               />
             ))}
           </div>
