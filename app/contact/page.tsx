@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | RepFinder',
-  description: 'Get in touch with the RepFinder team. We are here to help with any questions or concerns.',
+  title: 'Contact Us | A Rep Near Me',
+  description: 'Get in touch with the A Rep Near Me team. We are here to help with any questions or concerns.',
 }
 
 export default function ContactPage() {

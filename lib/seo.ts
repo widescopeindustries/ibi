@@ -31,18 +31,18 @@ export interface SEOConfig {
 
 // Default SEO configuration
 export const defaultSEO = {
-  siteName: 'IBI Sales Rep Directory',
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://ibi-nu.vercel.app',
-  titleTemplate: '%s | IBI Sales Rep Directory',
+  siteName: 'A Rep Near Me',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://arepnearme.com',
+  titleTemplate: '%s | A Rep Near Me',
   description: 'Find direct sales representatives for Mary Kay, Pampered Chef, Avon, and more. Connect with local reps in your area.',
   twitter: {
-    site: '@IBIDirectory',
+    site: '@ARepNearMe',
     cardType: 'summary_large_image' as const,
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'IBI Sales Rep Directory',
+    siteName: 'A Rep Near Me',
   },
 }
 

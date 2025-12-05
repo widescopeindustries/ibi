@@ -41,10 +41,10 @@ export default async function Navbar() {
           <div className="flex-1 md:flex-none flex justify-center">
             <Link href="/" className="flex flex-col items-center">
               <span className="font-serif text-2xl tracking-wider text-gray-900">
-                REPFINDER
+                A REP NEAR ME
               </span>
               <span className="text-[10px] uppercase tracking-[0.3em] text-gray-500 mt-0.5">
-                Directory
+                Inspired By Independence
               </span>
             </Link>
           </div>

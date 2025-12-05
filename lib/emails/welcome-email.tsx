@@ -24,18 +24,18 @@ export const WelcomeEmail = ({ userName }: WelcomeEmailProps) => {
   return (
     <Html>
       <Head />
-      <Preview>Welcome to IBI Directory - Let&apos;s get you started!</Preview>
+      <Preview>Welcome to A Rep Near Me - Let&apos;s get you started!</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={header}>
-            <Heading style={heading}>Welcome to IBI Directory!</Heading>
+            <Heading style={heading}>Welcome to A Rep Near Me!</Heading>
           </Section>
 
           <Section style={content}>
             <Text style={paragraph}>Hi {userName},</Text>
 
             <Text style={paragraph}>
-              Welcome to IBI Directory! We&apos;re thrilled to have you join our community of
+              Welcome to A Rep Near Me! We&apos;re thrilled to have you join our community of
               direct sales representatives. You&apos;re now part of a platform that connects you
               with customers actively looking for representatives like you.
             </Text>
@@ -93,7 +93,7 @@ export const WelcomeEmail = ({ userName }: WelcomeEmailProps) => {
             <Text style={footer}>
               Happy selling,
               <br />
-              The IBI Directory Team
+              The A Rep Near Me Team
             </Text>
           </Section>
         </Container>

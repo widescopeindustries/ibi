@@ -9,8 +9,8 @@ import { defaultSEO } from '@/lib/seo'
 export const metadata: Metadata = {
   metadataBase: new URL(defaultSEO.siteUrl),
   title: {
-    default: 'IBI Sales Rep Directory - Find Direct Sales Representatives Near You',
-    template: '%s | IBI Sales Rep Directory',
+    default: 'A Rep Near Me - Finding Agents Inspired by Independence',
+    template: '%s | A Rep Near Me',
   },
   description: defaultSEO.description,
   keywords: [
@@ -29,10 +29,11 @@ export const metadata: Metadata = {
     'find rep near me',
     'local sales rep',
     'direct sales directory',
+    'a rep near me',
   ],
-  authors: [{ name: 'IBI Directory' }],
-  creator: 'IBI Directory',
-  publisher: 'IBI Directory',
+  authors: [{ name: 'A Rep Near Me' }],
+  creator: 'A Rep Near Me',
+  publisher: 'A Rep Near Me',
   formatDetection: {
     email: false,
     address: false,
@@ -42,15 +43,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: defaultSEO.siteUrl,
-    siteName: defaultSEO.siteName,
-    title: 'IBI Sales Rep Directory - Find Direct Sales Representatives Near You',
+    siteName: 'A Rep Near Me',
+    title: 'A Rep Near Me - Finding Agents Inspired by Independence',
     description: defaultSEO.description,
     images: [
       {
         url: `${defaultSEO.siteUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: defaultSEO.siteName,
+        alt: 'A Rep Near Me',
       },
     ],
   },
@@ -58,10 +59,11 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: defaultSEO.twitter.site,
     creator: defaultSEO.twitter.site,
-    title: 'IBI Sales Rep Directory - Find Direct Sales Representatives Near You',
+    title: 'A Rep Near Me - Finding Agents Inspired by Independence',
     description: defaultSEO.description,
     images: [`${defaultSEO.siteUrl}/og-image.jpg`],
   },
+
   robots: {
     index: true,
     follow: true,

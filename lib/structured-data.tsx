@@ -23,9 +23,9 @@ export function generateOrganizationSchema(): StructuredData {
     description: defaultSEO.description,
     sameAs: [
       // Add social media URLs here when available
-      // 'https://www.facebook.com/IBIDirectory',
-      // 'https://twitter.com/IBIDirectory',
-      // 'https://www.linkedin.com/company/ibi-directory',
+      // 'https://www.facebook.com/arepnearme',
+      // 'https://twitter.com/arepnearme',
+      // 'https://www.linkedin.com/company/arepnearme',
     ],
     contactPoint: {
       '@type': 'ContactPoint',

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Us | RepFinder',
-  description: 'Learn about RepFinder - connecting customers with trusted direct sales representatives.',
+  title: 'About Us | A Rep Near Me',
+  description: 'Learn about A Rep Near Me - connecting customers with trusted direct sales representatives.',
 }
 
 export default function AboutPage() {
@@ -11,12 +11,12 @@ export default function AboutPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 md:p-12">
           <h1 className="font-serif text-4xl md:text-5xl text-gray-900 mb-6">
-            About RepFinder
+            About A Rep Near Me
           </h1>
 
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-600 leading-relaxed mb-6">
-              RepFinder is your trusted directory for connecting with independent sales representatives
+              A Rep Near Me is your trusted directory for connecting with independent sales representatives
               from top direct sales companies. We make it easy to find local representatives who can
               help you discover amazing products and personalized service.
             </p>

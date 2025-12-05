@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | RepFinder',
-  description: 'RepFinder privacy policy - how we collect, use, and protect your information.',
+  title: 'Privacy Policy | A Rep Near Me',
+  description: 'A Rep Near Me privacy policy - how we collect, use, and protect your information.',
 }
 
 export default function PrivacyPage() {
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
                 Introduction
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                RepFinder (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your privacy. This Privacy
+                A Rep Near Me (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) is committed to protecting your privacy. This Privacy
                 Policy explains how we collect, use, disclose, and safeguard your information when you
                 use our directory platform.
               </p>

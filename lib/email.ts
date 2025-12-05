@@ -20,9 +20,9 @@ function getResend(): Resend {
 }
 
 // Default from address for all emails
-const FROM_EMAIL = process.env.EMAIL_FROM_ADDRESS || 'IBI Directory <noreply@ibidirectory.com>';
+const FROM_EMAIL = process.env.EMAIL_FROM_ADDRESS || 'A Rep Near Me <noreply@arepnearme.com>';
 
-// Brand colors for IBI
+// Brand colors for A Rep Near Me
 export const brandColors = {
   primary: '#4F46E5', // Indigo
   secondary: '#06B6D4', // Cyan
@@ -72,7 +72,7 @@ export async function sendWelcomeEmail(
     const { data, error } = await getResend().emails.send({
       from: FROM_EMAIL,
       to: userEmail,
-      subject: 'Welcome to IBI Directory!',
+      subject: 'Welcome to A Rep Near Me!',
       react: WelcomeEmail({ userName }),
     });
 
@@ -102,7 +102,7 @@ export async function sendProfileIncompleteReminder(
     const { data, error } = await getResend().emails.send({
       from: FROM_EMAIL,
       to: userEmail,
-      subject: 'Complete Your IBI Profile',
+      subject: 'Complete Your A Rep Near Me Profile',
       react: ProfileIncompleteReminder({ userName, profileUrl }),
     });
 

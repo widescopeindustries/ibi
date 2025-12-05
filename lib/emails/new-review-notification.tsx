@@ -53,7 +53,7 @@ export const NewReviewNotification = ({
             <Text style={paragraph}>Hi {repName},</Text>
 
             <Text style={paragraph}>
-              Great news! You just received a new review on your IBI Directory profile.
+              Great news! You just received a new review on your A Rep Near Me profile.
             </Text>
 
             <Section style={reviewBox}>
@@ -132,7 +132,7 @@ export const NewReviewNotification = ({
             <Text style={footer}>
               Best regards,
               <br />
-              The IBI Directory Team
+              The A Rep Near Me Team
             </Text>
           </Section>
         </Container>

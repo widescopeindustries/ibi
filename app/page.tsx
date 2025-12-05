@@ -58,7 +58,7 @@ export default async function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div className="text-center mb-12">
               <p className="text-xs uppercase tracking-[0.3em] text-primary-600 mb-4">
-                Your Connection to Excellence
+                A Rep Near Me
               </p>
               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-6 leading-tight">
                 Find Your Perfect

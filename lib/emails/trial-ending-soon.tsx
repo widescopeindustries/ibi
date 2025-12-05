@@ -123,7 +123,7 @@ export const TrialEndingSoonEmail = ({
             <Text style={footer}>
               We hope to see you continue with Pro!
               <br />
-              The IBI Directory Team
+              The A Rep Near Me Team
             </Text>
 
             <Text style={unsubscribe}>

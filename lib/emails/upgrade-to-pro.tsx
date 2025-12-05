@@ -38,7 +38,7 @@ export const UpgradeToProEmail = ({ userName, pricingUrl }: UpgradeToProEmailPro
             <Text style={paragraph}>Hi {userName},</Text>
 
             <Text style={paragraph}>
-              You&apos;ve taken the first step by creating your IBI Directory profile. Now,
+              You&apos;ve taken the first step by creating your A Rep Near Me profile. Now,
               imagine getting <strong>3-5x more visibility</strong> and connecting with even
               more customers!
             </Text>
@@ -134,7 +134,7 @@ export const UpgradeToProEmail = ({ userName, pricingUrl }: UpgradeToProEmailPro
             <Text style={footer}>
               To your success,
               <br />
-              The IBI Directory Team
+              The A Rep Near Me Team
             </Text>
           </Section>
         </Container>

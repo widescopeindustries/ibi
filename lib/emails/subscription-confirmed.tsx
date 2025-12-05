@@ -104,7 +104,7 @@ export const SubscriptionConfirmedEmail = ({
               </Text>
 
               <Text style={tipItem}>
-                4. <strong>Share your profile</strong> - Promote your IBI profile on social
+                4. <strong>Share your profile</strong> - Promote your A Rep Near Me profile on social
                 media
               </Text>
             </Section>
@@ -138,7 +138,7 @@ export const SubscriptionConfirmedEmail = ({
             <Text style={footer}>
               Thank you for choosing Pro!
               <br />
-              The IBI Directory Team
+              The A Rep Near Me Team
             </Text>
           </Section>
         </Container>

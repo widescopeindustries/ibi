@@ -9,10 +9,10 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="block mb-4">
               <span className="font-serif text-xl tracking-wider text-gray-900">
-                REPFINDER
+                A REP NEAR ME
               </span>
               <span className="block text-[9px] uppercase tracking-[0.3em] text-gray-500 mt-0.5">
-                Directory
+                Inspired By Independence
               </span>
             </Link>
             <p className="text-sm text-gray-600 font-light leading-relaxed">
@@ -115,7 +115,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-200">
           <p className="text-xs text-gray-500 text-center tracking-wide">
-            &copy; {new Date().getFullYear()} RepFinder. All rights reserved.
+            &copy; {new Date().getFullYear()} A Rep Near Me. All rights reserved.
           </p>
         </div>
       </div>

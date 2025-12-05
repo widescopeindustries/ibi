@@ -3,7 +3,7 @@ import { TestimonialData } from '@/components/Testimonial'
 export const testimonials: TestimonialData[] = [
   {
     id: '1',
-    quote: 'I was looking for a Mary Kay consultant in my area and found Sarah through IBI. She was so knowledgeable and helped me find the perfect skincare routine. The whole experience was seamless!',
+    quote: 'I was looking for a Mary Kay consultant in my area and found Sarah through A Rep Near Me. She was so knowledgeable and helped me find the perfect skincare routine. The whole experience was seamless!',
     repName: 'Jennifer Martinez',
     company: 'Mary Kay',
     rating: 5,
@@ -19,7 +19,7 @@ export const testimonials: TestimonialData[] = [
   },
   {
     id: '3',
-    quote: 'I have been selling Avon for 10 years, but listing on IBI has completely transformed my business. I get contacted by customers I would have never reached otherwise.',
+    quote: 'I have been selling Avon for 10 years, but listing on A Rep Near Me has completely transformed my business. I get contacted by customers I would have never reached otherwise.',
     repName: 'Rebecca Johnson',
     company: 'Avon',
     rating: 5,
@@ -43,7 +43,7 @@ export const testimonials: TestimonialData[] = [
   },
   {
     id: '6',
-    quote: 'I wanted to support a local Scentsy consultant and IBI helped me find three amazing reps nearby. Love being able to read reviews and see their specialties before reaching out!',
+    quote: 'I wanted to support a local Scentsy consultant and A Rep Near Me helped me find three amazing reps nearby. Love being able to read reviews and see their specialties before reaching out!',
     repName: 'David Thompson',
     company: 'Scentsy',
     rating: 5,

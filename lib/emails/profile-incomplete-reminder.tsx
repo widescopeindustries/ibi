@@ -38,7 +38,7 @@ export const ProfileIncompleteReminder = ({
             <Text style={paragraph}>Hi {userName},</Text>
 
             <Text style={paragraph}>
-              We noticed your IBI Directory profile isn&apos;t quite complete yet. You&apos;re so close
+              We noticed your A Rep Near Me profile isn&apos;t quite complete yet. You&apos;re so close
               to being discoverable by customers looking for representatives like you!
             </Text>
 
@@ -84,7 +84,7 @@ export const ProfileIncompleteReminder = ({
             <Text style={footer}>
               Best regards,
               <br />
-              The IBI Directory Team
+              The A Rep Near Me Team
             </Text>
           </Section>
         </Container>
