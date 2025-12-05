@@ -11,21 +11,8 @@ interface CompanyPageProps {
   }
 }
 
-// Enable ISR - Regenerate page every hour
+// ISR - Regenerate every hour
 export const revalidate = 3600
-
-// Pre-generate all company pages at build time
-export async function generateStaticParams() {
-  const supabase = await createClient()
-
-  const { data: companies } = await supabase
-    .from('companies')
-    .select('slug')
-
-  return companies?.map((company) => ({
-    slug: company.slug,
-  })) || []
-}
 
 // Generate dynamic metadata for SEO
 export async function generateMetadata({ params }: CompanyPageProps): Promise<Metadata> {

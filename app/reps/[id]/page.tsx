@@ -10,24 +10,8 @@ interface RepPageProps {
     }
 }
 
-// Enable ISR - Regenerate page every hour
+// ISR - Regenerate every hour
 export const revalidate = 3600
-
-// Pre-generate top rep pages at build time (limit to prevent excessive build time)
-export async function generateStaticParams() {
-    const supabase = await createClient()
-
-    // Generate pages for pro subscribers and recently active reps
-    const { data: reps } = await supabase
-        .from('profiles')
-        .select('id')
-        .or('is_pro_subscriber.eq.true,updated_at.gte.2024-01-01')
-        .limit(100) // Start with top 100, will generate others on-demand
-
-    return reps?.map((rep) => ({
-        id: rep.id,
-    })) || []
-}
 
 // Generate dynamic metadata for SEO
 export async function generateMetadata({ params }: RepPageProps): Promise<Metadata> {
