@@ -122,16 +122,9 @@ export default function RepCard({ profile, companies = [] }: RepCardProps) {
           <div className="w-full border-t border-gray-100 my-4"></div>
 
           {/* View Profile Button */}
-          <button
-            className="w-full btn btn-outline py-2.5"
-            onClick={(e) => {
-              e.preventDefault()
-              window.location.href = `/rep/${profile.id}`
-            }}
-            aria-label={`View ${fullName}'s profile`}
-          >
+          <span className="w-full btn btn-outline py-2.5 inline-block text-center">
             View Profile
-          </button>
+          </span>
 
           {/* Pro indicator text */}
           {profile.is_pro_subscriber && (
