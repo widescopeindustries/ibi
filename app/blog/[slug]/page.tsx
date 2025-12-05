@@ -1,6 +1,5 @@
 import { getPostBySlug, getAllPosts } from '@/lib/mdx'
-import { serialize } from 'next-mdx-remote/serialize'
-import { MDXRemote } from 'next-mdx-remote'
+import { MDXRemote } from 'next-mdx-remote/rsc'
 import ProductCTA from '@/components/blog/ProductCTA'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -46,8 +45,6 @@ export default async function Post({ params }: { params: { slug: string } }) {
         notFound()
     }
 
-    const mdxSource = await serialize(post.content)
-
     return (
         <div className="bg-white min-h-screen">
             <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -66,7 +63,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
                 </header>
 
                 <div className="prose prose-lg prose-indigo mx-auto">
-                    <MDXRemote {...mdxSource} components={components} />
+                    <MDXRemote source={post.content} components={components} />
                 </div>
 
                 <div className="mt-16 pt-8 border-t border-gray-100 text-center">

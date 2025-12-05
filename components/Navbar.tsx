@@ -35,6 +35,12 @@ export default async function Navbar() {
             >
               Pricing
             </Link>
+            <Link
+              href="/blog"
+              className="text-xs uppercase tracking-widest text-gray-700 hover:text-primary-600 transition-colors"
+            >
+              Blog
+            </Link>
           </div>
 
           {/* Center Logo */}

@@ -5,6 +5,8 @@ import { generateSearchMetadata } from '@/lib/seo'
 import { generateBreadcrumbSchema, StructuredDataScript } from '@/lib/structured-data'
 import { defaultSEO } from '@/lib/seo'
 
+export const dynamic = 'force-dynamic'
+
 interface SearchPageProps {
   searchParams: {
     company?: string
@@ -148,8 +150,8 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
                           key={company.id}
                           href={`/search?company=${company.slug}${searchParams.location ? `&location=${searchParams.location}` : ''}`}
                           className={`block text-sm py-1 px-2 rounded hover:bg-gray-100 ${searchParams.company === company.slug
-                              ? 'bg-primary-50 text-primary-700 font-medium'
-                              : 'text-gray-700'
+                            ? 'bg-primary-50 text-primary-700 font-medium'
+                            : 'text-gray-700'
                             }`}
                         >
                           {company.name}
