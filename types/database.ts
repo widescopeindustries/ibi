@@ -64,21 +64,24 @@ export interface SearchParams {
 }
 
 // External listing from scraped data (Google Maps, etc.)
+// Matches Supabase table schema (snake_case)
 export interface ExternalListing {
   id: string;
+  created_at?: string;
   title: string;
-  firstName: string;
-  lastName: string;
-  totalScore?: number;
-  reviewsCount: number;
-  street?: string;
-  city?: string;
-  state?: string;
-  countryCode: string;
-  website?: string;
-  phone?: string;
-  categoryName: string;
-  googleMapsUrl: string;
-  company: string;
+  first_name: string | null;
+  last_name: string | null;
+  total_score: number | null;
+  reviews_count: number;
+  street: string | null;
+  city: string | null;
+  state: string | null;
+  country_code: string;
+  website: string | null;
+  phone: string | null;
+  category_name: string | null;
+  google_maps_url: string | null;
+  company_slug: string | null;
   source: string;
+  is_active?: boolean;
 }

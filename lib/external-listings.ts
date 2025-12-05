@@ -1,67 +1,114 @@
+import { createClient } from '@/lib/supabase/server'
 import { ExternalListing } from '@/types/database'
-import avonListings from '@/data/external-listings/avon.json'
-import pamperedChefListings from '@/data/external-listings/pampered-chef.json'
-
-// Map of company slugs to their external listings
-const externalListingsByCompany: Record<string, ExternalListing[]> = {
-  'avon': avonListings as ExternalListing[],
-  'pampered-chef': pamperedChefListings as ExternalListing[],
-}
 
 /**
  * Get external listings for a specific company by slug
  */
-export function getExternalListingsByCompany(companySlug: string): ExternalListing[] {
-  return externalListingsByCompany[companySlug] || []
+export async function getExternalListingsByCompany(companySlug: string): Promise<ExternalListing[]> {
+  const supabase = await createClient()
+
+  const { data, error } = await supabase
+    .from('external_listings')
+    .select('*')
+    .eq('company_slug', companySlug)
+    .eq('is_active', true)
+    .order('total_score', { ascending: false, nullsFirst: false })
+
+  if (error) {
+    console.error('Error fetching external listings:', error)
+    return []
+  }
+
+  return data || []
 }
 
 /**
  * Get all external listings
  */
-export function getAllExternalListings(): ExternalListing[] {
-  return Object.values(externalListingsByCompany).flat()
+export async function getAllExternalListings(): Promise<ExternalListing[]> {
+  const supabase = await createClient()
+
+  const { data, error } = await supabase
+    .from('external_listings')
+    .select('*')
+    .eq('is_active', true)
+    .order('total_score', { ascending: false, nullsFirst: false })
+
+  if (error) {
+    console.error('Error fetching external listings:', error)
+    return []
+  }
+
+  return data || []
 }
 
 /**
- * Search external listings by location
+ * Search external listings by location and/or company
  */
-export function searchExternalListings(options: {
+export async function searchExternalListings(options: {
   companySlug?: string
   location?: string
   state?: string
   city?: string
-}): ExternalListing[] {
-  let listings = options.companySlug
-    ? getExternalListingsByCompany(options.companySlug)
-    : getAllExternalListings()
+}): Promise<ExternalListing[]> {
+  const supabase = await createClient()
+
+  let query = supabase
+    .from('external_listings')
+    .select('*')
+    .eq('is_active', true)
+
+  if (options.companySlug) {
+    query = query.eq('company_slug', options.companySlug)
+  }
 
   if (options.state) {
-    const stateSearch = options.state.toUpperCase()
-    listings = listings.filter(l => l.state?.toUpperCase() === stateSearch)
+    query = query.ilike('state', options.state)
   }
 
   if (options.city) {
-    const citySearch = options.city.toLowerCase()
-    listings = listings.filter(l => l.city?.toLowerCase().includes(citySearch))
+    query = query.ilike('city', `%${options.city}%`)
   }
 
   if (options.location) {
-    const locationSearch = options.location.toLowerCase()
+    const locationSearch = options.location.toLowerCase().trim()
     // Check if it's a state code (2 chars)
     if (locationSearch.length === 2) {
-      listings = listings.filter(l => l.state?.toLowerCase() === locationSearch)
+      query = query.ilike('state', locationSearch)
     } else {
       // Search by city
-      listings = listings.filter(l => l.city?.toLowerCase().includes(locationSearch))
+      query = query.ilike('city', `%${locationSearch}%`)
     }
   }
 
-  return listings
+  query = query.order('total_score', { ascending: false, nullsFirst: false })
+
+  const { data, error } = await query
+
+  if (error) {
+    console.error('Error searching external listings:', error)
+    return []
+  }
+
+  return data || []
 }
 
 /**
  * Get count of external listings for a company
  */
-export function getExternalListingCount(companySlug: string): number {
-  return getExternalListingsByCompany(companySlug).length
+export async function getExternalListingCount(companySlug: string): Promise<number> {
+  const supabase = await createClient()
+
+  const { count, error } = await supabase
+    .from('external_listings')
+    .select('*', { count: 'exact', head: true })
+    .eq('company_slug', companySlug)
+    .eq('is_active', true)
+
+  if (error) {
+    console.error('Error counting external listings:', error)
+    return 0
+  }
+
+  return count || 0
 }

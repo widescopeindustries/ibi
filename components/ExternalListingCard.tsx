@@ -6,9 +6,15 @@ interface ExternalListingCardProps {
 }
 
 export default function ExternalListingCard({ listing }: ExternalListingCardProps) {
-  const fullName = `${listing.firstName || ''} ${listing.lastName || ''}`.trim() || listing.title
+  const fullName = `${listing.first_name || ''} ${listing.last_name || ''}`.trim() || listing.title
   const location = [listing.city, listing.state].filter(Boolean).join(', ') || 'Location not specified'
   const hasLocation = listing.city || listing.state
+
+  // Format company name from slug
+  const companyName = listing.company_slug
+    ?.split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ') || 'Independent'
 
   return (
     <div className="block group">
@@ -29,7 +35,7 @@ export default function ExternalListingCard({ listing }: ExternalListingCardProp
             <div className="relative w-24 h-24">
               <div className="w-full h-full bg-cream-100 rounded-full flex items-center justify-center border-2 border-cream-200">
                 <span className="font-serif text-3xl text-primary-600">
-                  {(listing.firstName?.[0] || listing.title?.[0] || '?').toUpperCase()}
+                  {(listing.first_name?.[0] || listing.title?.[0] || '?').toUpperCase()}
                 </span>
               </div>
             </div>
@@ -56,11 +62,11 @@ export default function ExternalListingCard({ listing }: ExternalListingCardProp
           )}
 
           {/* Rating */}
-          {listing.totalScore !== undefined && listing.reviewsCount > 0 && (
+          {listing.total_score !== null && listing.reviews_count > 0 && (
             <div className="flex items-center gap-2 mb-4">
-              <StarRating rating={listing.totalScore} />
+              <StarRating rating={listing.total_score} />
               <span className="text-sm text-gray-600">
-                {listing.totalScore.toFixed(1)} ({listing.reviewsCount})
+                {listing.total_score.toFixed(1)} ({listing.reviews_count})
               </span>
             </div>
           )}
@@ -69,7 +75,7 @@ export default function ExternalListingCard({ listing }: ExternalListingCardProp
           <div className="w-full mb-4">
             <div className="flex flex-wrap gap-2 justify-center">
               <span className="inline-flex items-center bg-cream-100 text-gray-700 text-xs px-3 py-1 rounded-sm">
-                {listing.company}
+                {companyName}
               </span>
             </div>
           </div>
@@ -100,15 +106,17 @@ export default function ExternalListingCard({ listing }: ExternalListingCardProp
                 Visit Website
               </a>
             )}
-            <a
-              href={listing.googleMapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`${listing.website ? 'flex-1' : 'w-full'} btn btn-outline py-2.5 text-sm`}
-              onClick={(e) => e.stopPropagation()}
-            >
-              View on Maps
-            </a>
+            {listing.google_maps_url && (
+              <a
+                href={listing.google_maps_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${listing.website ? 'flex-1' : 'w-full'} btn btn-outline py-2.5 text-sm`}
+                onClick={(e) => e.stopPropagation()}
+              >
+                View on Maps
+              </a>
+            )}
           </div>
 
           {/* Source indicator */}

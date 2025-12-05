@@ -210,3 +210,44 @@ insert into public.companies (name, logo_url, description, category, slug) value
   ('Norwex', null, 'Environmentally friendly cleaning products', 'Cleaning', 'norwex'),
   ('Rodan + Fields', null, 'Skincare and beauty products', 'Cosmetics', 'rodan-fields'),
   ('Arbonne', null, 'Health, wellness, and skincare products', 'Wellness', 'arbonne');
+
+-- ====================================
+-- EXTERNAL LISTINGS TABLE
+-- ====================================
+-- Stores listings from external sources (Google Maps, etc.)
+-- These are not tied to authenticated users
+
+create table public.external_listings (
+  id text primary key,
+  created_at timestamptz default now(),
+  title text not null,
+  first_name text,
+  last_name text,
+  total_score decimal(2,1),
+  reviews_count int default 0,
+  street text,
+  city text,
+  state text,
+  country_code text default 'US',
+  website text,
+  phone text,
+  category_name text,
+  google_maps_url text,
+  company_slug text references public.companies(slug),
+  source text default 'google-maps',
+  is_active boolean default true
+);
+
+-- Enable RLS
+alter table public.external_listings enable row level security;
+
+-- External listings are viewable by everyone
+create policy "External listings are viewable by everyone"
+  on public.external_listings for select
+  using (is_active = true);
+
+-- Indexes for performance
+create index external_listings_company_slug_idx on public.external_listings(company_slug);
+create index external_listings_state_idx on public.external_listings(state);
+create index external_listings_city_idx on public.external_listings(city);
+create index external_listings_active_idx on public.external_listings(is_active);
