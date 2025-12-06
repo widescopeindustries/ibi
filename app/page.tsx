@@ -52,18 +52,18 @@ export default async function Home() {
         {/* Hero Section - Elegant minimal style */}
         <section className="bg-cream-50 py-24 md:py-32 relative overflow-hidden">
           {/* Subtle decorative elements */}
-          <div className="absolute top-20 left-10 w-32 h-32 bg-primary-100/30 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary-100/30 rounded-full blur-3xl"></div>
+          <div className="absolute top-20 left-10 w-64 h-64 bg-primary-200/40 rounded-full blur-3xl mix-blend-multiply animate-pulse-slow"></div>
+          <div className="absolute bottom-20 right-10 w-80 h-80 bg-secondary-200/40 rounded-full blur-3xl mix-blend-multiply animate-pulse-slow delay-1000"></div>
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div className="text-center mb-12">
-              <p className="text-xs uppercase tracking-[0.3em] text-primary-600 mb-4">
+              <p className="text-xs uppercase tracking-[0.3em] text-primary-600 mb-4 mr-[-0.3em]">
                 A Rep Near Me
               </p>
               <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-6 leading-tight">
                 Find Your Perfect
                 <br />
-                <span className="italic">Sales Representative</span>
+                <span className="italic text-primary-800">Sales Representative</span>
               </h1>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto font-light">
                 Connect with trusted local representatives from leading direct sales companies
