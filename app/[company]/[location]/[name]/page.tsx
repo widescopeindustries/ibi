@@ -167,7 +167,7 @@ export default async function RepPage({ params }: RepPageProps) {
                                 {companies.map((rc: any) => (
                                     <Link
                                         key={rc.companies.id}
-                                        href={`/companies/${rc.companies.slug}`}
+                                        href={`/${rc.companies.slug}`}
                                         className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-800 hover:bg-gray-200"
                                     >
                                         {rc.companies.name}

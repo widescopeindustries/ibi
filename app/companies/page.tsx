@@ -42,7 +42,7 @@ export default async function CompaniesPage() {
               {categoryCompanies.map((company: any) => (
                 <Link
                   key={company.id}
-                  href={`/companies/${company.slug}`}
+                  href={`/${company.slug}`}
                   className="card hover:shadow-lg transition-shadow"
                 >
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">

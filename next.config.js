@@ -29,6 +29,15 @@ const nextConfig = {
       },
     ]
   },
+  async redirects() {
+    return [
+      {
+        source: '/companies/:slug',
+        destination: '/:slug',
+        permanent: true,
+      },
+    ]
+  },
   eslint: {
     ignoreDuringBuilds: true, // Temporary fix for ESLint config conflict
   },

@@ -341,7 +341,7 @@ export function generateCompanyCollectionSchema(params: {
     '@type': 'CollectionPage',
     name: `${companyName} Representatives`,
     description: description || `Find ${companyName} direct sales representatives in your area`,
-    url: `${defaultSEO.siteUrl}/companies/${slug}`,
+    url: `${defaultSEO.siteUrl}/${slug}`,
     numberOfItems: repCount,
   }
 }

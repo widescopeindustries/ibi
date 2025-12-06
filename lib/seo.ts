@@ -262,7 +262,7 @@ export function generateCompanyMetadata(params: {
   return generateSEO({
     title,
     description: desc,
-    canonical: `${defaultSEO.siteUrl}/companies/${slug}`,
+    canonical: `${defaultSEO.siteUrl}/${slug}`,
     openGraph: {
       title,
       description: desc,

@@ -118,7 +118,7 @@ export default async function Home() {
               {companies?.map((company: Company) => (
                 <Link
                   key={company.id}
-                  href={`/companies/${company.slug}`}
+                  href={`/${company.slug}`}
                   className="group p-6 bg-cream-50 hover:bg-white border border-gray-100 hover:border-primary-200 rounded-sm text-center transition-all duration-300 hover:shadow-md"
                 >
                   <h3 className="font-medium text-gray-900 group-hover:text-primary-700 transition-colors">

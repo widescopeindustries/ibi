@@ -264,7 +264,7 @@ export default async function RepProfilePage({ params }: RepProfilePageProps) {
                 {companies.map((company: any) => (
                   <Link
                     key={company.id}
-                    href={`/companies/${company.slug}`}
+                    href={`/${company.slug}`}
                     className="flex items-center gap-3 p-3 border border-gray-200 rounded-lg hover:border-primary-500 hover:bg-primary-50 transition"
                   >
                     <div className="flex-grow">
