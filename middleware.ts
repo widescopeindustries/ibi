@@ -81,8 +81,10 @@ export const config = {
      * - favicon.ico (favicon file)
      * - site.webmanifest (PWA manifest)
      * - .well-known (well-known URIs)
-     * - Static file extensions
+     * - sitemap.xml (SEO)
+     * - robots.txt (SEO)
+     * - Static file extensions (svg, png, jpg, etc)
      */
-    '/((?!_next/static|_next/image|favicon\\.ico|site\\.webmanifest|\\.well-known|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|json|xml|txt|webmanifest)$).*)',
+    '/((?!_next/static|_next/image|favicon\\.ico|site\\.webmanifest|\\.well-known|sitemap\\.xml|robots\\.txt|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|json|xml|txt|webmanifest)$).*)',
   ],
 }
