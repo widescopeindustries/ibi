@@ -1,0 +1,3337 @@
+[
+  {
+    "title": "Jerk King",
+    "city": "Far Rockaway",
+    "state": "NY",
+    "rating": 4.9,
+    "lat": 40.6060411,
+    "lng": -73.7545774
+  },
+  {
+    "title": "Adrienne's NYC",
+    "city": "Queens",
+    "state": "NY",
+    "website": "http://adriennes-nyc.com/",
+    "rating": 4.7,
+    "lat": 40.5973398,
+    "lng": -73.819623
+  },
+  {
+    "title": "Uma's",
+    "city": "Rockaway Beach",
+    "state": "NY",
+    "website": "https://umasrockaway.com/",
+    "rating": 4.5,
+    "lat": 40.58617,
+    "lng": -73.815637
+  },
+  {
+    "title": "Bungalow Bar",
+    "city": "Queens",
+    "state": "NY",
+    "website": "https://bungalowbarny.com/",
+    "rating": 4.4,
+    "lat": 40.5891852,
+    "lng": -73.8171514
+  },
+  {
+    "title": "Kimo's",
+    "city": "Queens",
+    "state": "NY",
+    "website": "https://kimoskitchen.com/",
+    "rating": 4.8,
+    "lat": 40.5863456,
+    "lng": -73.8160552
+  },
+  {
+    "title": "Oasis",
+    "city": "Far Rockaway",
+    "state": "NY",
+    "website": "https://www.oasisramenhouseny.com/heqs5oht/restaurant/order-online",
+    "rating": 4.7,
+    "lat": 40.5864428,
+    "lng": -73.8158283
+  },
+  {
+    "title": "HalalXtreme Grill",
+    "city": "Queens",
+    "state": "NY",
+    "website": "https://halalxtremegrill.dine.online/",
+    "rating": 4.7,
+    "lat": 40.6054152,
+    "lng": -73.75493
+  },
+  {
+    "title": "Lena Trattoria",
+    "city": "Bronx",
+    "state": "NY",
+    "website": "https://www.lenatrattoria.com/",
+    "rating": 4.7,
+    "lat": 40.8315408,
+    "lng": -73.8273579
+  },
+  {
+    "title": "Moon Cheese Restaurant",
+    "city": "East Elmhurst",
+    "state": "NY",
+    "website": "https://mooncheeserestaurant.shop/",
+    "rating": 4.8,
+    "lat": 40.7600949,
+    "lng": -73.8800038
+  },
+  {
+    "title": "Mojitos",
+    "city": "Jackson Heights",
+    "state": "NY",
+    "website": "http://www.mojitosrestaurantbar.com/",
+    "rating": 4.8,
+    "lat": 40.755661,
+    "lng": -73.8862126
+  },
+  {
+    "title": "Fabrika",
+    "city": "Jackson Heights",
+    "state": "NY",
+    "website": "https://www.fabrikany.com/",
+    "rating": 4.7,
+    "lat": 40.7552294,
+    "lng": -73.8865204
+  },
+  {
+    "title": "Riviera Maya",
+    "city": "Astoria",
+    "state": "NY",
+    "website": "http://rivieramayarestaurant.com/",
+    "rating": 4.6,
+    "lat": 40.7648721,
+    "lng": -73.9145457
+  },
+  {
+    "title": "CHELI FLUSHING",
+    "city": "Queens",
+    "state": "NY",
+    "website": "http://www.che-li.com/",
+    "rating": 4.6,
+    "lat": 40.7594897,
+    "lng": -73.8326023
+  },
+  {
+    "title": "Pranam Restaurant & Bar",
+    "city": "Queens",
+    "state": "NY",
+    "website": "https://pranamrestaurant.com/",
+    "rating": 4.9,
+    "lat": 40.7635265,
+    "lng": -73.9090341
+  },
+  {
+    "title": "Hongdae Korean restaurant",
+    "city": "Flushing",
+    "state": "NY",
+    "rating": 4.8,
+    "lat": 40.7623802,
+    "lng": -73.8155563
+  },
+  {
+    "title": "Veranda",
+    "city": "Bayside",
+    "state": "NY",
+    "website": "http://www.veranda-restaurant.com/",
+    "rating": 4.4,
+    "lat": 40.7590444,
+    "lng": -73.7753861
+  },
+  {
+    "title": "Pine Restaurant",
+    "city": "Bronx",
+    "state": "NY",
+    "website": "http://fjpine.com/",
+    "rating": 4.5,
+    "lat": 40.8487296,
+    "lng": -73.8622597
+  },
+  {
+    "title": "Riviera Ristorante",
+    "city": "Whitestone",
+    "state": "NY",
+    "website": "http://www.rivieraristorante.com/",
+    "rating": 4.6,
+    "lat": 40.7822521,
+    "lng": -73.7947252
+  },
+  {
+    "title": "Bistro Eloise - French Restaurant",
+    "city": "East Elmhurst",
+    "state": "NY",
+    "website": "https://bistroeloise.com/",
+    "rating": 4.6,
+    "lat": 40.7600249,
+    "lng": -73.8920991
+  },
+  {
+    "title": "Dakota's On The Cove",
+    "city": "Bronx",
+    "state": "NY",
+    "website": "https://dakotasonthecove.com/",
+    "rating": 4.6,
+    "lat": 40.8169524,
+    "lng": -73.8067585
+  },
+  {
+    "title": "Porto Salvo",
+    "city": "Bronx",
+    "state": "NY",
+    "website": "https://portosalvonyc.com/?utm_source=google",
+    "rating": 4.6,
+    "lat": 40.8236957,
+    "lng": -73.9129382
+  },
+  {
+    "title": "ZHUMI BAKERY & RESTAURANT",
+    "city": "Whitestone",
+    "state": "NY",
+    "website": "https://www.zhumimex.com/",
+    "rating": 4.8,
+    "lat": 40.7892082,
+    "lng": -73.8118139
+  },
+  {
+    "title": "Kaizen: Omakase & Hand Roll Sushi Restaurant",
+    "city": "Queens",
+    "state": "NY",
+    "website": "https://www.nyckaizen.com/",
+    "rating": 4.6,
+    "lat": 40.7650265,
+    "lng": -73.8322898
+  },
+  {
+    "title": "AfroSpice BisTro",
+    "city": "Bronx",
+    "state": "NY",
+    "website": "https://afrospice.ca/menu/",
+    "rating": 4.8,
+    "lat": 40.8164481,
+    "lng": -73.8649192
+  },
+  {
+    "title": "JeunJu Korean Restaurant 전주식당 | 전주할매칼국수 - Authentic Korean home style food",
+    "city": "Flushing",
+    "state": "NY",
+    "rating": 4.7,
+    "lat": 40.7633236,
+    "lng": -73.814119
+  },
+  {
+    "title": "Jägerhaus German Mediterranean restaurant",
+    "city": "Flushing",
+    "state": "NY",
+    "website": "https://jagerhausnyc.com/?utm_campaign=gmb",
+    "rating": 4.5,
+    "lat": 40.7866579,
+    "lng": -73.8164733
+  },
+  {
+    "title": "Parrilla Azteca Cibaena Restaurant",
+    "city": "Bronx",
+    "state": "NY",
+    "website": "http://parrillaaztecacibaenarestaurant.com/",
+    "rating": 4.4,
+    "lat": 40.8271372,
+    "lng": -73.8866015
+  },
+  {
+    "title": "Sunny",
+    "city": "Far Rockaway",
+    "state": "NY",
+    "rating": 4.2,
+    "lat": 40.6034478,
+    "lng": -73.753181
+  },
+  {
+    "title": "The Restaurant",
+    "city": "Rockaway Park",
+    "state": "NY",
+    "rating": 4.4,
+    "lat": 40.5870657,
+    "lng": -73.8116321
+  },
+  {
+    "title": "La Playa",
+    "city": "Far Rockaway",
+    "state": "NY",
+    "rating": 4.1,
+    "lat": 40.587608,
+    "lng": -73.812828
+  },
+  {
+    "title": "L'Osteria",
+    "city": "New York",
+    "state": "NY",
+    "website": "http://www.losterianyc.com/",
+    "rating": 4.7,
+    "lat": 40.777137,
+    "lng": -73.957094
+  },
+  {
+    "title": "Home Kitchen",
+    "city": "New York",
+    "state": "NY",
+    "website": "http://www.homekitchennyc.com/",
+    "rating": 4.5,
+    "lat": 40.7781573,
+    "lng": -73.9558893
+  },
+  {
+    "title": "Mission Ceviche",
+    "city": "New York",
+    "state": "NY",
+    "website": "https://www.missionceviche.com/",
+    "rating": 4.6,
+    "lat": 40.7691005,
+    "lng": -73.9578631
+  },
+  {
+    "title": "Inca Paisa Restaurant Astoria",
+    "city": "Astoria",
+    "state": "NY",
+    "website": "https://incapaisaastoria.com/",
+    "rating": 4.7,
+    "lat": 40.7649789,
+    "lng": -73.9304299
+  },
+  {
+    "title": "The BLVD",
+    "city": "Bronx",
+    "state": "NY",
+    "rating": 4.9,
+    "lat": 40.8331857,
+    "lng": -73.8273611
+  },
+  {
+    "title": "Boqueria UES",
+    "city": "New York",
+    "state": "NY",
+    "website": "https://boqueriarestaurant.com/location/nyc/ues/?utm_source=organic&utm_medium=gmb",
+    "rating": 4.6,
+    "lat": 40.7715096,
+    "lng": -73.956073
+  },
+  {
+    "title": "Maisonetta",
+    "city": "Bronx",
+    "state": "NY",
+    "website": "https://maisonettanyc.com/",
+    "rating": 4.5,
+    "lat": 40.808723,
+    "lng": -73.9291428
+  },
+  {
+    "title": "Suyo Gastrofusion",
+    "city": "Bronx",
+    "state": "NY",
+    "website": "https://suyonyc.com/",
+    "rating": 4.5,
+    "lat": 40.840605,
+    "lng": -73.918249
+  },
+  {
+    "title": "Wicked Wolf Bronx",
+    "city": "Bronx",
+    "state": "NY",
+    "website": "http://www.wickedwolfbronx.com/",
+    "rating": 4.5,
+    "lat": 40.8196472,
+    "lng": -73.81735
+  },
+  {
+    "title": "Jacques Brasserie",
+    "city": "New York",
+    "state": "NY",
+    "website": "http://www.jacquesbrasserie.com/",
+    "rating": 4.5,
+    "lat": 40.7778319,
+    "lng": -73.9541443
+  },
+  {
+    "title": "Plue",
+    "city": "New York",
+    "state": "NY",
+    "website": "https://www.pluenyc.com/",
+    "rating": 4.8,
+    "lat": 40.78893,
+    "lng": -73.9485456
+  },
+  {
+    "title": "THEP Thai Restaurant",
+    "city": "New York",
+    "state": "NY",
+    "website": "http://www.thepnewyork.com/",
+    "rating": 4.7,
+    "lat": 40.7707714,
+    "lng": -73.9572357
+  },
+  {
+    "title": "La Palma",
+    "city": "Far Rockaway",
+    "state": "NY",
+    "rating": 4.2,
+    "lat": 40.60333,
+    "lng": -73.7532071
+  },
+  {
+    "title": "Super Burrito Rockaway | Queens",
+    "city": "Arverne",
+    "state": "NY",
+    "website": "http://superburritonyc.com/",
+    "rating": 4.4,
+    "lat": 40.5900842,
+    "lng": -73.7974626
+  },
+  {
+    "title": "Lex Restaurant",
+    "city": "New York",
+    "state": "NY",
+    "website": "http://lexrestaurant.com/",
+    "rating": 4.6,
+    "lat": 40.7825,
+    "lng": -73.9536111
+  },
+  {
+    "title": "Arturo's",
+    "city": "New York",
+    "state": "NY",
+    "website": "http://www.arturosny.com/",
+    "rating": 4.6,
+    "lat": 40.7754226,
+    "lng": -73.9477086
+  },
+  {
+    "title": "Stamatis",
+    "city": "Astoria",
+    "state": "NY",
+    "website": "https://stamatisrestaurant.net/",
+    "rating": 4.6,
+    "lat": 40.7749556,
+    "lng": -73.91343
+  },
+  {
+    "title": "Truth Restaurant Astoria",
+    "city": "Astoria",
+    "state": "NY",
+    "website": "https://www.truthastoria.com/",
+    "rating": 4.5,
+    "lat": 40.77112,
+    "lng": -73.926401
+  },
+  {
+    "title": "Cafe Triskell",
+    "city": "Long Island City",
+    "state": "NY",
+    "website": "http://www.cafetriskell.co/",
+    "rating": 4.6,
+    "lat": 40.7555935,
+    "lng": -73.9280495
+  },
+  {
+    "title": "Marbella",
+    "city": "Bayside",
+    "state": "NY",
+    "website": "http://www.marbella-restaurant.com/",
+    "rating": 4.5,
+    "lat": 40.7618,
+    "lng": -73.7608
+  },
+  {
+    "title": "Kim's Avon",
+    "city": "Candler",
+    "state": "NC",
+    "website": "http://www.youravon.com/kjamison",
+    "rating": 5.0,
+    "lat": 35.5763116,
+    "lng": -82.6916227
+  },
+  {
+    "title": "Cindy's Avon Beauty Center",
+    "city": "Rancho Cucamonga",
+    "state": "CA",
+    "website": "https://www.avon.com/repstore/cindygoulet?dc_url=%2Fbrochure-second.html%3Feh%3DY&rep=cindygoulet",
+    "rating": 4.8,
+    "lat": 34.1236048,
+    "lng": -117.5740742
+  },
+  {
+    "title": "Avon Distribution Center",
+    "city": "Suwanee",
+    "state": "GA",
+    "website": "http://www.avon.com/",
+    "rating": 5.0,
+    "lat": 34.0340162,
+    "lng": -84.0304922
+  },
+  {
+    "title": "Silvia your Avon representative",
+    "city": "Candler",
+    "state": "NC",
+    "website": "http://youravon.com/silviaamaya",
+    "lat": 35.5478158,
+    "lng": -82.6946591
+  },
+  {
+    "title": "Terri's Avon Outlet, Gifts & More",
+    "city": "Easley",
+    "state": "SC",
+    "website": "http://www.youravon.com/tkay",
+    "rating": 5.0,
+    "lat": 34.8531651,
+    "lng": -82.6659126
+  },
+  {
+    "title": "Conyers AVON - In Due Season Gifts",
+    "city": "Conyers",
+    "state": "GA",
+    "website": "http://www.avon.com/?rep=vsingleton",
+    "rating": 4.8,
+    "lat": 33.6532925,
+    "lng": -84.0113469
+  },
+  {
+    "title": "Avon Representative - Alba Tabares",
+    "city": "Lawrenceville",
+    "state": "GA",
+    "website": "https://www.avon.com/es/brochure?rep=discounts",
+    "rating": 4.8,
+    "lat": 33.9023979,
+    "lng": -83.9082276
+  },
+  {
+    "title": "Avon By Charlene Poindexter",
+    "city": "Greenville",
+    "state": "SC",
+    "lat": 34.9116937,
+    "lng": -82.3729264
+  },
+  {
+    "title": "Avon",
+    "city": "Bean Station",
+    "state": "TN",
+    "website": "http://www.youravon.com/ck2014",
+    "rating": 1.0,
+    "lat": 36.3059665,
+    "lng": -83.3308673
+  },
+  {
+    "title": "Avon Outlet & Boutique",
+    "city": "Fountain Inn",
+    "state": "SC",
+    "rating": 4.0,
+    "lat": 34.6936554,
+    "lng": -82.1996985
+  },
+  {
+    "title": "Avon Concerige",
+    "city": "Marietta",
+    "state": "GA",
+    "website": "http://www.youravon.com/cherlyncooper",
+    "rating": 5.0,
+    "lat": 33.8747906,
+    "lng": -84.6137542
+  },
+  {
+    "title": "Avon Representative Valeryn",
+    "city": "Loganville",
+    "state": "GA",
+    "website": "http://www.youravon.com/atabares",
+    "rating": 5.0,
+    "lat": 33.7498218,
+    "lng": -83.8679689
+  },
+  {
+    "title": "Lynn's Avon",
+    "city": "Walland",
+    "state": "TN",
+    "website": "https://www.avon.com/?rep=lynnmyoungen",
+    "lat": 35.8095883,
+    "lng": -83.8258325
+  },
+  {
+    "title": "Avon Representative Cynthia",
+    "city": "Denver",
+    "state": "NC",
+    "website": "https://www.avon.com/repstore/cynthiag?rep=cynthiag",
+    "rating": 5.0,
+    "lat": 35.4880337,
+    "lng": -81.0059801
+  },
+  {
+    "title": "Avon Beauty Center",
+    "city": "North Olmsted",
+    "state": "OH",
+    "website": "https://www.avon.com/repstore/jenniferjoseph?rep=jenniferjoseph",
+    "rating": 4.3,
+    "lat": 41.4171096,
+    "lng": -81.9071174
+  },
+  {
+    "title": "Avon Products/Health & Beauty",
+    "city": "Parma",
+    "state": "OH",
+    "website": "http://www.youravon.com/rlombardo",
+    "lat": 41.4179492,
+    "lng": -81.7274342
+  },
+  {
+    "title": "Avon Boot Shop",
+    "city": "Avon",
+    "state": "OH",
+    "website": "http://www.avonboot.com/",
+    "rating": 4.7,
+    "lat": 41.4675503,
+    "lng": -82.0530223
+  },
+  {
+    "title": "Avon Dairy Mart",
+    "city": "Avon",
+    "state": "OH",
+    "rating": 4.6,
+    "lat": 41.4524248,
+    "lng": -82.0345002
+  },
+  {
+    "title": "Amazon Drop Off Returns point at Kohl’s Avon",
+    "city": "Avon",
+    "state": "OH",
+    "rating": 5.0,
+    "lat": 41.4632426,
+    "lng": -82.0147231
+  },
+  {
+    "title": "Mrs Dawn Fairbee's Avon Store",
+    "city": "Lorain",
+    "state": "OH",
+    "website": "https://www.avon.com/repstore/dfairbee",
+    "lat": 41.445766,
+    "lng": -82.136307
+  },
+  {
+    "title": "Avon Vision Centre",
+    "city": "Avon",
+    "state": "OH",
+    "website": "http://www.avonvisioncentre.com/?utm_source=NEXT&utm_medium=Google_website",
+    "rating": 4.9,
+    "lat": 41.4554598,
+    "lng": -82.0373934
+  },
+  {
+    "title": "Gotcha Covered of Avon",
+    "city": "Avon",
+    "state": "OH",
+    "website": "https://www.gotchacovered.com/avon/",
+    "rating": 5.0,
+    "lat": 41.4527355,
+    "lng": -81.9889929
+  },
+  {
+    "title": "Avon Lake Eye Care",
+    "city": "Avon Lake",
+    "state": "OH",
+    "website": "http://www.clevelandeyeclinic.com/",
+    "rating": 5.0,
+    "lat": 41.4936857,
+    "lng": -82.0464935
+  },
+  {
+    "title": "Avon lake food mart",
+    "city": "Avon Lake",
+    "state": "OH",
+    "rating": 3.6,
+    "lat": 41.508636,
+    "lng": -81.9877913
+  },
+  {
+    "title": "Avon Lake Carry Out & Liquor",
+    "city": "Avon Lake",
+    "state": "OH",
+    "website": "https://www.ohlq.com/locations/avon-lake-deli-carryout-33501-lake-rd",
+    "rating": 4.7,
+    "lat": 41.5023888,
+    "lng": -82.0499894
+  },
+  {
+    "title": "Avon Eye Design: Dr. John Novak & Dr. Brooke Bader",
+    "city": "Avon",
+    "state": "OH",
+    "website": "http://avoneyedesign.com/",
+    "rating": 4.9,
+    "lat": 41.4534578,
+    "lng": -82.0322015
+  },
+  {
+    "title": "Avon Beauty Products",
+    "city": "Missouri City",
+    "state": "TX",
+    "website": "https://avonbeautytoday.com/",
+    "rating": 5.0,
+    "lat": 29.5830632,
+    "lng": -95.517309
+  },
+  {
+    "title": "Avon Bakery & Deli",
+    "city": "Avon",
+    "state": "CO",
+    "website": "http://www.avonbakeryanddeli.com/",
+    "rating": 4.3,
+    "lat": 39.632273,
+    "lng": -106.521005
+  },
+  {
+    "title": "Verizon",
+    "city": "Avon",
+    "state": "CO",
+    "website": "https://www.cellularplus.com/locations/170113/avon/",
+    "rating": 4.9,
+    "lat": 39.6341101,
+    "lng": -106.5203931
+  },
+  {
+    "title": "SLV Avon Representative",
+    "city": "Alamosa",
+    "state": "CO",
+    "lat": 37.447837,
+    "lng": -105.8822207
+  },
+  {
+    "title": "Avon Liquor",
+    "city": "Avon",
+    "state": "CO",
+    "website": "http://www.avon-liquor.com/",
+    "rating": 4.5,
+    "lat": 39.6350721,
+    "lng": -106.5235672
+  },
+  {
+    "title": "Giovanny Alexander",
+    "city": "Avon",
+    "state": "CO",
+    "rating": 2.4,
+    "lat": 39.6040461,
+    "lng": -106.517245
+  },
+  {
+    "title": "R Farmers' Market & Kitchen",
+    "city": "Avon",
+    "state": "CO",
+    "website": "https://rfarmersmarket.com/?utm_campaign=gmb",
+    "rating": 4.5,
+    "lat": 39.6346699,
+    "lng": -106.5185645
+  },
+  {
+    "title": "Valleygirl Boutique - Avon",
+    "city": "Avon",
+    "state": "CO",
+    "website": "http://www.valleygirlboutique.com/",
+    "rating": 4.7,
+    "lat": 39.633596,
+    "lng": -106.520838
+  },
+  {
+    "title": "Beaver Creek Mountain Demo Center",
+    "city": "Avon",
+    "state": "CO",
+    "website": "http://www.beavercreeksports.com/",
+    "rating": 4.9,
+    "lat": 39.595736,
+    "lng": -106.5230542
+  },
+  {
+    "title": "Aardvac",
+    "city": "Avon",
+    "state": "CO",
+    "website": "http://www.aardvacvacuums.com/",
+    "rating": 5.0,
+    "lat": 39.6219458,
+    "lng": -106.4731514
+  },
+  {
+    "title": "Hygge Life Shop & Café",
+    "city": "Avon",
+    "state": "CO",
+    "website": "https://www.hyggelife.com/",
+    "rating": 4.9,
+    "lat": 39.621894,
+    "lng": -106.473281
+  },
+  {
+    "title": "Avon by Monica",
+    "city": "San Jose",
+    "state": "CA",
+    "website": "http://www.youravon.com/mpeach",
+    "rating": 5.0,
+    "lat": 37.2299753,
+    "lng": -121.8111761
+  },
+  {
+    "title": "Avon",
+    "city": "Stockton",
+    "state": "CA",
+    "lat": 37.9741595,
+    "lng": -121.2914475
+  },
+  {
+    "title": "The Pampered Chef",
+    "city": "Addison",
+    "state": "IL",
+    "website": "http://www.pamperedchef.com/",
+    "rating": 4.0,
+    "lat": 41.9296191,
+    "lng": -88.0451836
+  },
+  {
+    "title": "pampered chef",
+    "city": "Pasco",
+    "state": "WA",
+    "website": "https://www.pamperedchef.biz/grandmajudy",
+    "lat": 46.2817253,
+    "lng": -119.2171095
+  },
+  {
+    "title": "Shop Pampered Chef with Penney",
+    "city": "Fairfield",
+    "state": "CT",
+    "website": "https://www.pamperedchef.com/pws/chefpenney",
+    "rating": 5.0,
+    "lat": 41.1897644,
+    "lng": -73.2634745
+  },
+  {
+    "title": "Pampered Chef Independent Consultant",
+    "city": "Wilmington",
+    "state": "NC",
+    "lat": 34.0607978,
+    "lng": -77.9006085
+  },
+  {
+    "title": "Pampered Chef Indep Consultant Laura Hutchison",
+    "city": "Bartlett",
+    "state": "IL",
+    "website": "http://pamperedchef.com/pws/laurahutch",
+    "lat": 41.9656787,
+    "lng": -88.2035283
+  },
+  {
+    "title": "Julie Remer Pampered Chef",
+    "city": "Columbus",
+    "state": "OH",
+    "lat": 40.0466716,
+    "lng": -82.8530981
+  },
+  {
+    "title": "Kelly Taylor - Pampered Chef",
+    "city": "Grover",
+    "state": "MO",
+    "website": "https://www.pamperedchef.com/pws/ktaylor16",
+    "lat": 38.5712949,
+    "lng": -90.6171876
+  },
+  {
+    "title": "Pampered Chef with Mandy Heneisen",
+    "city": "Pacific",
+    "state": "MO",
+    "website": "https://www.pamperedchef.com/pws/mandyheneisen",
+    "rating": 5.0,
+    "lat": 38.4763702,
+    "lng": -90.7546549
+  },
+  {
+    "title": "Pampered chef",
+    "city": "Summerville",
+    "state": "GA",
+    "website": "https://www.pamperedchef.com/",
+    "rating": 5.0,
+    "lat": 34.4526982,
+    "lng": -85.3670108
+  },
+  {
+    "title": "Pampered Chef",
+    "city": "Erwin",
+    "state": "NC",
+    "website": "https://www.pamperedchef.com/pws/vhornsby",
+    "lat": 35.3289561,
+    "lng": -78.6650266
+  },
+  {
+    "title": "Nikki Ilgen, Independent Consultant for Pampered Chef",
+    "city": "Willmar",
+    "state": "MN",
+    "website": "https://www.pamperedchef.com/pws/nilgen",
+    "lat": 45.0965601,
+    "lng": -95.0450672
+  },
+  {
+    "title": "Vernae Larsen, independent pampered chef consultant",
+    "city": "Spicer",
+    "state": "MN",
+    "website": "http://www.pamperedchef.biz/vernaelarsen",
+    "lat": 45.2110864,
+    "lng": -95.0077452
+  },
+  {
+    "title": "Pampered Chef with Caryn Pollock, Independent Executive Consultant",
+    "city": "Doylestown",
+    "state": "PA",
+    "website": "http://www.pamperedchef.biz/carynpollock",
+    "rating": 5.0,
+    "lat": 40.3500142,
+    "lng": -75.0902367
+  },
+  {
+    "title": "Gretchen's Gourmet Pampered Chef",
+    "city": "Hockessin",
+    "state": "DE",
+    "website": "https://www.pamperedchef.biz/gretchensgourmet",
+    "lat": 39.7819492,
+    "lng": -75.6849146
+  },
+  {
+    "title": "Pampered Chef with Caryn Donah",
+    "city": "Clark",
+    "state": "NJ",
+    "website": "https://www.pamperedchef.com/pws/caryndonah",
+    "rating": 4.7,
+    "lat": 40.6375511,
+    "lng": -74.295889
+  },
+  {
+    "title": "Independent Consultant",
+    "city": "Huntington Station",
+    "state": "NY",
+    "website": "https://www.pamperedchef.com/pws/mmeringolo/",
+    "rating": 5.0,
+    "lat": 40.835042,
+    "lng": -73.4270715
+  },
+  {
+    "title": "Pampered Chef Independent Consulant Dara",
+    "city": "Barrington",
+    "state": "RI",
+    "website": "https://www.pamperedchef.com/pws/dcolacchio",
+    "lat": 41.7371485,
+    "lng": -71.2902858
+  },
+  {
+    "title": "Angela & Sam's Pampered Chef",
+    "city": "Morristown",
+    "state": "NJ",
+    "website": "https://www.pamperedchef.com/pws/klein17",
+    "lat": 40.801091,
+    "lng": -74.4947201
+  },
+  {
+    "title": "Nueva Imagen consultora Mary Kay",
+    "city": "Penitas",
+    "state": "TX",
+    "lat": 26.336972,
+    "lng": -98.4536665
+  },
+  {
+    "title": "Nicole Sanchez, Mary Kay IBC",
+    "city": "Parrottsville",
+    "state": "TN",
+    "website": "https://www.marykay.com/nicolesanchez",
+    "lat": 36.0036707,
+    "lng": -83.0344749
+  },
+  {
+    "title": "Jenn's Mary Kay",
+    "city": "Portland",
+    "state": "OR",
+    "website": "https://www.marykay.com/BeautifulYoubyJenn",
+    "lat": 45.4124767,
+    "lng": -122.7908925
+  },
+  {
+    "title": "Renee Robinson Independent Mary Kay Beauty Consultant",
+    "city": "Ontario",
+    "state": "CA",
+    "website": "http://marykay.com/reneerobinson2009",
+    "rating": 5.0,
+    "lat": 34.0659031,
+    "lng": -117.6346242
+  },
+  {
+    "title": "Mary Kay Beauty Consultant, Diana Lopez",
+    "city": "Laredo",
+    "state": "TX",
+    "website": "http://www.marykay.com/dianalopz",
+    "rating": 5.0,
+    "lat": 27.531862,
+    "lng": -99.4387933
+  },
+  {
+    "title": "Marykay beauty consultant",
+    "city": "Grand Prairie",
+    "state": "TX",
+    "website": "https://www.marykay.com/MAguilar9857",
+    "lat": 32.7037993,
+    "lng": -97.0576761
+  },
+  {
+    "title": "Agata Zienkiewicz Mary Kay consultant",
+    "city": "Elk Grove Village",
+    "state": "IL",
+    "website": "https://www.marykay.com/AZienkiewicz",
+    "rating": 5.0,
+    "lat": 42.023165,
+    "lng": -87.986105
+  },
+  {
+    "title": "Mary Kay Consultant",
+    "city": "Plainfield",
+    "state": "IL",
+    "website": "https://www.marykay.com/EIsac",
+    "rating": 5.0,
+    "lat": 41.6760816,
+    "lng": -88.20912
+  },
+  {
+    "title": "Yolanda Mary Kay Clean skin",
+    "city": "Norwalk",
+    "state": "CA",
+    "website": "https://www.marykay.com/YGalindo1",
+    "lat": 33.9170666,
+    "lng": -118.0725134
+  },
+  {
+    "title": "Lourdes consultora independiente mary kay",
+    "city": "Phoenix",
+    "state": "AZ",
+    "website": "https://www.marykay.com/MEspinoza2523",
+    "rating": 4.3,
+    "lat": 33.5726868,
+    "lng": -112.0887394
+  },
+  {
+    "title": "Stacy Welch, Mary Kay Beauty Consultant",
+    "city": "Lakewood",
+    "state": "CO",
+    "website": "https://www.marykay.com/swelch0518",
+    "rating": 5.0,
+    "lat": 39.6826916,
+    "lng": -105.0715418
+  },
+  {
+    "title": "Mary Kay consultant",
+    "city": "Greenwood",
+    "state": "SC",
+    "lat": 34.1635548,
+    "lng": -82.1109803
+  },
+  {
+    "title": "Sarah's Mary Kay",
+    "city": "Endicott",
+    "state": "NY",
+    "website": "http://www.marykay.com/SSimonds",
+    "rating": 5.0,
+    "lat": 42.1417749,
+    "lng": -76.0672706
+  },
+  {
+    "title": "Renee Schreiner, Independent Mary Kay Consultant",
+    "city": "Lakewood",
+    "state": "CO",
+    "website": "http://www.marykay.com/rschreiner",
+    "rating": 5.0,
+    "lat": 39.7435153,
+    "lng": -105.1403258
+  },
+  {
+    "title": "Adrianas Mary Kay",
+    "city": "Wenatchee",
+    "state": "WA",
+    "lat": 47.413288,
+    "lng": -120.302677
+  },
+  {
+    "title": "Michelle Willis Independent Mary Kay consultant",
+    "city": "Sandy",
+    "state": "UT",
+    "website": "https://marykay.com/Michellewillispink",
+    "lat": 40.5626642,
+    "lng": -111.8785171
+  },
+  {
+    "title": "Mary Kay beauty consultant Kristina Dunaway",
+    "city": "Hopkinsville",
+    "state": "KY",
+    "website": "https://www.marykay.com/kdunaway",
+    "lat": 36.8263214,
+    "lng": -87.4838235
+  },
+  {
+    "title": "Mary Kay Marthette Loney",
+    "city": "Nashville",
+    "state": "TN",
+    "website": "http://www.marykay.com/mloney1",
+    "lat": 36.2639405,
+    "lng": -86.7565653
+  },
+  {
+    "title": "Mary Kay Independent Beauty Consultant",
+    "city": "Carterville",
+    "state": "IL",
+    "website": "http://www.marykay.com/sabrina.stewart",
+    "rating": 5.0,
+    "lat": 37.7556053,
+    "lng": -89.0991168
+  },
+  {
+    "title": "Mary Kay consultant",
+    "city": "White Bluff",
+    "state": "TN",
+    "website": "https://www.marykay.com/jwaggoner4",
+    "lat": 36.1166781,
+    "lng": -87.2417657
+  },
+  {
+    "title": "Anna Cole - Mary Kay Independent Beauty consultant",
+    "city": "Arlington",
+    "state": "TX",
+    "website": "https://www.marykay.com/AnnaCole",
+    "rating": 5.0,
+    "lat": 32.6377395,
+    "lng": -97.1461994
+  },
+  {
+    "title": "MaryKayRichardson.com",
+    "city": "Nashville",
+    "state": "TN",
+    "website": "http://www.marykayrichardson.com/",
+    "rating": 1.0,
+    "lat": 36.2682014,
+    "lng": -86.7577845
+  },
+  {
+    "title": "Stephanie Renee presenting Mary Kay Skincare",
+    "city": "Indianapolis",
+    "state": "IN",
+    "website": "https://www.marykay.com/SkincareBabe",
+    "rating": 5.0,
+    "lat": 39.7787048,
+    "lng": -86.1543856
+  },
+  {
+    "title": "Ana's Mary Kay",
+    "city": "Gainesville",
+    "state": "GA",
+    "website": "https://www.marykay.com/AGomez21866",
+    "rating": 5.0,
+    "lat": 34.2615671,
+    "lng": -83.8447952
+  },
+  {
+    "title": "Jessica Harsh Mary Kay Store",
+    "city": "Saginaw",
+    "state": "TX",
+    "website": "https://www.marykay.com/jessicaharsh75",
+    "rating": 5.0,
+    "lat": 32.8666906,
+    "lng": -97.3854635
+  },
+  {
+    "title": "Mary Kay Cosmetics",
+    "city": "Harrisburg",
+    "state": "PA",
+    "website": "https://www.marykay.com/en-us/",
+    "lat": 40.2646997,
+    "lng": -76.8582052
+  },
+  {
+    "title": "Mary Kay by Maria Karantonis",
+    "city": "Hershey",
+    "state": "PA",
+    "website": "http://www.marykay.com/mkarantonis/en-us/",
+    "rating": 5.0,
+    "lat": 40.2945614,
+    "lng": -76.6424219
+  },
+  {
+    "title": "Mary Kay Eastern Branch",
+    "city": "Manchester",
+    "state": "PA",
+    "rating": 4.4,
+    "lat": 40.0326,
+    "lng": -76.739507
+  },
+  {
+    "title": "Mary Kay Tracy Potochny",
+    "city": "Hummelstown",
+    "state": "PA",
+    "website": "http://www.marykay.com/tpotochny",
+    "rating": 5.0,
+    "lat": 40.2433088,
+    "lng": -76.6868091
+  },
+  {
+    "title": "Mary Kay",
+    "city": "Harrisburg",
+    "state": "PA",
+    "website": "http://marykay.com/FMorales34",
+    "lat": 40.290886,
+    "lng": -76.8408107
+  },
+  {
+    "title": "Mary Kay Beauty Consultant - Loretta Long",
+    "city": "Bath",
+    "state": "PA",
+    "website": "http://www.marykay.com/LLong3",
+    "lat": 40.7315545,
+    "lng": -75.3978132
+  },
+  {
+    "title": "Marykay",
+    "city": "Perth Amboy",
+    "state": "NJ",
+    "lat": 40.5088188,
+    "lng": -74.2675368
+  },
+  {
+    "title": "Studio Pink (Mary Kay)",
+    "city": "Elizabeth",
+    "state": "NJ",
+    "website": "http://www.marykay.com/jwalker2019",
+    "rating": 5.0,
+    "lat": 40.6654492,
+    "lng": -74.2173137
+  },
+  {
+    "title": "Ashley Seymour Mary Kay Independent Beauty Consultant",
+    "city": "Sayre",
+    "state": "PA",
+    "website": "http://www.marykay.com/aseymour1",
+    "lat": 41.9765307,
+    "lng": -76.5236005
+  },
+  {
+    "title": "Mary kay",
+    "city": "Hardy",
+    "state": "KY",
+    "website": "http://www.marykay.com/AWolford",
+    "lat": 37.5920276,
+    "lng": -82.2482189
+  },
+  {
+    "title": "Mary Kay by Margot",
+    "city": "Cleveland",
+    "state": "OH",
+    "website": "https://www.marykay.com/amwahdan/en-US/",
+    "lat": 41.5041888,
+    "lng": -81.6908565
+  },
+  {
+    "title": "Denise Steele- Scentsy Fragrance Consultant",
+    "city": "Silverdale",
+    "state": "WA",
+    "website": "https://denisemompreneur.com/",
+    "rating": 4.8,
+    "lat": 47.6739635711963,
+    "lng": -122.71788402271845
+  },
+  {
+    "title": "Wickless Scents - Carol Hauch- Scentsy Fragrance",
+    "city": "Meridian",
+    "state": "ID",
+    "website": "http://www.carolbh.com/",
+    "rating": 5.0,
+    "lat": 43.643028871102594,
+    "lng": -116.37663312287278
+  },
+  {
+    "title": "Kristen Atkinson, Independent Scentsy Consultant-Tuttle, OK",
+    "city": "Tuttle",
+    "state": "OK",
+    "website": "http://kmascents.scentsy.us/",
+    "rating": 5.0,
+    "lat": 35.29093597271568,
+    "lng": -97.72656272315704
+  },
+  {
+    "title": "Scentsy Local Pickup - Meridian",
+    "city": "Meridian",
+    "state": "ID",
+    "website": "http://scentsy.com/",
+    "rating": 4.5,
+    "lat": 43.61032367110415,
+    "lng": -116.36243412287398
+  },
+  {
+    "title": "Scentsy Fragrance Consultant-Pam Lewing-Myers",
+    "city": "Kirbyville",
+    "state": "TX",
+    "website": "http://pamlewing.scentsy.us/",
+    "rating": 5.0,
+    "lat": 30.647335400000003,
+    "lng": -93.89556379999999
+  },
+  {
+    "title": "Scentsy Representative Debra Keresztes",
+    "city": "Pitt Meadows",
+    "state": "BC",
+    "website": "https://barbiegurl.scentsy.ca/",
+    "rating": 5.0,
+    "lat": 49.2226143,
+    "lng": -122.692978
+  },
+  {
+    "title": "Tricia Butler Independent Scentsy Consultant",
+    "city": "Okotoks",
+    "state": "AB",
+    "website": "https://trishthorsonbutler.scentsy.ca/",
+    "rating": 5.0,
+    "lat": 50.711296999999995,
+    "lng": -113.9788267
+  },
+  {
+    "title": "Sonya Pritchett-Arnason - Independent Scentsy Consultant",
+    "city": "Derby",
+    "state": "KS",
+    "website": "http://flameislame.com/",
+    "rating": 5.0,
+    "lat": 37.55479549999999,
+    "lng": -97.2336163
+  },
+  {
+    "title": "Kara Wilson, Independent Scentsy Consultant",
+    "city": "Brantford",
+    "state": "ON",
+    "website": "http://karawilson1.scentsy.ca/",
+    "rating": 5.0,
+    "lat": 43.180885171128395,
+    "lng": -80.25552302288979
+  },
+  {
+    "title": "Scentsy",
+    "city": "Meridian",
+    "state": "ID",
+    "website": "https://scentsy.com/?cid=googlemybusiness::cs041:g055:r1:april2024:c086:l104:a114:::googlebusinesswebsitebutton:::::ct172::::",
+    "rating": 4.4,
+    "lat": 43.61107997110416,
+    "lng": -116.36084752287391
+  },
+  {
+    "title": "WAXONWICKSOFF.COM INDEPENDENT SCENTSY CONSULTANT",
+    "city": "Sacramento",
+    "state": "CA",
+    "website": "http://waxonwicksoff.com/",
+    "rating": 4.6,
+    "lat": 38.6127795,
+    "lng": -121.40191790000002
+  },
+  {
+    "title": "Scentsy Independent Director",
+    "city": "Hamilton",
+    "state": "ON",
+    "website": "https://terriworron.scentsy.ca/",
+    "rating": 5.0,
+    "lat": 43.22531709999999,
+    "lng": -79.85020329999999
+  },
+  {
+    "title": "Rose-Anna's Independent Scentsy",
+    "city": "St Thomas",
+    "state": "ON",
+    "website": "https://rose-anna.scentsy.ca/",
+    "rating": 5.0,
+    "lat": 42.76226899999999,
+    "lng": -81.1914786
+  },
+  {
+    "title": "The Wickless Homestead- Independent Scentsy Consultant",
+    "city": "Franklin",
+    "state": "OH",
+    "website": "http://rachelepence.scentsy.us/",
+    "rating": 5.0,
+    "lat": 39.569869700000005,
+    "lng": -84.36096979999999
+  },
+  {
+    "title": "Sonya Bennett Independent Scentsy Consultant",
+    "city": "London",
+    "state": "ON",
+    "website": "https://sncsmellies.scentsy.ca/",
+    "rating": 5.0,
+    "lat": 42.969039699999996,
+    "lng": -81.2160136
+  },
+  {
+    "title": "Wickless Scents by Tammy Dempsey - Independent Scentsy Consultant",
+    "city": "Paris",
+    "state": "ON",
+    "website": "https://tammydempsey.scentsy.ca/",
+    "rating": 5.0,
+    "lat": 43.210699299999995,
+    "lng": -80.4044393
+  },
+  {
+    "title": "Ashley Webber Scentsy Fragrance Consultant",
+    "city": "Massillon",
+    "state": "OH",
+    "website": "https://ashleywebber.scentsy.us/",
+    "lat": 40.792156999999996,
+    "lng": -81.4598405
+  },
+  {
+    "title": "Donna Neumann - Independent Scentsy Goddess",
+    "city": "Village of Clarkston",
+    "state": "MI",
+    "website": "https://dneumann.scentsy.us/",
+    "rating": 5.0,
+    "lat": 42.706227299999995,
+    "lng": -83.3349977
+  },
+  {
+    "title": "Jennifer Noble independent Scentsy consultant",
+    "city": "Louisville",
+    "state": "OH",
+    "website": "http://www.jenminer91.scentsy.us/",
+    "lat": 40.817409399999995,
+    "lng": -81.22092289999999
+  },
+  {
+    "title": "Kaylan Jean Independent Scentsy Consultant",
+    "city": "London",
+    "state": "ON",
+    "website": "https://kaylanjean.scentsy.ca/",
+    "rating": 5.0,
+    "lat": 42.98914310000001,
+    "lng": -81.26224429999999
+  },
+  {
+    "title": "Scentsy Independent Consultant-Rose-Anna Awalt",
+    "city": "St Thomas",
+    "state": "ON",
+    "website": "https://rose-anna.scentsy.ca/",
+    "rating": 5.0,
+    "lat": 42.77151,
+    "lng": -81.166285
+  },
+  {
+    "title": "Amazing Scentsy with Kari",
+    "city": "Essex",
+    "state": "ON",
+    "website": "https://karibarnett.scentsy.ca/",
+    "rating": 5.0,
+    "lat": 42.115345999999995,
+    "lng": -82.7676855
+  },
+  {
+    "title": "Scentsy independent consultant Allison Darvis",
+    "city": "Alliance",
+    "state": "OH",
+    "website": "http://adarvis.scentsy.us/",
+    "lat": 40.871897399999995,
+    "lng": -81.16575420000001
+  },
+  {
+    "title": "Scentsy by Serafina Youssef",
+    "city": "LaSalle",
+    "state": "ON",
+    "website": "https://serafinay.scentsy.ca/",
+    "rating": 5.0,
+    "lat": 42.23943999999999,
+    "lng": -83.0134444
+  },
+  {
+    "title": "Crystal's Scentsy",
+    "city": "Marietta",
+    "state": "OH",
+    "website": "https://crystalmatthews.scentsy.us/",
+    "rating": 5.0,
+    "lat": 39.41900019999999,
+    "lng": -81.435388
+  },
+  {
+    "title": "Samantha Wolske, Independent Scentsy Consultant",
+    "city": "Bedford",
+    "state": "OH",
+    "website": "http://www.samanthawolske.scentsy.us/",
+    "lat": 41.4077876,
+    "lng": -81.54877599999999
+  },
+  {
+    "title": "Scentsy to the Core",
+    "city": "Eastlake",
+    "state": "OH",
+    "website": "http://briannacore.scentsy.us/",
+    "lat": 41.6441737,
+    "lng": -81.4393365
+  },
+  {
+    "title": "Melissa Hristovski, Independent Scentsy Consultant",
+    "city": "Ashland",
+    "state": "OH",
+    "rating": 5.0,
+    "lat": 40.780294100000006,
+    "lng": -82.2612367
+  },
+  {
+    "title": "The WicklessTwist on Fragrance: Melissa Gratz - Independent Scentsy Consultant",
+    "city": "South Lyon",
+    "state": "MI",
+    "website": "https://www.wicklesstwist.com/",
+    "rating": 5.0,
+    "lat": 42.458325699999996,
+    "lng": -83.55865299999999
+  },
+  {
+    "title": "Scent to You By Lindsey: Scentsy Independent Consultant",
+    "city": "Brantford",
+    "state": "ON",
+    "website": "http://scenttoyoubylindsey.scentsy.ca/",
+    "rating": 5.0,
+    "lat": 43.1066776,
+    "lng": -80.3004009
+  },
+  {
+    "title": "Scentsy with Jessica Hefton-Dillon",
+    "city": "Erie",
+    "state": "PA",
+    "website": "https://jessica579.scentsy.us/",
+    "rating": 5.0,
+    "lat": 42.0787269,
+    "lng": -80.1661945
+  },
+  {
+    "title": "MeltMyScents Scentsy Consultant",
+    "city": "Swansboro",
+    "state": "NC",
+    "website": "http://meltmyscents.com/",
+    "lat": 34.696708400000006,
+    "lng": -77.1479097
+  },
+  {
+    "title": "Shelby Dutton Independent Scentsy Consultant ( Your Crazy Scentsy Lady)",
+    "city": "Englewood",
+    "state": "OH",
+    "website": "https://shelbydutton.scentsy.us/",
+    "lat": 39.8805535,
+    "lng": -84.30271139999999
+  },
+  {
+    "title": "Becky Vassar Independent Scentsy Director",
+    "city": "Elyria",
+    "state": "OH",
+    "website": "http://beckyvassar.scentsy.us/",
+    "lat": 41.3996726,
+    "lng": -82.0754949
+  },
+  {
+    "title": "Scentsy",
+    "city": "Cincinnati",
+    "state": "OH",
+    "website": "http://jesshamby.scentsy.us/",
+    "rating": 5.0,
+    "lat": 39.274623299999995,
+    "lng": -84.57223599999999
+  },
+  {
+    "title": "Terri-Lynn Jeavons Independent Scentsy Consultant",
+    "city": "Brantford",
+    "state": "ON",
+    "website": "http://terrijeavons.scentsy.ca/",
+    "rating": 5.0,
+    "lat": 43.181481,
+    "lng": -80.2532054
+  },
+  {
+    "title": "Aysha Jossie Awan Scentsy Consultant",
+    "city": "Chatham",
+    "state": "ON",
+    "lat": 42.426585171186815,
+    "lng": -82.19742382291723
+  },
+  {
+    "title": "Gina Marioni - Scented By Gina - Independent Scentsy Consultant ️ ️ ️ ️ ️",
+    "city": "Cibolo",
+    "state": "TX",
+    "website": "http://www.scentedbygina.com/",
+    "rating": 5.0,
+    "lat": 29.5708411,
+    "lng": -98.2488201
+  },
+  {
+    "title": "The WicklessTwist on Fragrance: Melissa Gratz - Independent Scentsy Consultant",
+    "city": "South Lyon",
+    "state": "MI",
+    "website": "https://www.wicklesstwist.com/",
+    "rating": 5.0,
+    "lat": 42.4583257,
+    "lng": -83.558653
+  },
+  {
+    "title": "Lauren - Independent Scentsy Consultant",
+    "city": "Austin",
+    "state": "TX",
+    "website": "http://latelywithlaurenevans.com/",
+    "rating": 5.0,
+    "lat": 30.1779648,
+    "lng": -97.8383975
+  },
+  {
+    "title": "Christi Webb, Scentsy Independent Consultant",
+    "city": "Temecula",
+    "state": "CA",
+    "website": "https://christiwebb.scentsy.us/",
+    "rating": 5.0,
+    "lat": 33.5323773,
+    "lng": -117.1565979
+  },
+  {
+    "title": "Jessica Hallberg Independent Scentsy Director",
+    "city": "Oxford",
+    "state": "OH",
+    "website": "http://www.waxfam.com/",
+    "rating": 5.0,
+    "lat": 39.5069571,
+    "lng": -84.7450334
+  },
+  {
+    "title": "The Powers’ of Scent | Independent Scentsy Consultant",
+    "city": "Bakersfield",
+    "state": "CA",
+    "website": "http://scent2me.scentsy.us/",
+    "rating": 5.0,
+    "lat": 35.3621462,
+    "lng": -119.0418454
+  },
+  {
+    "title": "Melissa Hristovski, Independent Scentsy Consultant",
+    "city": "Ashland",
+    "state": "OH",
+    "rating": 5.0,
+    "lat": 40.7802941,
+    "lng": -82.2612367
+  },
+  {
+    "title": "Scentsy Independent Consultant-AngelieShrader",
+    "city": "Meridian",
+    "state": "ID",
+    "website": "http://www.livelifescented.com/",
+    "rating": 5.0,
+    "lat": 43.5751158,
+    "lng": -116.3897881
+  },
+  {
+    "title": "Scentsy Local Pickup - Meridian",
+    "city": "Meridian",
+    "state": "ID",
+    "website": "http://scentsy.com/",
+    "rating": 4.5,
+    "lat": 43.6103237,
+    "lng": -116.3598592
+  },
+  {
+    "title": "Samantha Wolske, Independent Scentsy Consultant",
+    "city": "Bedford",
+    "state": "OH",
+    "website": "http://www.samanthawolske.scentsy.us/",
+    "lat": 41.4077876,
+    "lng": -81.548776
+  },
+  {
+    "title": "Scentsy independent consultant Allison Darvis",
+    "city": "Alliance",
+    "state": "OH",
+    "website": "http://adarvis.scentsy.us/",
+    "lat": 40.8718974,
+    "lng": -81.1657542
+  },
+  {
+    "title": "Fallons scentsy sensations",
+    "city": "Saltsburg",
+    "state": "PA",
+    "website": "https://fallontaylor.scentsy.us/",
+    "rating": 5.0,
+    "lat": 40.5575837,
+    "lng": -79.3843903
+  },
+  {
+    "title": "Jamie Wright Independent Scentsy Consultant",
+    "city": "Kansas City",
+    "state": "MO",
+    "website": "https://jamwright.scentsy.us/",
+    "lat": 39.2056624,
+    "lng": -94.5888198
+  },
+  {
+    "title": "Shirley McCallum - Independent Scentsy Director",
+    "city": "Tacoma",
+    "state": "WA",
+    "website": "http://shirleymccallum.scentsy.us/",
+    "rating": 5.0,
+    "lat": 47.1315539,
+    "lng": -122.4044395
+  },
+  {
+    "title": "April Campana- Scentsy Fragrance Consultant",
+    "city": "Grantsburg",
+    "state": "WI",
+    "website": "https://aprilcampana.scentsy.us/join",
+    "rating": 5.0,
+    "lat": 45.7810894,
+    "lng": -92.5795603
+  },
+  {
+    "title": "Denise Steele- Scentsy Fragrance Consultant",
+    "city": "Silverdale",
+    "state": "WA",
+    "website": "https://denisemompreneur.com/",
+    "rating": 4.8,
+    "lat": 47.6739636,
+    "lng": -122.7153091
+  },
+  {
+    "title": "Scentsy - Northern Lights - Jannessa Luerra - Independent Scentsy Consultant",
+    "city": "Juneau",
+    "state": "AK",
+    "website": "https://thebest.scentsy.us/",
+    "lat": 58.401342,
+    "lng": -134.5493189
+  },
+  {
+    "title": "Deb Lynch Independent Scentsy Consultant Olney IL",
+    "city": "Olney",
+    "state": "IL",
+    "website": "https://crazyscentlady.com/",
+    "rating": 5.0,
+    "lat": 38.8102596,
+    "lng": -88.1315599
+  },
+  {
+    "title": "Kaylee Beebes Scents - Independent Scentsy SuperStar Consultant",
+    "city": "Milford",
+    "state": "UT",
+    "website": "http://kayleejbeebe.scentsy.us/",
+    "rating": 5.0,
+    "lat": 38.3669755,
+    "lng": -113.0127677
+  },
+  {
+    "title": "Pawsitively Scented, Randi Hedges Director with Scentsy",
+    "city": "Gahanna",
+    "state": "OH",
+    "website": "https://randi2017.scentsy.us/",
+    "rating": 5.0,
+    "lat": 40.0593673,
+    "lng": -82.8829236
+  },
+  {
+    "title": "Scentsy by Linda M. Doherty",
+    "city": "Northbridge",
+    "state": "MA",
+    "website": "https://lindamdoherty.scentsy.us/",
+    "lat": 42.1540818,
+    "lng": -71.64778
+  },
+  {
+    "title": "Laurie Berard Independent Scentsy Consultant -True Fragrance",
+    "city": "Bennington",
+    "state": "VT",
+    "website": "https://truefragrance.scentsy.us/",
+    "rating": 5.0,
+    "lat": 42.8852025,
+    "lng": -73.1159188
+  },
+  {
+    "title": "Wickfree Kerri ~ Independent Scentsy Consultant",
+    "city": "Concord",
+    "state": "NC",
+    "website": "https://wickfreekerri.scentsy.us/",
+    "rating": 5.0,
+    "lat": 35.4445379,
+    "lng": -80.7500005
+  },
+  {
+    "title": "Scentsy with Carrie Williams",
+    "city": "Moneta",
+    "state": "VA",
+    "website": "https://loveforscent.scentsy.us/",
+    "rating": 5.0,
+    "lat": 37.065856,
+    "lng": -79.6719422
+  },
+  {
+    "title": "Scentsy Independent Consultant- Stacey",
+    "city": "Elliston",
+    "state": "VA",
+    "website": "https://scentsandsensability.scentsy.us/",
+    "lat": 37.1743048,
+    "lng": -80.2348307
+  },
+  {
+    "title": "Bridget Devine Independent Scentsy Consultant",
+    "city": "Maynard",
+    "state": "MA",
+    "website": "https://bridgetdevine.scentsy.us/",
+    "rating": 5.0,
+    "lat": 42.4387557,
+    "lng": -71.4363603
+  },
+  {
+    "title": "Sonya Pritchett-Arnason - Independent Scentsy Consultant",
+    "city": "Derby",
+    "state": "KS",
+    "website": "http://flameislame.com/",
+    "rating": 5.0,
+    "lat": 37.5547955,
+    "lng": -97.2336163
+  },
+  {
+    "title": "Jacqui Schlotterbeck Independent Scentsy Director",
+    "city": "Central City",
+    "state": "IA",
+    "website": "https://jacquischlotterbeck.scentsy.us/",
+    "rating": 4.0,
+    "lat": 42.2076464,
+    "lng": -91.5292197
+  },
+  {
+    "title": "Lisa Kirby Independent Scentsy Director",
+    "city": "Coggon",
+    "state": "IA",
+    "website": "http://lisakirby.scentsy.us/",
+    "lat": 42.282693,
+    "lng": -91.529538
+  },
+  {
+    "title": "Scentsy Independent Consultant Mindy Carr",
+    "city": "Manchester",
+    "state": "IA",
+    "website": "http://mindycarr.scentsy.us/",
+    "lat": 42.4986125,
+    "lng": -91.4621029
+  },
+  {
+    "title": "Samantha Romero Independent Scentsy Consultant",
+    "city": "Wahiawa",
+    "state": "HI",
+    "website": "http://www.samantharomero.scentsy.us/",
+    "rating": 5.0,
+    "lat": 21.4918198,
+    "lng": -158.0667268
+  },
+  {
+    "title": "Independent Scentsy consultant Jessica Cuevas",
+    "city": "Rosamond",
+    "state": "CA",
+    "website": "http://www.cuevasjess.scentsy.us/",
+    "rating": 5.0,
+    "lat": 34.8635112,
+    "lng": -118.1507254
+  },
+  {
+    "title": "Stephanie Beasley - Independent Scentsy Consultant",
+    "city": "Cordova",
+    "state": "TN",
+    "website": "https://sbeasley.scentsy.us/",
+    "rating": 5.0,
+    "lat": 35.1586935,
+    "lng": -89.7404271
+  },
+  {
+    "title": "Independent Scentsy Consultant, Robyn Hazelwood",
+    "city": "Ashburn",
+    "state": "VA",
+    "website": "https://sweetrld.scentsy.us/",
+    "lat": 39.0291743,
+    "lng": -77.4780268
+  },
+  {
+    "title": "Mike and Becky Scentsy independent consultant",
+    "city": "Glendale",
+    "state": "AZ",
+    "website": "https://azparties.scentsy.us/",
+    "lat": 33.6658149,
+    "lng": -112.1855918
+  },
+  {
+    "title": "Scentsy",
+    "city": "Meridian",
+    "state": "ID",
+    "website": "https://scentsy.com/?cid=googlemybusiness::cs041:g055:r1:april2024:c086:l104:a114:::googlebusinesswebsitebutton:::::ct172::::",
+    "rating": 4.4,
+    "lat": 43.61108,
+    "lng": -116.3582726
+  },
+  {
+    "title": "Annmarie Independent Scentsy Consultant",
+    "city": "Wahiawa",
+    "state": "HI",
+    "website": "http://www.annmariecornier.scentsy.us/",
+    "lat": 21.531952,
+    "lng": -158.0171712
+  },
+  {
+    "title": "Scentsy Wickless Candles",
+    "city": "Honolulu",
+    "state": "HI",
+    "lat": 21.3599274,
+    "lng": -157.917431
+  },
+  {
+    "title": "Carrie’s independent scentsy",
+    "city": "Bloomsburg",
+    "state": "PA",
+    "lat": 41.0323371,
+    "lng": -76.3348431
+  },
+  {
+    "title": "Becky Vassar Independent Scentsy Director",
+    "city": "Elyria",
+    "state": "OH",
+    "website": "http://beckyvassar.scentsy.us/",
+    "lat": 41.3996726,
+    "lng": -82.0754949
+  },
+  {
+    "title": "Amy Osborne--Independent Scentsy Consultant",
+    "city": "Cypress",
+    "state": "TX",
+    "website": "https://amyosborne.scentsy.us/",
+    "rating": 5.0,
+    "lat": 29.9824043,
+    "lng": -95.6928272
+  },
+  {
+    "title": "Anne Howell Scentsy My Sita Marie Independent Scentsy Consultant",
+    "city": "Katy",
+    "state": "TX",
+    "website": "https://mysitamarie.scentsy.us/",
+    "rating": 5.0,
+    "lat": 29.8634521,
+    "lng": -95.693412
+  },
+  {
+    "title": "Alicia Regnault - Independent Scentsy Consultant",
+    "city": "Gas City",
+    "state": "IN",
+    "website": "https://alicia-regnault.scentsy.us/",
+    "rating": 5.0,
+    "lat": 40.4878972,
+    "lng": -85.6109807
+  },
+  {
+    "title": "Karlee Neiman - Independent Scentsy Consultant",
+    "city": "Filion",
+    "state": "MI",
+    "website": "https://karneiman.scentsy.com/",
+    "lat": 43.878074,
+    "lng": -82.8710289
+  },
+  {
+    "title": "Megan McDonald Independent Scentsy Consultant",
+    "city": "Canton Township",
+    "state": "MI",
+    "website": "https://mcnoodle.scentsy.us/",
+    "lat": 42.3164698,
+    "lng": -83.448215
+  },
+  {
+    "title": "Carola Russell- Independent Scentsy Consultant",
+    "city": "Bradenton",
+    "state": "FL",
+    "website": "https://carolarussell.scentsy.us/party/17442242/august-online-orders",
+    "rating": 4.9,
+    "lat": 27.5029008,
+    "lng": -82.3996967
+  },
+  {
+    "title": "Janey Angus, Independent Scentsy Consultant",
+    "city": "Seminole",
+    "state": "FL",
+    "website": "http://janeyangus.com/",
+    "lat": 27.8493351,
+    "lng": -82.7611596
+  },
+  {
+    "title": "Independent Scentsy Director",
+    "city": "Loxahatchee",
+    "state": "FL",
+    "website": "https://wax2themax.scentsy.us/",
+    "lat": 26.749851,
+    "lng": -80.279548
+  },
+  {
+    "title": "Scentsy with Jessica Hefton-Dillon",
+    "city": "Erie",
+    "state": "PA",
+    "website": "https://jessica579.scentsy.us/",
+    "rating": 5.0,
+    "lat": 42.0787269,
+    "lng": -80.1661945
+  },
+  {
+    "title": "Erica Stiles - Independent Scentsy Consultant",
+    "city": "Port Allegany",
+    "state": "PA",
+    "website": "https://ericastiles19.scentsy.us/",
+    "lat": 41.8127462,
+    "lng": -78.2820089
+  },
+  {
+    "title": "Natalie Young Independent Scentsy Consultant",
+    "city": "Hornell",
+    "state": "NY",
+    "website": "http://natalieyoung.scentsy.us/",
+    "lat": 42.3344399,
+    "lng": -77.6663281
+  },
+  {
+    "title": "Nelly and Jose Scentsy Independent Star Consultants",
+    "city": "Houston",
+    "state": "TX",
+    "website": "https://nellyjose.scentsy.us/",
+    "lat": 29.6454532,
+    "lng": -95.2359462
+  },
+  {
+    "title": "Christy Spencer - Independent Scentsy Consultant",
+    "city": "Radcliff",
+    "state": "KY",
+    "website": "https://cspencer.scentsy.us/",
+    "lat": 37.8069065,
+    "lng": -85.9121586
+  },
+  {
+    "title": "Independent Scentsy Consultant Jessica Maurer",
+    "city": "Cumberland Furnace",
+    "state": "TN",
+    "website": "https://jessicamaurer1984.scentsy.us/",
+    "rating": 3.7,
+    "lat": 36.3502504,
+    "lng": -87.5316843
+  },
+  {
+    "title": "Scentsy Independent Consultant - Erin Kellems",
+    "city": "Owensboro",
+    "state": "KY",
+    "website": "http://www.ifusion.scentsy.us/",
+    "lat": 37.7388831,
+    "lng": -87.0649642
+  },
+  {
+    "title": "Julie Gazley, Independant Scentsy Consultant",
+    "city": "Huntingdon",
+    "state": "TN",
+    "website": "https://juliegazley.scentsy.us/",
+    "rating": 5.0,
+    "lat": 36.004267,
+    "lng": -88.4287179
+  },
+  {
+    "title": "Scentsy Director-Jaana Neunteufel ️ ️ ️ ️",
+    "city": "West Chicago",
+    "state": "IL",
+    "website": "http://jaana.scentsy.us/",
+    "rating": 5.0,
+    "lat": 41.8867558,
+    "lng": -88.1868108
+  },
+  {
+    "title": "Scentsy by Shannon Independent Consultant",
+    "city": "Knoxville",
+    "state": "TN",
+    "website": "https://shannonrosa99.scentsy.us/",
+    "lat": 36.0315136,
+    "lng": -83.9179984
+  },
+  {
+    "title": "Magical Scents by Karina (Independent Scentsy Consultant)",
+    "city": "Princeton",
+    "state": "IN",
+    "website": "http://magicalscentsbykarina.com/",
+    "rating": 5.0,
+    "lat": 38.3491758,
+    "lng": -87.5706547
+  },
+  {
+    "title": "Scentsy Independent Sales Consultant",
+    "city": "Georgetown",
+    "state": "IN",
+    "lat": 38.2437573,
+    "lng": -86.0511387
+  },
+  {
+    "title": "Kelly Nunley your Independent Scentsy Consultant",
+    "city": "Grayson",
+    "state": "KY",
+    "website": "https://kellynunley.scentsy.us/",
+    "rating": 5.0,
+    "lat": 38.3336607,
+    "lng": -82.956268
+  },
+  {
+    "title": "Mary Kay Independent Beauty Consultant Corrina Warwick",
+    "city": "Marshall",
+    "state": "WI",
+    "website": "https://www.marykay.com/cwarwick",
+    "rating": 4.8,
+    "lat": 43.17819,
+    "lng": -89.064677
+  },
+  {
+    "title": "Mary Kay Cosmetics Kathleen Koclanes",
+    "city": "Madison",
+    "state": "WI",
+    "website": "https://www.marykay.com/kkoclanes",
+    "rating": 5.0,
+    "lat": 43.067746,
+    "lng": -89.3134139
+  },
+  {
+    "title": "Mary Kay Independent Beauty Consultant, Courtney Penhallegon",
+    "city": "Mesa",
+    "state": "AZ",
+    "lat": 33.4396945,
+    "lng": -111.6288624
+  },
+  {
+    "title": "Cassie Johnson, Mary Kay Independent Beauty Consultant",
+    "city": "Coon Rapids",
+    "state": "MN",
+    "website": "http://www.healthyskinplan.com/",
+    "rating": 5.0,
+    "lat": 45.1906532,
+    "lng": -93.2905282
+  },
+  {
+    "title": "Mary Kay Independent Beauty Consultant",
+    "city": "Houston",
+    "state": "TX",
+    "website": "https://marykayapp.page.link/ttMwTa9sRP7vvN9z6",
+    "lat": 29.7371985,
+    "lng": -95.5740058
+  },
+  {
+    "title": "Renee Robinson Independent Mary Kay Beauty Consultant",
+    "city": "Ontario",
+    "state": "CA",
+    "website": "http://marykay.com/reneerobinson2009",
+    "rating": 5.0,
+    "lat": 34.0659031,
+    "lng": -117.6346242
+  },
+  {
+    "title": "Mary Kay Senior Independent Beauty Consultant",
+    "city": "Glendale",
+    "state": "AZ",
+    "website": "https://marykay.com/bsismilich",
+    "lat": 33.6176282,
+    "lng": -112.1895195
+  },
+  {
+    "title": "Mary Kay Independent Sales Director - Alesia C. Dickerson",
+    "city": "Estero",
+    "state": "FL",
+    "rating": 5.0,
+    "lat": 26.4359752,
+    "lng": -81.8044027
+  },
+  {
+    "title": "Mary Kay Independent Beauty Consultant",
+    "city": "Oakley",
+    "state": "CA",
+    "lat": 37.9919733,
+    "lng": -121.7257367
+  },
+  {
+    "title": "Jane Geen | Mary Kay Independent Beauty Consultant",
+    "city": "Highland",
+    "state": "MI",
+    "website": "http://www.marykay.com/JGeen",
+    "rating": 5.0,
+    "lat": 42.6481929,
+    "lng": -83.6753573
+  },
+  {
+    "title": "Anna Cole - Mary Kay Independent Beauty consultant",
+    "city": "Arlington",
+    "state": "TX",
+    "website": "https://www.marykay.com/AnnaCole",
+    "rating": 5.0,
+    "lat": 32.6377395,
+    "lng": -97.1461994
+  },
+  {
+    "title": "MaryKay Beauty Consultant",
+    "city": "Alsea",
+    "state": "OR",
+    "website": "http://www.marykay.com/kimpruitt2014",
+    "lat": 44.3828115,
+    "lng": -123.5976271
+  },
+  {
+    "title": "Mary Kay",
+    "city": "West Haven",
+    "state": "CT",
+    "website": "http://www.marykay.com/mthomas81559",
+    "rating": 5.0,
+    "lat": 41.269412,
+    "lng": -72.9486955
+  },
+  {
+    "title": "Mary Kay",
+    "city": "Manchester",
+    "state": "NH",
+    "website": "https://www.marykayintouch.com/jparris",
+    "lat": 42.9887009,
+    "lng": -71.4477237
+  },
+  {
+    "title": "Mary Kay Cosmetics",
+    "city": "Melrose",
+    "state": "MA",
+    "website": "http://www.marykay.com/carolmouradian",
+    "lat": 42.4661758,
+    "lng": -71.0611516
+  },
+  {
+    "title": "Robin Janetos, Mary Kay Independent Beauty Consultant",
+    "city": "Dover",
+    "state": "NH",
+    "website": "http://www.marykay.com/rjanetos",
+    "lat": 43.2393532,
+    "lng": -70.9154462
+  },
+  {
+    "title": "Mary Kay by Allosene",
+    "city": "Brooklyn",
+    "state": "NY",
+    "website": "https://www.marykay.com/allosene",
+    "rating": 4.9,
+    "lat": 40.6699639,
+    "lng": -73.9428018
+  },
+  {
+    "title": "Mary Kay Independent Beauty Consultant",
+    "city": "Browns Mills",
+    "state": "NJ",
+    "website": "http://www.marykay.com/Lkorch",
+    "lat": 39.9870754,
+    "lng": -74.5803561
+  },
+  {
+    "title": "Marykay",
+    "city": "Farmingdale",
+    "state": "NY",
+    "rating": 1.0,
+    "lat": 40.73508,
+    "lng": -73.433555
+  },
+  {
+    "title": "Marykay",
+    "city": "Perth Amboy",
+    "state": "NJ",
+    "lat": 40.5088188,
+    "lng": -74.2675368
+  },
+  {
+    "title": "Mary Kay consultora independiente en Boston Massachusetts",
+    "city": "Revere",
+    "state": "MA",
+    "lat": 42.4123054,
+    "lng": -71.0185175
+  },
+  {
+    "title": "Mary Kay",
+    "city": "Lempster",
+    "state": "NH",
+    "website": "http://www.marykay.com/hcarter811",
+    "lat": 43.2322586,
+    "lng": -72.175465
+  },
+  {
+    "title": "Mary Kay Beauty Consultant-Jessica Black",
+    "city": "Maywood",
+    "state": "IL",
+    "website": "http://marykay.com/JBcares4u",
+    "rating": 5.0,
+    "lat": 41.8680021,
+    "lng": -87.8421533
+  },
+  {
+    "title": "Mary Kay Consultant",
+    "city": "Plainfield",
+    "state": "IL",
+    "website": "https://www.marykay.com/EIsac",
+    "rating": 5.0,
+    "lat": 41.6760816,
+    "lng": -88.20912
+  },
+  {
+    "title": "Agata Zienkiewicz Mary Kay consultant",
+    "city": "Elk Grove Village",
+    "state": "IL",
+    "website": "https://www.marykay.com/AZienkiewicz",
+    "rating": 5.0,
+    "lat": 42.023165,
+    "lng": -87.986105
+  },
+  {
+    "title": "Trish Pacheco - Mary Kay Independent Beauty Consultant",
+    "city": "Tucson",
+    "state": "AZ",
+    "website": "https://www.marykay.com/misstrishfig",
+    "rating": 5.0,
+    "lat": 32.2698526,
+    "lng": -110.9258483
+  },
+  {
+    "title": "Mary Kay Independent Beauty Consultant, Chelsey DeBruin-Colbert",
+    "city": "Queen Creek",
+    "state": "AZ",
+    "website": "http://www.marykay.com/cdebruin",
+    "rating": 5.0,
+    "lat": 33.2508207,
+    "lng": -111.6416781
+  },
+  {
+    "title": "Veronica Boe, Mary Kay, Independent Sales Director",
+    "city": "Vallejo",
+    "state": "CA",
+    "website": "http://www.marykay.com/vboe",
+    "rating": 5.0,
+    "lat": 38.0732082,
+    "lng": -122.2362454
+  },
+  {
+    "title": "Patricia's Mary Kay Skin Care For All",
+    "city": "Sunol",
+    "state": "CA",
+    "website": "http://www.marykay.com/pmcpicard",
+    "rating": 5.0,
+    "lat": 37.5574795,
+    "lng": -121.8845549
+  },
+  {
+    "title": "Marykay Independent Consulrant",
+    "city": "San Antonio",
+    "state": "TX",
+    "website": "https://marykay.com/CarolBurton9876",
+    "lat": 29.4566962,
+    "lng": -98.6447359
+  },
+  {
+    "title": "Mary Kay by Margot",
+    "city": "Cleveland",
+    "state": "OH",
+    "website": "https://www.marykay.com/amwahdan/en-US/",
+    "lat": 41.5041888,
+    "lng": -81.6908565
+  },
+  {
+    "title": "Mary Kay Independent Sales Director & Beauty Consultant - Jenny Ludke",
+    "city": "Flat Rock",
+    "state": "MI",
+    "website": "http://www.marykay.com/jmaitland1",
+    "rating": 5.0,
+    "lat": 42.0969409,
+    "lng": -83.3339954
+  },
+  {
+    "title": "MaryKay Independent Beauty Consultant",
+    "city": "Jasper",
+    "state": "TX",
+    "website": "https://www.marykay.com/Amcmillan759",
+    "lat": 30.9043305,
+    "lng": -94.1110158
+  },
+  {
+    "title": "Olga Morrow - Mary Kay Independent Beauty Consultant",
+    "city": "Fort Worth",
+    "state": "TX",
+    "website": "https://www.marykay.com/omorrow",
+    "rating": 5.0,
+    "lat": 32.7352689,
+    "lng": -97.5070916
+  },
+  {
+    "title": "Mary Kay Global Headquarters",
+    "city": "Addison",
+    "state": "TX",
+    "website": "http://www.marykay.com/",
+    "rating": 4.8,
+    "lat": 32.9713745,
+    "lng": -96.8227005
+  },
+  {
+    "title": "Marykay beauty consultant",
+    "city": "Grand Prairie",
+    "state": "TX",
+    "website": "https://www.marykay.com/MAguilar9857",
+    "lat": 32.7037993,
+    "lng": -97.0576761
+  },
+  {
+    "title": "Elizabeth reyes Consultora independiente de mary Kay",
+    "city": "Oakland",
+    "state": "CA",
+    "website": "http://www.marykay.com/EReyes333",
+    "lat": 37.7391081,
+    "lng": -122.2016088
+  },
+  {
+    "title": "Heather Richardson, Mary Kay Independent Beauty Consultant",
+    "city": "Manito",
+    "state": "IL",
+    "website": "http://www.marykay.com/hrichardson",
+    "lat": 40.5146439,
+    "lng": -89.789151
+  },
+  {
+    "title": "Mary Kay Beauty Consultant",
+    "city": "Van Buren Township",
+    "state": "MI",
+    "website": "http://www.marykay.com/DDBrooks927",
+    "lat": 42.2411833,
+    "lng": -83.4705004
+  },
+  {
+    "title": "KTD, Independent Mary Kay Beauty Consultant",
+    "city": "Lancaster",
+    "state": "NY",
+    "website": "https://www.mkunitapp.com/ktd/",
+    "lat": 42.9023686,
+    "lng": -78.6572709
+  },
+  {
+    "title": "Krystyl Sank, Independent beauty consultant with Mary Kay cosmetics",
+    "city": "Arcade",
+    "state": "NY",
+    "website": "http://www.marykay.com/kwachowski",
+    "lat": 42.6142302,
+    "lng": -78.342822
+  },
+  {
+    "title": "Mary Kay, Independent Beauty Consultant",
+    "city": "Owasso",
+    "state": "OK",
+    "lat": 36.3017738,
+    "lng": -95.8146267
+  },
+  {
+    "title": "Anny Randel - Independent Mary Kay Consultant",
+    "city": "Denver",
+    "state": "CO",
+    "lat": 39.7494774,
+    "lng": -104.9974085
+  },
+  {
+    "title": "Mary Kay Independent Beauty Consultant",
+    "city": "Las Vegas",
+    "state": "NV",
+    "website": "https://www.marykay.com/shariunderhill",
+    "lat": 36.288491,
+    "lng": -115.221427
+  },
+  {
+    "title": "Jessica Galasso, Mary Kay Independent Beauty Consultant",
+    "city": "Ballston Lake",
+    "state": "NY",
+    "website": "http://marykay.com/jessgalasso",
+    "lat": 42.9310338,
+    "lng": -73.8207239
+  },
+  {
+    "title": "Mary Kay Beauty Consultant Debbie Reedy",
+    "city": "Village of Clarkston",
+    "state": "MI",
+    "lat": 42.7369911,
+    "lng": -83.3652693
+  },
+  {
+    "title": "Elma Balboa, Mary Kay Independent Beauty Consultant",
+    "city": "El Paso",
+    "state": "TX",
+    "website": "http://www.marykay.com/ebalboa",
+    "rating": 4.4,
+    "lat": 31.9394192,
+    "lng": -106.4466486
+  },
+  {
+    "title": "Stephanie - Mary Kay Independent Beauty Consultant",
+    "city": "Spring Hill",
+    "state": "FL",
+    "website": "https://www.marykay.com/SteffeRae",
+    "lat": 28.5017444,
+    "lng": -82.5081182
+  },
+  {
+    "title": "Mary Kay Beauty Consultant, Diane Carbajal",
+    "city": "Chapin",
+    "state": "SC",
+    "website": "https://www.marykay.com/DianesBeautyBar",
+    "rating": 5.0,
+    "lat": 34.1787825,
+    "lng": -81.2725893
+  },
+  {
+    "title": "Mary Kay consultant",
+    "city": "Greenwood",
+    "state": "SC",
+    "lat": 34.1635548,
+    "lng": -82.1109803
+  },
+  {
+    "title": "Chris Cartaya, Mary Kay Independent Beauty Consultant",
+    "city": "Valrico",
+    "state": "FL",
+    "website": "http://www.marykay.com/ccartaya",
+    "rating": 5.0,
+    "lat": 27.9480967,
+    "lng": -82.2657775
+  },
+  {
+    "title": "MaryKay Inc.",
+    "city": "Lorton",
+    "state": "VA",
+    "website": "http://www.marykay.com/angelia",
+    "rating": 5.0,
+    "lat": 38.7100045,
+    "lng": -77.2127515
+  },
+  {
+    "title": "Mary Kay Beauty Consultant Claudia Flores. Hablo Español",
+    "city": "Berwyn",
+    "state": "IL",
+    "website": "https://www.marykay.com/cfloresbeautyselfcare",
+    "rating": 5.0,
+    "lat": 41.8639676,
+    "lng": -87.7934227
+  },
+  {
+    "title": "Elizabeth Alvarez Mary Kay Consultant",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://www.marykay.com/yalvarez2",
+    "rating": 5.0,
+    "lat": 41.9535217,
+    "lng": -87.75161
+  },
+  {
+    "title": "Elizabeth Mendez Mary Kay",
+    "city": "Berwyn",
+    "state": "IL",
+    "website": "https://www.marykay.com/EMendezRivera",
+    "lat": 41.846062,
+    "lng": -87.7965476
+  },
+  {
+    "title": "Mary Kay Independent Consultant",
+    "city": "Olathe",
+    "state": "KS",
+    "website": "http://www.marykay.com/fphillips2",
+    "lat": 38.9062094,
+    "lng": -94.7557614
+  },
+  {
+    "title": "MARY KAY",
+    "city": "Falls Church",
+    "state": "VA",
+    "website": "https://www.marykay.com/",
+    "rating": 5.0,
+    "lat": 38.8535692,
+    "lng": -77.1342699
+  },
+  {
+    "title": "Mary Kay Sales Director, Anna Sempeles",
+    "city": "Fairfax",
+    "state": "VA",
+    "lat": 38.8133814,
+    "lng": -77.2755647
+  },
+  {
+    "title": "Mary Kay Sales Director, Marty Beach",
+    "city": "Fairfax",
+    "state": "VA",
+    "website": "https://www.marykay.com/mbeach",
+    "lat": 38.8082349,
+    "lng": -77.3108362
+  },
+  {
+    "title": "Mary Kay Cosmetics, Lori Hawthorne, - Sales Director",
+    "city": "St Paul",
+    "state": "MN",
+    "website": "https://www.marykay.com/lhawthorne",
+    "lat": 44.9393739,
+    "lng": -93.0085218
+  },
+  {
+    "title": "Mary Kay Independent Beauty Consultant",
+    "city": "Carterville",
+    "state": "IL",
+    "website": "http://www.marykay.com/sabrina.stewart",
+    "rating": 5.0,
+    "lat": 37.7556053,
+    "lng": -89.0991168
+  },
+  {
+    "title": "Becky Conway - Independent Beauty Consultant - Mary Kay",
+    "city": "Conroe",
+    "state": "TX",
+    "website": "http://www.marykay.com/becky.conway",
+    "rating": 5.0,
+    "lat": 30.2321118,
+    "lng": -95.5102173
+  },
+  {
+    "title": "Cordell Harding Mary Kay Independent Consultant",
+    "city": "Atlanta",
+    "state": "GA",
+    "website": "http://marykay.com/charding777",
+    "lat": 33.6754323,
+    "lng": -84.5127885
+  },
+  {
+    "title": "Mary Kay Lupita Rabago",
+    "city": "Ontario",
+    "state": "CA",
+    "website": "http://www.marykay.com/grabago",
+    "rating": 1.0,
+    "lat": 34.0643905,
+    "lng": -117.6529903
+  },
+  {
+    "title": "Diane Kuciel, Mary Kay Beauty Consultant",
+    "city": "Hamburg",
+    "state": "NY",
+    "website": "http://www.marykay.com/dianekuciel",
+    "lat": 42.7701837,
+    "lng": -78.8678744
+  },
+  {
+    "title": "Mary Kay Independent Beauty Consultant",
+    "city": "Shenandoah Junction",
+    "state": "WV",
+    "website": "http://www.marykay.com/kaz",
+    "lat": 39.3925993,
+    "lng": -77.843272
+  },
+  {
+    "title": "Teresa Bailey Independent Mary Kay Consultant",
+    "city": "Portage",
+    "state": "MI",
+    "website": "https://www.marykay.com/tbailey82022",
+    "rating": 5.0,
+    "lat": 42.2081727,
+    "lng": -85.621344
+  },
+  {
+    "title": "Kimberly Brown Independent Mary Kay Consultant",
+    "city": "Kalamazoo",
+    "state": "MI",
+    "lat": 42.2809759,
+    "lng": -85.5958292
+  },
+  {
+    "title": "Laura A Mary Kay Ind Beauty Consultant",
+    "city": "Cranberry Twp",
+    "state": "PA",
+    "website": "https://www.marykay.com/Lasseff",
+    "lat": 40.7197732,
+    "lng": -80.1156177
+  },
+  {
+    "title": "Independent Beauty Consultant - Rachael Nowicki",
+    "city": "Mayville",
+    "state": "NY",
+    "website": "http://www.marykay.com/rnowicki",
+    "lat": 42.2909126,
+    "lng": -79.4652278
+  },
+  {
+    "title": "ZAYRA'S MARY KAY - Independent Beauty Consultant",
+    "city": "Smithfield",
+    "state": "VA",
+    "website": "https://www.marykay.com/zayra",
+    "rating": 1.0,
+    "lat": 36.9749297,
+    "lng": -76.6114631
+  },
+  {
+    "title": "Marykay independent consultant",
+    "city": "Buffalo",
+    "state": "NY",
+    "website": "http://www.marykay.com/ebonyRobinson",
+    "rating": 1.0,
+    "lat": 42.8989201,
+    "lng": -78.831128
+  },
+  {
+    "title": "Ashley Seymour Mary Kay Independent Beauty Consultant",
+    "city": "Sayre",
+    "state": "PA",
+    "website": "http://www.marykay.com/aseymour1",
+    "lat": 41.9765307,
+    "lng": -76.5236005
+  },
+  {
+    "title": "Mary Kay Beauty Consultant Gena Caldwell",
+    "city": "Sarasota",
+    "state": "FL",
+    "website": "http://marykay.com/gcaldwell9",
+    "rating": 5.0,
+    "lat": 27.309518,
+    "lng": -82.5176346
+  },
+  {
+    "title": "Independent Sales director, Mary Kay Cosmetics Kathy McGinnis",
+    "city": "Fort Myers",
+    "state": "FL",
+    "website": "http://www.marykay.com/kmcginnis1",
+    "lat": 26.5712462,
+    "lng": -81.8690489
+  },
+  {
+    "title": "Mary Kay Independant Beauty Consultant Celeste Clutter",
+    "city": "Cape Coral",
+    "state": "FL",
+    "website": "http://marykay.com/celestec",
+    "lat": 26.6132885,
+    "lng": -81.9700614
+  },
+  {
+    "title": "Independent Sales Director, Mary Kay Jeri-Lynn Arocho",
+    "city": "Cape Coral",
+    "state": "FL",
+    "website": "http://www.marykay.com/jarocho",
+    "lat": 26.6307166,
+    "lng": -81.9957177
+  },
+  {
+    "title": "Debbie Thomas Mary Kay Beauty Consultant",
+    "city": "Fort Myers",
+    "state": "FL",
+    "website": "https://www.marykay.com/dthomas926",
+    "lat": 26.558462,
+    "lng": -81.8533244
+  },
+  {
+    "title": "Mary Jo Pressman Mary Kay Independent Sales Director",
+    "city": "Sarasota",
+    "state": "FL",
+    "website": "https://www.marykay.com/mpressman1",
+    "lat": 27.3237591,
+    "lng": -82.4247939
+  },
+  {
+    "title": "Mary Kay Cosmetics Regina McDermott",
+    "city": "Sarasota",
+    "state": "FL",
+    "website": "https://www.marykay.com/rmcdermott/en-us/",
+    "rating": 5.0,
+    "lat": 27.3117007,
+    "lng": -82.4941959
+  },
+  {
+    "title": "Jenn's Mary Kay",
+    "city": "Portland",
+    "state": "OR",
+    "website": "https://www.marykay.com/BeautifulYoubyJenn",
+    "lat": 45.4124767,
+    "lng": -122.7908925
+  },
+  {
+    "title": "Stephanie Alvarez Independent Beauty Consultant with Mary Kay",
+    "city": "Clackamas",
+    "state": "OR",
+    "website": "http://www.marykay.com/stephaniealvarez",
+    "lat": 45.4104903,
+    "lng": -122.5771974
+  },
+  {
+    "title": "Belinda MaryKay Blush & Bloom",
+    "city": "South Gate",
+    "state": "CA",
+    "website": "http://marykay.com/bmorales429",
+    "rating": 5.0,
+    "lat": 33.9527282,
+    "lng": -118.2291569
+  },
+  {
+    "title": "Mari's Viveros Cosmetics",
+    "city": "Los Angeles",
+    "state": "CA",
+    "website": "https://t.me/mk04m",
+    "rating": 5.0,
+    "lat": 34.0459875,
+    "lng": -118.2062537
+  },
+  {
+    "title": "Cecilia Chavez Mary Kay Consultant",
+    "city": "Downey",
+    "state": "CA",
+    "website": "https://www.ceciliachavezmarykayconsultant.store/",
+    "lat": 33.948483,
+    "lng": -118.122353
+  },
+  {
+    "title": "Jill Adair, Independent Mary Kay Sales director",
+    "city": "Hickory",
+    "state": "NC",
+    "website": "http://www.marykay.com/jadair2",
+    "rating": 5.0,
+    "lat": 35.7187696,
+    "lng": -81.3530312
+  },
+  {
+    "title": "Mary Kay Independent Beauty Consultant, Gabriela Gavidia",
+    "city": "Katy",
+    "state": "TX",
+    "website": "http://www.marykay.com/ggavidia",
+    "rating": 5.0,
+    "lat": 29.7358061,
+    "lng": -95.7347952
+  },
+  {
+    "title": "Anastasia Szymkowski Mary Kay Independent Consultant",
+    "city": "Fort Worth",
+    "state": "TX",
+    "website": "https://www.marykay.com/amoore94",
+    "lat": 32.8761227,
+    "lng": -97.4272141
+  },
+  {
+    "title": "Brittany Wirt, Mary Kay Independent Beauty Consultant",
+    "city": "The Colony",
+    "state": "TX",
+    "website": "http://www.marykay.com/brittanywirt",
+    "rating": 5.0,
+    "lat": 33.0552681,
+    "lng": -96.8589094
+  },
+  {
+    "title": "MARY KAY INDEPENDENT BEAUTY CONSULTANT CLAUDIA PREZA",
+    "city": "Granbury",
+    "state": "TX",
+    "website": "https://www.marykay.com/CPreza",
+    "rating": 5.0,
+    "lat": 32.4900204,
+    "lng": -97.8361686
+  },
+  {
+    "title": "Alicia Hollenbeck Mary Kay Ind. Beauty Consultant",
+    "city": "Evans Mills",
+    "state": "NY",
+    "website": "http://www.marykay.com/alicia.hollenbeck",
+    "lat": 44.093866,
+    "lng": -75.7998475
+  },
+  {
+    "title": "Mary Kay Consultant",
+    "city": "Turner",
+    "state": "ME",
+    "website": "http://www.marykay.com/tbaker80997",
+    "rating": 5.0,
+    "lat": 44.2538225,
+    "lng": -70.2537226
+  },
+  {
+    "title": "Mary Kay consultant",
+    "city": "White Bluff",
+    "state": "TN",
+    "website": "https://www.marykay.com/jwaggoner4",
+    "lat": 36.1166781,
+    "lng": -87.2417657
+  },
+  {
+    "title": "Mary Kay Consultant Marti Frailey",
+    "city": "La Grange",
+    "state": "KY",
+    "website": "http://www.marykay.com/mfrailey",
+    "rating": 5.0,
+    "lat": 38.4026758,
+    "lng": -85.3528127
+  },
+  {
+    "title": "Mary Kay Marthette Loney",
+    "city": "Nashville",
+    "state": "TN",
+    "website": "http://www.marykay.com/mloney1",
+    "lat": 36.2639405,
+    "lng": -86.7565653
+  },
+  {
+    "title": "Mary Kay beauty consultant Kristina Dunaway",
+    "city": "Hopkinsville",
+    "state": "KY",
+    "website": "https://www.marykay.com/kdunaway",
+    "lat": 36.8263214,
+    "lng": -87.4838235
+  },
+  {
+    "title": "Mary Kay sales Director, Delmy Alemán",
+    "city": "Antioch",
+    "state": "TN",
+    "website": "https://www.marykay.com/daleman",
+    "lat": 36.0305064,
+    "lng": -86.589611
+  },
+  {
+    "title": "Auburnee Stanley Independent Sales Director w/Mary Kay",
+    "city": "Athens",
+    "state": "TN",
+    "website": "https://marykay.com/astanley0812",
+    "rating": 5.0,
+    "lat": 35.4371855,
+    "lng": -84.6397988
+  },
+  {
+    "title": "Kathryn Miller, Independent Mary Kay Beauty Consultant",
+    "city": "Powder Springs",
+    "state": "GA",
+    "website": "http://www.marykay.com/notetokathryn",
+    "rating": 5.0,
+    "lat": 33.9323157,
+    "lng": -84.6881861
+  },
+  {
+    "title": "Mary Kay Cosmetics Consultant Chrissie White",
+    "city": "Columbus",
+    "state": "IN",
+    "website": "https://www.marykay.com/dreamerachiever/en-us",
+    "lat": 39.1447952,
+    "lng": -85.8032329
+  },
+  {
+    "title": "Nicole Jones Mary Kay Independent Beauty Consultant",
+    "city": "Little Elm",
+    "state": "TX",
+    "website": "http://www.marykay.com/njones14613",
+    "rating": 5.0,
+    "lat": 33.1992056,
+    "lng": -96.891933
+  },
+  {
+    "title": "Mary Kay",
+    "city": "Dallas",
+    "state": "TX",
+    "website": "http://marykay.com/Bwilliams91167",
+    "rating": 5.0,
+    "lat": 32.9140456,
+    "lng": -96.7357278
+  },
+  {
+    "title": "Mary Kay Consultant-Teena Kistner",
+    "city": "Bowling Green",
+    "state": "OH",
+    "website": "http://www.marykay.com/teenakistner",
+    "rating": 5.0,
+    "lat": 41.4009421,
+    "lng": -83.718689
+  },
+  {
+    "title": "Mary Kay",
+    "city": "Perrysburg",
+    "state": "OH",
+    "website": "http://marykay.com/%20janetengler",
+    "lat": 41.5761606,
+    "lng": -83.529492
+  },
+  {
+    "title": "MARIE'S MARY KAY",
+    "city": "Ferguson",
+    "state": "KY",
+    "website": "https://marykay.com/MMcGowan2",
+    "lat": 37.0710896,
+    "lng": -84.5983516
+  },
+  {
+    "title": "Lynne Gouge, Mary Kay Independent Beauty Consultant",
+    "city": "Yuma",
+    "state": "AZ",
+    "website": "http://www.marykay.com/lgouge",
+    "rating": 5.0,
+    "lat": 32.6596906,
+    "lng": -114.4112035
+  },
+  {
+    "title": "Mary Kay Inc And Independent Consultant",
+    "city": "Helotes",
+    "state": "TX",
+    "website": "https://www.marykay.com/DMARLETTE",
+    "lat": 29.5872772,
+    "lng": -98.706232
+  },
+  {
+    "title": "Mary Kay Aimee M. Garza beauty consultant",
+    "city": "San Antonio",
+    "state": "TX",
+    "rating": 5.0,
+    "lat": 29.6755688,
+    "lng": -98.4576808
+  },
+  {
+    "title": "Dawn Mallery, Sales Director with Mary Kay",
+    "city": "Covington",
+    "state": "KY",
+    "website": "http://www.marykay.com/dmallery",
+    "lat": 39.0849155,
+    "lng": -84.5196793
+  },
+  {
+    "title": "Maria DiCaro, Independent Mary Kay Beauty Consultant",
+    "city": "South Weber",
+    "state": "UT",
+    "website": "https://www.marykay.com/mdicaro",
+    "lat": 41.1473885,
+    "lng": -111.971462
+  },
+  {
+    "title": "Christine McKnight, Mary Kay, Beauty Consultant, Rep, Star Team Builder",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "website": "https://www.marykay.com/cmcknight70",
+    "lat": 38.9044164,
+    "lng": -104.7081875
+  },
+  {
+    "title": "Stacy Welch, Mary Kay Beauty Consultant",
+    "city": "Lakewood",
+    "state": "CO",
+    "website": "https://www.marykay.com/swelch0518",
+    "rating": 5.0,
+    "lat": 39.6826916,
+    "lng": -105.0715418
+  },
+  {
+    "title": "Mary Kay- Roz Okeke Independent Skincare Consultant",
+    "city": "Rockford",
+    "state": "IL",
+    "website": "https://www.marykay.com/rozokeke",
+    "rating": 5.0,
+    "lat": 42.3132448,
+    "lng": -89.0247788
+  },
+  {
+    "title": "Mary kay",
+    "city": "Clayton",
+    "state": "NM",
+    "website": "http://www.marykay.com/astory1",
+    "lat": 36.4481868,
+    "lng": -103.1728619
+  },
+  {
+    "title": "Mary Kay, Independent Beauty Consultant Terri Karle",
+    "city": "Springtown",
+    "state": "TX",
+    "website": "http://www.marykay.com/tkarle",
+    "rating": 5.0,
+    "lat": 32.9027278,
+    "lng": -97.7463174
+  },
+  {
+    "title": "Latisha Price, Mary Kay Skincare Expert",
+    "city": "Biloxi",
+    "state": "MS",
+    "website": "http://www.marykay.com/latishalewisprice",
+    "rating": 5.0,
+    "lat": 30.3948833,
+    "lng": -88.887988
+  },
+  {
+    "title": "MARY KAY Independant SR. SALES DIRECTOR LISA THOMPSON, DESTIN, FL",
+    "city": "Destin",
+    "state": "FL",
+    "website": "https://marykay.com/LThompson",
+    "lat": 30.4027554,
+    "lng": -86.4589325
+  },
+  {
+    "title": "Mary Kay Cosmetics Online",
+    "city": "Dothan",
+    "state": "AL",
+    "website": "https://www.marykay.com/vspeights",
+    "lat": 31.2409394,
+    "lng": -85.4137152
+  },
+  {
+    "title": "Mary Kay",
+    "city": "Crestview",
+    "state": "FL",
+    "website": "http://www.marykay.com/vlake",
+    "lat": 30.730449,
+    "lng": -86.5551776
+  },
+  {
+    "title": "Samantha Tate-Alan Mary Kay Independent Beauty Consultant",
+    "city": "Midland City",
+    "state": "AL",
+    "website": "https://www.marykay.com/STate-Alan",
+    "lat": 31.281734,
+    "lng": -85.5273209
+  },
+  {
+    "title": "Mary Kay Cosmetics",
+    "city": "Elk Grove Village",
+    "state": "IL",
+    "lat": 42.0046442,
+    "lng": -87.9812225
+  },
+  {
+    "title": "Independent Mary Kay Consultant",
+    "city": "Galesburg",
+    "state": "IL",
+    "website": "http://www.marykay.com/vdowers",
+    "rating": 5.0,
+    "lat": 40.9743818,
+    "lng": -90.3703115
+  },
+  {
+    "title": "Lynnise Finney Brown Mary Kay Sales Director Beauty Consultant",
+    "city": "Saucier",
+    "state": "MS",
+    "website": "http://www.marykay.com/lynnisebfit",
+    "lat": 30.5626411,
+    "lng": -89.1654097
+  },
+  {
+    "title": "Sarah's Mary Kay",
+    "city": "Endicott",
+    "state": "NY",
+    "website": "http://www.marykay.com/SSimonds",
+    "rating": 5.0,
+    "lat": 42.1417749,
+    "lng": -76.0672706
+  },
+  {
+    "title": "Mary Kay Beauty Consultant - Loretta Long",
+    "city": "Bath",
+    "state": "PA",
+    "website": "http://www.marykay.com/LLong3",
+    "lat": 40.7315545,
+    "lng": -75.3978132
+  },
+  {
+    "title": "Mary Kay Associate",
+    "city": "Syracuse",
+    "state": "NY",
+    "website": "https://www.marykay.com/en-us/find-an-independent-beauty-consultant/profile",
+    "lat": 43.0495879,
+    "lng": -76.1851776
+  },
+  {
+    "title": "Mary Kay Trippe, MA, LPC",
+    "city": "Traverse City",
+    "state": "MI",
+    "website": "http://www.bay-area-counseling.com/MeetourProviders.en.html",
+    "lat": 44.7320042,
+    "lng": -85.6168722
+  },
+  {
+    "title": "Mary Kay By Danielle Curry",
+    "city": "Liberty Lake",
+    "state": "WA",
+    "website": "https://www.marykay.com/DCURRY92",
+    "lat": 47.6702245,
+    "lng": -117.0867292
+  },
+  {
+    "title": "Shalynne Barr Integrated Creations, LLC and Mary Kay Independent Beauty Consultant",
+    "city": "Novi",
+    "state": "MI",
+    "website": "http://www.marykay.com/shalynnebarr",
+    "rating": 5.0,
+    "lat": 42.4891016,
+    "lng": -83.4652785
+  },
+  {
+    "title": "Shelley Bottiaux Independent Mary Kay Director",
+    "city": "Spanish Fort",
+    "state": "AL",
+    "website": "http://www.marykay.com/sbottiaux",
+    "lat": 30.681403,
+    "lng": -87.8101609
+  },
+  {
+    "title": "Mary Kay On A Budget",
+    "city": "Houston",
+    "state": "TX",
+    "website": "http://www.marykay.com/ybejaran",
+    "rating": 5.0,
+    "lat": 29.6115895,
+    "lng": -95.2221642
+  },
+  {
+    "title": "Rita Montesano Mary Kay Consultora de Belleza",
+    "city": "Katy",
+    "state": "TX",
+    "website": "https://www.marykay.com/rmontesano/es-US/",
+    "lat": 29.7910992,
+    "lng": -95.7984849
+  },
+  {
+    "title": "Becky L. Spaeth, Mary Kay Independent Sales Director",
+    "city": "San Antonio",
+    "state": "TX",
+    "website": "http://www.marykay.com/bspaeth",
+    "rating": 4.8,
+    "lat": 29.3620962,
+    "lng": -98.4746899
+  },
+  {
+    "title": "Consultora de Belleza Mary Kay",
+    "city": "West Orange",
+    "state": "NJ",
+    "website": "https://www.marykay.com/APerez78731",
+    "lat": 40.7877555,
+    "lng": -74.2258897
+  },
+  {
+    "title": "Savela Mary kay Beauty",
+    "city": "Corona",
+    "state": "CA",
+    "website": "https://marykay.com/sandravela",
+    "rating": 5.0,
+    "lat": 33.7178686,
+    "lng": -117.4233619
+  },
+  {
+    "title": "Lori Isaacson-Mary Kay Independent Beauty Consultant",
+    "city": "Plantation",
+    "state": "FL",
+    "website": "http://www.marykay.com/lori1",
+    "rating": 5.0,
+    "lat": 26.1422528,
+    "lng": -80.2392708
+  },
+  {
+    "title": "Catalina Muro, Mary Kay Beauty Consultant",
+    "city": "Miami",
+    "state": "FL",
+    "website": "http://www.marykay.com/cmuro",
+    "lat": 25.8128795,
+    "lng": -80.3658178
+  },
+  {
+    "title": "Mary Kay",
+    "city": "Coral Gables",
+    "state": "FL",
+    "website": "http://marykay.com/epadron1",
+    "lat": 25.7542806,
+    "lng": -80.2590518
+  },
+  {
+    "title": "Mary Kay Beauty Consultant-Nichole Fleming",
+    "city": "Fort Wayne",
+    "state": "IN",
+    "lat": 41.0966427,
+    "lng": -85.054931
+  },
+  {
+    "title": "Emily Comisford Mary Kay Consultant",
+    "city": "Nashport",
+    "state": "OH",
+    "website": "https://www.marykay.com/ecomisford",
+    "rating": 5.0,
+    "lat": 40.0912496,
+    "lng": -82.207238
+  },
+  {
+    "title": "Mary Kay cosmetics",
+    "city": "Dayton",
+    "state": "OH",
+    "lat": 39.6801599,
+    "lng": -84.21417
+  },
+  {
+    "title": "Mary Kay by Abby",
+    "city": "Goshen",
+    "state": "OH",
+    "website": "https://www.marykay.com/aheist",
+    "rating": 1.0,
+    "lat": 39.2179835,
+    "lng": -84.1298053
+  },
+  {
+    "title": "Mary Kay by Maria Karantonis",
+    "city": "Hershey",
+    "state": "PA",
+    "website": "http://www.marykay.com/mkarantonis/en-us/",
+    "rating": 5.0,
+    "lat": 40.2945614,
+    "lng": -76.6424219
+  },
+  {
+    "title": "Mary Kay Cosmetics",
+    "city": "Philadelphia",
+    "state": "PA",
+    "website": "http://www.marykay.com/oohlalagorgeous",
+    "lat": 40.0004242,
+    "lng": -75.1574971
+  },
+  {
+    "title": "Mary Kay Tracy Potochny",
+    "city": "Hummelstown",
+    "state": "PA",
+    "website": "http://www.marykay.com/tpotochny",
+    "rating": 5.0,
+    "lat": 40.2433088,
+    "lng": -76.6868091
+  },
+  {
+    "title": "Mary Kay Cosmetics",
+    "city": "Harrisburg",
+    "state": "PA",
+    "website": "https://www.marykay.com/en-us/",
+    "lat": 40.2646997,
+    "lng": -76.8582052
+  },
+  {
+    "title": "Mary kay Products by Yamiliz G",
+    "city": "Lancaster",
+    "state": "PA",
+    "website": "https://www.marykay.com/YGerena",
+    "lat": 40.024808,
+    "lng": -76.315348
+  },
+  {
+    "title": "Monica and Mary Kay",
+    "city": "District Heights",
+    "state": "MD",
+    "website": "http://www.marykay.com/Mspann",
+    "lat": 38.8617797,
+    "lng": -76.8785143
+  },
+  {
+    "title": "Mary Kay",
+    "city": "Harrisburg",
+    "state": "PA",
+    "website": "http://marykay.com/FMorales34",
+    "lat": 40.290886,
+    "lng": -76.8408107
+  },
+  {
+    "title": "MARY KAY - Indep Beauty Consultant/Sales Director)",
+    "city": "Manahawkin",
+    "state": "NJ",
+    "website": "http://www.marykay.com/Sandee",
+    "lat": 39.7057263,
+    "lng": -74.2809544
+  },
+  {
+    "title": "Mary Kay cosmetics and skin care",
+    "city": "Wellsville",
+    "state": "OH",
+    "website": "http://www.marykay.com/bobbibryson",
+    "lat": 40.6645282,
+    "lng": -80.6418181
+  },
+  {
+    "title": "Mary Kay Independent Sales Director Terriann P Bonfini",
+    "city": "Bellaire",
+    "state": "OH",
+    "website": "https://www.marykay.com/tbonfini",
+    "lat": 40.0316743,
+    "lng": -80.7557804
+  }
+]

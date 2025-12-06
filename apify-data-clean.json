@@ -1,0 +1,1739 @@
+{
+  "company": "Multiple",
+  "total_records": 393,
+  "valid_records": 204,
+  "skipped_records": 189,
+  "success_rate": "51.9%",
+  "consultants": [
+    {
+      "first_name": "Jerk",
+      "last_name": "King",
+      "city": "Far Rockaway",
+      "state": "NY",
+      "company": "Multiple",
+      "rating": 4.9
+    },
+    {
+      "first_name": "Adrienne's",
+      "last_name": "Nyc",
+      "city": "Queens",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://adriennes-nyc.com/",
+      "rating": 4.7
+    },
+    {
+      "first_name": "Bungalow",
+      "last_name": "Bar",
+      "city": "Queens",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://bungalowbarny.com/",
+      "rating": 4.4
+    },
+    {
+      "first_name": "Halalxtreme",
+      "last_name": "Grill",
+      "city": "Queens",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://halalxtremegrill.dine.online/",
+      "rating": 4.7
+    },
+    {
+      "first_name": "Lena",
+      "last_name": "Trattoria",
+      "city": "Bronx",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://www.lenatrattoria.com/",
+      "rating": 4.7
+    },
+    {
+      "first_name": "Moon",
+      "last_name": "Restaurant",
+      "city": "East Elmhurst",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://mooncheeserestaurant.shop/",
+      "rating": 4.8
+    },
+    {
+      "first_name": "Riviera",
+      "last_name": "Maya",
+      "city": "Astoria",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://rivieramayarestaurant.com/",
+      "rating": 4.6
+    },
+    {
+      "first_name": "Cheli",
+      "last_name": "Flushing",
+      "city": "Queens",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://www.che-li.com/",
+      "rating": 4.6
+    },
+    {
+      "first_name": "Pranam",
+      "last_name": "Bar",
+      "city": "Queens",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://pranamrestaurant.com/",
+      "rating": 4.9
+    },
+    {
+      "first_name": "Hongdae",
+      "last_name": "Restaurant",
+      "city": "Flushing",
+      "state": "NY",
+      "company": "Multiple",
+      "rating": 4.8
+    },
+    {
+      "first_name": "Pine",
+      "last_name": "Restaurant",
+      "city": "Bronx",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://fjpine.com/",
+      "rating": 4.5
+    },
+    {
+      "first_name": "Riviera",
+      "last_name": "Ristorante",
+      "city": "Whitestone",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://www.rivieraristorante.com/",
+      "rating": 4.6
+    },
+    {
+      "first_name": "Bistro",
+      "last_name": "Restaurant",
+      "city": "East Elmhurst",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://bistroeloise.com/",
+      "rating": 4.6
+    },
+    {
+      "first_name": "Dakota's",
+      "last_name": "Cove",
+      "city": "Bronx",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://dakotasonthecove.com/",
+      "rating": 4.6
+    },
+    {
+      "first_name": "Porto",
+      "last_name": "Salvo",
+      "city": "Bronx",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://portosalvonyc.com/?utm_source=google",
+      "rating": 4.6
+    },
+    {
+      "first_name": "Zhumi",
+      "last_name": "Restaurant",
+      "city": "Whitestone",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://www.zhumimex.com/",
+      "rating": 4.8
+    },
+    {
+      "first_name": "Kaizen:",
+      "last_name": "Restaurant",
+      "city": "Queens",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://www.nyckaizen.com/",
+      "rating": 4.6
+    },
+    {
+      "first_name": "Afrospice",
+      "last_name": "Bistro",
+      "city": "Bronx",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://afrospice.ca/menu/",
+      "rating": 4.8
+    },
+    {
+      "first_name": "Jeunju",
+      "last_name": "Food",
+      "city": "Flushing",
+      "state": "NY",
+      "company": "Multiple",
+      "rating": 4.7
+    },
+    {
+      "first_name": "Jägerhaus",
+      "last_name": "Restaurant",
+      "city": "Flushing",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://jagerhausnyc.com/?utm_campaign=gmb",
+      "rating": 4.5
+    },
+    {
+      "first_name": "Parrilla",
+      "last_name": "Restaurant",
+      "city": "Bronx",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://parrillaaztecacibaenarestaurant.com/",
+      "rating": 4.4
+    },
+    {
+      "first_name": "The",
+      "last_name": "Restaurant",
+      "city": "Rockaway Park",
+      "state": "NY",
+      "company": "Multiple",
+      "rating": 4.4
+    },
+    {
+      "first_name": "La",
+      "last_name": "Playa",
+      "city": "Far Rockaway",
+      "state": "NY",
+      "company": "Multiple",
+      "rating": 4.1
+    },
+    {
+      "first_name": "Home",
+      "last_name": "Kitchen",
+      "city": "New York",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://www.homekitchennyc.com/",
+      "rating": 4.5
+    },
+    {
+      "first_name": "Mission",
+      "last_name": "Ceviche",
+      "city": "New York",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://www.missionceviche.com/",
+      "rating": 4.6
+    },
+    {
+      "first_name": "Inca",
+      "last_name": "Astoria",
+      "city": "Astoria",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://incapaisaastoria.com/",
+      "rating": 4.7
+    },
+    {
+      "first_name": "The",
+      "last_name": "Blvd",
+      "city": "Bronx",
+      "state": "NY",
+      "company": "Multiple",
+      "rating": 4.9
+    },
+    {
+      "first_name": "Boqueria",
+      "last_name": "Ues",
+      "city": "New York",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://boqueriarestaurant.com/location/nyc/ues/?utm_source=organic&utm_medium=gmb",
+      "rating": 4.6
+    },
+    {
+      "first_name": "Suyo",
+      "last_name": "Gastrofusion",
+      "city": "Bronx",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://suyonyc.com/",
+      "rating": 4.5
+    },
+    {
+      "first_name": "Wicked",
+      "last_name": "Bronx",
+      "city": "Bronx",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://www.wickedwolfbronx.com/",
+      "rating": 4.5
+    },
+    {
+      "first_name": "Jacques",
+      "last_name": "Brasserie",
+      "city": "New York",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://www.jacquesbrasserie.com/",
+      "rating": 4.5
+    },
+    {
+      "first_name": "Thep",
+      "last_name": "Restaurant",
+      "city": "New York",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://www.thepnewyork.com/",
+      "rating": 4.7
+    },
+    {
+      "first_name": "La",
+      "last_name": "Palma",
+      "city": "Far Rockaway",
+      "state": "NY",
+      "company": "Multiple",
+      "rating": 4.2
+    },
+    {
+      "first_name": "Super",
+      "last_name": "Queens",
+      "city": "Arverne",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://superburritonyc.com/",
+      "rating": 4.4
+    },
+    {
+      "first_name": "Lex",
+      "last_name": "Restaurant",
+      "city": "New York",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://lexrestaurant.com/",
+      "rating": 4.6
+    },
+    {
+      "first_name": "Truth",
+      "last_name": "Astoria",
+      "city": "Astoria",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://www.truthastoria.com/",
+      "rating": 4.5
+    },
+    {
+      "first_name": "Cafe",
+      "last_name": "Triskell",
+      "city": "Long Island City",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://www.cafetriskell.co/",
+      "rating": 4.6
+    },
+    {
+      "first_name": "Kim's",
+      "last_name": "Avon",
+      "city": "Candler",
+      "state": "NC",
+      "company": "Multiple",
+      "website": "http://www.youravon.com/kjamison",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Cindy's",
+      "last_name": "Center",
+      "city": "Rancho Cucamonga",
+      "state": "CA",
+      "company": "Multiple",
+      "website": "https://www.avon.com/repstore/cindygoulet?dc_url=%2Fbrochure-second.html%3Feh%3DY&rep=cindygoulet",
+      "rating": 4.8
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Center",
+      "city": "Suwanee",
+      "state": "GA",
+      "company": "Multiple",
+      "website": "http://www.avon.com/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Terri's",
+      "last_name": "More",
+      "city": "Easley",
+      "state": "SC",
+      "company": "Multiple",
+      "website": "http://www.youravon.com/tkay",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Conyers",
+      "last_name": "Gifts",
+      "city": "Conyers",
+      "state": "GA",
+      "company": "Multiple",
+      "website": "http://www.avon.com/?rep=vsingleton",
+      "rating": 4.8
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Tabares",
+      "city": "Lawrenceville",
+      "state": "GA",
+      "company": "Multiple",
+      "website": "https://www.avon.com/es/brochure?rep=discounts",
+      "rating": 4.8
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Poindexter",
+      "city": "Greenville",
+      "state": "SC",
+      "company": "Multiple"
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Boutique",
+      "city": "Fountain Inn",
+      "state": "SC",
+      "company": "Multiple",
+      "rating": 4.0
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Concerige",
+      "city": "Marietta",
+      "state": "GA",
+      "company": "Multiple",
+      "website": "http://www.youravon.com/cherlyncooper",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Valeryn",
+      "city": "Loganville",
+      "state": "GA",
+      "company": "Multiple",
+      "website": "http://www.youravon.com/atabares",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Lynn's",
+      "last_name": "Avon",
+      "city": "Walland",
+      "state": "TN",
+      "company": "Multiple",
+      "website": "https://www.avon.com/?rep=lynnmyoungen"
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Cynthia",
+      "city": "Denver",
+      "state": "NC",
+      "company": "Multiple",
+      "website": "https://www.avon.com/repstore/cynthiag?rep=cynthiag",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Center",
+      "city": "North Olmsted",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "https://www.avon.com/repstore/jenniferjoseph?rep=jenniferjoseph",
+      "rating": 4.3
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Shop",
+      "city": "Avon",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "http://www.avonboot.com/",
+      "rating": 4.7
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Mart",
+      "city": "Avon",
+      "state": "OH",
+      "company": "Multiple",
+      "rating": 4.6
+    },
+    {
+      "first_name": "Amazon",
+      "last_name": "Avon",
+      "city": "Avon",
+      "state": "OH",
+      "company": "Multiple",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mrs",
+      "last_name": "Store",
+      "city": "Lorain",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "https://www.avon.com/repstore/dfairbee"
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Centre",
+      "city": "Avon",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "http://www.avonvisioncentre.com/?utm_source=NEXT&utm_medium=Google_website",
+      "rating": 4.9
+    },
+    {
+      "first_name": "Gotcha",
+      "last_name": "Avon",
+      "city": "Avon",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "https://www.gotchacovered.com/avon/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Care",
+      "city": "Avon Lake",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "http://www.clevelandeyeclinic.com/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Mart",
+      "city": "Avon Lake",
+      "state": "OH",
+      "company": "Multiple",
+      "rating": 3.6
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Liquor",
+      "city": "Avon Lake",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "https://www.ohlq.com/locations/avon-lake-deli-carryout-33501-lake-rd",
+      "rating": 4.7
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Bader",
+      "city": "Avon",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "http://avoneyedesign.com/",
+      "rating": 4.9
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Products",
+      "city": "Missouri City",
+      "state": "TX",
+      "company": "Multiple",
+      "website": "https://avonbeautytoday.com/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Deli",
+      "city": "Avon",
+      "state": "CO",
+      "company": "Multiple",
+      "website": "http://www.avonbakeryanddeli.com/",
+      "rating": 4.3
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Liquor",
+      "city": "Avon",
+      "state": "CO",
+      "company": "Multiple",
+      "website": "http://www.avon-liquor.com/",
+      "rating": 4.5
+    },
+    {
+      "first_name": "Giovanny",
+      "last_name": "Alexander",
+      "city": "Avon",
+      "state": "CO",
+      "company": "Multiple",
+      "rating": 2.4
+    },
+    {
+      "first_name": "Valleygirl",
+      "last_name": "Avon",
+      "city": "Avon",
+      "state": "CO",
+      "company": "Multiple",
+      "website": "http://www.valleygirlboutique.com/",
+      "rating": 4.7
+    },
+    {
+      "first_name": "Beaver",
+      "last_name": "Center",
+      "city": "Avon",
+      "state": "CO",
+      "company": "Multiple",
+      "website": "http://www.beavercreeksports.com/",
+      "rating": 4.9
+    },
+    {
+      "first_name": "Hygge",
+      "last_name": "Café",
+      "city": "Avon",
+      "state": "CO",
+      "company": "Multiple",
+      "website": "https://www.hyggelife.com/",
+      "rating": 4.9
+    },
+    {
+      "first_name": "Avon",
+      "last_name": "Monica",
+      "city": "San Jose",
+      "state": "CA",
+      "company": "Multiple",
+      "website": "http://www.youravon.com/mpeach",
+      "rating": 5.0
+    },
+    {
+      "first_name": "The",
+      "last_name": "Chef",
+      "city": "Addison",
+      "state": "IL",
+      "company": "Multiple",
+      "website": "http://www.pamperedchef.com/",
+      "rating": 4.0
+    },
+    {
+      "first_name": "Pampered",
+      "last_name": "Chef",
+      "city": "Pasco",
+      "state": "WA",
+      "company": "Multiple",
+      "website": "https://www.pamperedchef.biz/grandmajudy"
+    },
+    {
+      "first_name": "Shop",
+      "last_name": "Penney",
+      "city": "Fairfield",
+      "state": "CT",
+      "company": "Multiple",
+      "website": "https://www.pamperedchef.com/pws/chefpenney",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Pampered",
+      "last_name": "Hutchison",
+      "city": "Bartlett",
+      "state": "IL",
+      "company": "Multiple",
+      "website": "http://pamperedchef.com/pws/laurahutch"
+    },
+    {
+      "first_name": "Julie",
+      "last_name": "Chef",
+      "city": "Columbus",
+      "state": "OH",
+      "company": "Multiple"
+    },
+    {
+      "first_name": "Kelly",
+      "last_name": "Chef",
+      "city": "Grover",
+      "state": "MO",
+      "company": "Multiple",
+      "website": "https://www.pamperedchef.com/pws/ktaylor16"
+    },
+    {
+      "first_name": "Pampered",
+      "last_name": "Heneisen",
+      "city": "Pacific",
+      "state": "MO",
+      "company": "Multiple",
+      "website": "https://www.pamperedchef.com/pws/mandyheneisen",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Pampered",
+      "last_name": "Chef",
+      "city": "Summerville",
+      "state": "GA",
+      "company": "Multiple",
+      "website": "https://www.pamperedchef.com/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Pampered",
+      "last_name": "Chef",
+      "city": "Erwin",
+      "state": "NC",
+      "company": "Multiple",
+      "website": "https://www.pamperedchef.com/pws/vhornsby"
+    },
+    {
+      "first_name": "Nikki",
+      "last_name": "Chef",
+      "city": "Willmar",
+      "state": "MN",
+      "company": "Multiple",
+      "website": "https://www.pamperedchef.com/pws/nilgen"
+    },
+    {
+      "first_name": "Gretchen's",
+      "last_name": "Chef",
+      "city": "Hockessin",
+      "state": "DE",
+      "company": "Multiple",
+      "website": "https://www.pamperedchef.biz/gretchensgourmet"
+    },
+    {
+      "first_name": "Pampered",
+      "last_name": "Donah",
+      "city": "Clark",
+      "state": "NJ",
+      "company": "Multiple",
+      "website": "https://www.pamperedchef.com/pws/caryndonah",
+      "rating": 4.7
+    },
+    {
+      "first_name": "Pampered",
+      "last_name": "Dara",
+      "city": "Barrington",
+      "state": "RI",
+      "company": "Multiple",
+      "website": "https://www.pamperedchef.com/pws/dcolacchio"
+    },
+    {
+      "first_name": "Angela",
+      "last_name": "Chef",
+      "city": "Morristown",
+      "state": "NJ",
+      "company": "Multiple",
+      "website": "https://www.pamperedchef.com/pws/klein17"
+    },
+    {
+      "first_name": "Nueva",
+      "last_name": "Kay",
+      "city": "Penitas",
+      "state": "TX",
+      "company": "Multiple"
+    },
+    {
+      "first_name": "Nicole",
+      "last_name": "Ibc",
+      "city": "Parrottsville",
+      "state": "TN",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/nicolesanchez"
+    },
+    {
+      "first_name": "Jenn's",
+      "last_name": "Kay",
+      "city": "Portland",
+      "state": "OR",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/BeautifulYoubyJenn"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Lopez",
+      "city": "Laredo",
+      "state": "TX",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/dianalopz",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Yolanda",
+      "last_name": "Skin",
+      "city": "Norwalk",
+      "state": "CA",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/YGalindo1"
+    },
+    {
+      "first_name": "Lourdes",
+      "last_name": "Kay",
+      "city": "Phoenix",
+      "state": "AZ",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/MEspinoza2523",
+      "rating": 4.3
+    },
+    {
+      "first_name": "Sarah's",
+      "last_name": "Kay",
+      "city": "Endicott",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/SSimonds",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Adrianas",
+      "last_name": "Kay",
+      "city": "Wenatchee",
+      "state": "WA",
+      "company": "Multiple"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Dunaway",
+      "city": "Hopkinsville",
+      "state": "KY",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/kdunaway"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Loney",
+      "city": "Nashville",
+      "state": "TN",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/mloney1"
+    },
+    {
+      "first_name": "Ana's",
+      "last_name": "Kay",
+      "city": "Gainesville",
+      "state": "GA",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/AGomez21866",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Jessica",
+      "last_name": "Store",
+      "city": "Saginaw",
+      "state": "TX",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/jessicaharsh75",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Cosmetics",
+      "city": "Harrisburg",
+      "state": "PA",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/en-us/"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Karantonis",
+      "city": "Hershey",
+      "state": "PA",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/mkarantonis/en-us/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Branch",
+      "city": "Manchester",
+      "state": "PA",
+      "company": "Multiple",
+      "rating": 4.4
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Potochny",
+      "city": "Hummelstown",
+      "state": "PA",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/tpotochny",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Kay",
+      "city": "Harrisburg",
+      "state": "PA",
+      "company": "Multiple",
+      "website": "http://marykay.com/FMorales34"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Long",
+      "city": "Bath",
+      "state": "PA",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/LLong3"
+    },
+    {
+      "first_name": "Studio",
+      "last_name": "Kay)",
+      "city": "Elizabeth",
+      "state": "NJ",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/jwalker2019",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Kay",
+      "city": "Hardy",
+      "state": "KY",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/AWolford"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Margot",
+      "city": "Cleveland",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/amwahdan/en-US/"
+    },
+    {
+      "first_name": "Wickless",
+      "last_name": "Fragrance",
+      "city": "Meridian",
+      "state": "ID",
+      "company": "Multiple",
+      "website": "http://www.carolbh.com/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Kristen",
+      "last_name": "Ok",
+      "city": "Tuttle",
+      "state": "OK",
+      "company": "Multiple",
+      "website": "http://kmascents.scentsy.us/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Scentsy",
+      "last_name": "Meridian",
+      "city": "Meridian",
+      "state": "ID",
+      "company": "Multiple",
+      "website": "http://scentsy.com/",
+      "rating": 4.5
+    },
+    {
+      "first_name": "Scentsy",
+      "last_name": "Lewing-myers",
+      "city": "Kirbyville",
+      "state": "TX",
+      "company": "Multiple",
+      "website": "http://pamlewing.scentsy.us/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Donna",
+      "last_name": "Goddess",
+      "city": "Village Of Clarkston",
+      "state": "MI",
+      "company": "Multiple",
+      "website": "https://dneumann.scentsy.us/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Scentsy",
+      "last_name": "Darvis",
+      "city": "Alliance",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "http://adarvis.scentsy.us/"
+    },
+    {
+      "first_name": "Crystal's",
+      "last_name": "Scentsy",
+      "city": "Marietta",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "https://crystalmatthews.scentsy.us/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Scentsy",
+      "last_name": "Core",
+      "city": "Eastlake",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "http://briannacore.scentsy.us/"
+    },
+    {
+      "first_name": "Scentsy",
+      "last_name": "Hefton-dillon",
+      "city": "Erie",
+      "state": "PA",
+      "company": "Multiple",
+      "website": "https://jessica579.scentsy.us/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Shelby",
+      "last_name": "Lady)",
+      "city": "Englewood",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "https://shelbydutton.scentsy.us/"
+    },
+    {
+      "first_name": "Scentsy",
+      "last_name": "Meridian",
+      "city": "Meridian",
+      "state": "ID",
+      "company": "Multiple",
+      "website": "http://scentsy.com/",
+      "rating": 4.5
+    },
+    {
+      "first_name": "Scentsy",
+      "last_name": "Darvis",
+      "city": "Alliance",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "http://adarvis.scentsy.us/"
+    },
+    {
+      "first_name": "Fallons",
+      "last_name": "Sensations",
+      "city": "Saltsburg",
+      "state": "PA",
+      "company": "Multiple",
+      "website": "https://fallontaylor.scentsy.us/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Deb",
+      "last_name": "Il",
+      "city": "Olney",
+      "state": "IL",
+      "company": "Multiple",
+      "website": "https://crazyscentlady.com/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Pawsitively",
+      "last_name": "Scentsy",
+      "city": "Gahanna",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "https://randi2017.scentsy.us/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Scentsy",
+      "last_name": "Doherty",
+      "city": "Northbridge",
+      "state": "MA",
+      "company": "Multiple",
+      "website": "https://lindamdoherty.scentsy.us/"
+    },
+    {
+      "first_name": "Laurie",
+      "last_name": "Fragrance",
+      "city": "Bennington",
+      "state": "VT",
+      "company": "Multiple",
+      "website": "https://truefragrance.scentsy.us/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Scentsy",
+      "last_name": "Williams",
+      "city": "Moneta",
+      "state": "VA",
+      "company": "Multiple",
+      "website": "https://loveforscent.scentsy.us/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Scentsy",
+      "last_name": "Stacey",
+      "city": "Elliston",
+      "state": "VA",
+      "company": "Multiple",
+      "website": "https://scentsandsensability.scentsy.us/"
+    },
+    {
+      "first_name": "Scentsy",
+      "last_name": "Carr",
+      "city": "Manchester",
+      "state": "IA",
+      "company": "Multiple",
+      "website": "http://mindycarr.scentsy.us/"
+    },
+    {
+      "first_name": "Scentsy",
+      "last_name": "Candles",
+      "city": "Honolulu",
+      "state": "HI",
+      "company": "Multiple"
+    },
+    {
+      "first_name": "Carrie’s",
+      "last_name": "Scentsy",
+      "city": "Bloomsburg",
+      "state": "PA",
+      "company": "Multiple"
+    },
+    {
+      "first_name": "Scentsy",
+      "last_name": "Hefton-dillon",
+      "city": "Erie",
+      "state": "PA",
+      "company": "Multiple",
+      "website": "https://jessica579.scentsy.us/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Nelly",
+      "last_name": "Consultants",
+      "city": "Houston",
+      "state": "TX",
+      "company": "Multiple",
+      "website": "https://nellyjose.scentsy.us/"
+    },
+    {
+      "first_name": "Scentsy",
+      "last_name": "Kellems",
+      "city": "Owensboro",
+      "state": "KY",
+      "company": "Multiple",
+      "website": "http://www.ifusion.scentsy.us/"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Warwick",
+      "city": "Marshall",
+      "state": "WI",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/cwarwick",
+      "rating": 4.8
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Koclanes",
+      "city": "Madison",
+      "state": "WI",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/kkoclanes",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Penhallegon",
+      "city": "Mesa",
+      "state": "AZ",
+      "company": "Multiple"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Dickerson",
+      "city": "Estero",
+      "state": "FL",
+      "company": "Multiple",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Kay",
+      "city": "West Haven",
+      "state": "CT",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/mthomas81559",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Kay",
+      "city": "Manchester",
+      "state": "NH",
+      "company": "Multiple",
+      "website": "https://www.marykayintouch.com/jparris"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Cosmetics",
+      "city": "Melrose",
+      "state": "MA",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/carolmouradian"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Allosene",
+      "city": "Brooklyn",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/allosene",
+      "rating": 4.9
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Massachusetts",
+      "city": "Revere",
+      "state": "MA",
+      "company": "Multiple"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Kay",
+      "city": "Lempster",
+      "state": "NH",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/hcarter811"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Black",
+      "city": "Maywood",
+      "state": "IL",
+      "company": "Multiple",
+      "website": "http://marykay.com/JBcares4u",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Debruin-colbert",
+      "city": "Queen Creek",
+      "state": "AZ",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/cdebruin",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Patricia's",
+      "last_name": "All",
+      "city": "Sunol",
+      "state": "CA",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/pmcpicard",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Marykay",
+      "last_name": "Consulrant",
+      "city": "San Antonio",
+      "state": "TX",
+      "company": "Multiple",
+      "website": "https://marykay.com/CarolBurton9876"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Margot",
+      "city": "Cleveland",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/amwahdan/en-US/"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Ludke",
+      "city": "Flat Rock",
+      "state": "MI",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/jmaitland1",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Headquarters",
+      "city": "Addison",
+      "state": "TX",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/",
+      "rating": 4.8
+    },
+    {
+      "first_name": "Elizabeth",
+      "last_name": "Kay",
+      "city": "Oakland",
+      "state": "CA",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/EReyes333"
+    },
+    {
+      "first_name": "Krystyl",
+      "last_name": "Cosmetics",
+      "city": "Arcade",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/kwachowski"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Reedy",
+      "city": "Village Of Clarkston",
+      "state": "MI",
+      "company": "Multiple"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Carbajal",
+      "city": "Chapin",
+      "state": "SC",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/DianesBeautyBar",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Español",
+      "city": "Berwyn",
+      "state": "IL",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/cfloresbeautyselfcare",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Elizabeth",
+      "last_name": "Kay",
+      "city": "Berwyn",
+      "state": "IL",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/EMendezRivera"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Kay",
+      "city": "Falls Church",
+      "state": "VA",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Sempeles",
+      "city": "Fairfax",
+      "state": "VA",
+      "company": "Multiple"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Beach",
+      "city": "Fairfax",
+      "state": "VA",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/mbeach"
+    },
+    {
+      "first_name": "Becky",
+      "last_name": "Kay",
+      "city": "Conroe",
+      "state": "TX",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/becky.conway",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Rabago",
+      "city": "Ontario",
+      "state": "CA",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/grabago",
+      "rating": 1.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Caldwell",
+      "city": "Sarasota",
+      "state": "FL",
+      "company": "Multiple",
+      "website": "http://marykay.com/gcaldwell9",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Clutter",
+      "city": "Cape Coral",
+      "state": "FL",
+      "company": "Multiple",
+      "website": "http://marykay.com/celestec"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Mcdermott",
+      "city": "Sarasota",
+      "state": "FL",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/rmcdermott/en-us/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Jenn's",
+      "last_name": "Kay",
+      "city": "Portland",
+      "state": "OR",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/BeautifulYoubyJenn"
+    },
+    {
+      "first_name": "Stephanie",
+      "last_name": "Kay",
+      "city": "Clackamas",
+      "state": "OR",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/stephaniealvarez"
+    },
+    {
+      "first_name": "Belinda",
+      "last_name": "Bloom",
+      "city": "South Gate",
+      "state": "CA",
+      "company": "Multiple",
+      "website": "http://marykay.com/bmorales429",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mari's",
+      "last_name": "Cosmetics",
+      "city": "Los Angeles",
+      "state": "CA",
+      "company": "Multiple",
+      "website": "https://t.me/mk04m",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Gavidia",
+      "city": "Katy",
+      "state": "TX",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/ggavidia",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Preza",
+      "city": "Granbury",
+      "state": "TX",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/CPreza",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Frailey",
+      "city": "La Grange",
+      "state": "KY",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/mfrailey",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Loney",
+      "city": "Nashville",
+      "state": "TN",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/mloney1"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Dunaway",
+      "city": "Hopkinsville",
+      "state": "KY",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/kdunaway"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Alemán",
+      "city": "Antioch",
+      "state": "TN",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/daleman"
+    },
+    {
+      "first_name": "Auburnee",
+      "last_name": "Kay",
+      "city": "Athens",
+      "state": "TN",
+      "company": "Multiple",
+      "website": "https://marykay.com/astanley0812",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "White",
+      "city": "Columbus",
+      "state": "IN",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/dreamerachiever/en-us"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Kay",
+      "city": "Dallas",
+      "state": "TX",
+      "company": "Multiple",
+      "website": "http://marykay.com/Bwilliams91167",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Kistner",
+      "city": "Bowling Green",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/teenakistner",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Kay",
+      "city": "Perrysburg",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "http://marykay.com/%20janetengler"
+    },
+    {
+      "first_name": "Marie's",
+      "last_name": "Kay",
+      "city": "Ferguson",
+      "state": "KY",
+      "company": "Multiple",
+      "website": "https://marykay.com/MMcGowan2"
+    },
+    {
+      "first_name": "Dawn",
+      "last_name": "Kay",
+      "city": "Covington",
+      "state": "KY",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/dmallery"
+    },
+    {
+      "first_name": "Christine",
+      "last_name": "Builder",
+      "city": "Colorado Springs",
+      "state": "CO",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/cmcknight70"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Kay",
+      "city": "Clayton",
+      "state": "NM",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/astory1"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Karle",
+      "city": "Springtown",
+      "state": "TX",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/tkarle",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Latisha",
+      "last_name": "Expert",
+      "city": "Biloxi",
+      "state": "MS",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/latishalewisprice",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Fl",
+      "city": "Destin",
+      "state": "FL",
+      "company": "Multiple",
+      "website": "https://marykay.com/LThompson"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Online",
+      "city": "Dothan",
+      "state": "AL",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/vspeights"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Kay",
+      "city": "Crestview",
+      "state": "FL",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/vlake"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Cosmetics",
+      "city": "Elk Grove Village",
+      "state": "IL",
+      "company": "Multiple"
+    },
+    {
+      "first_name": "Sarah's",
+      "last_name": "Kay",
+      "city": "Endicott",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/SSimonds",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Long",
+      "city": "Bath",
+      "state": "PA",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/LLong3"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Associate",
+      "city": "Syracuse",
+      "state": "NY",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/en-us/find-an-independent-beauty-consultant/profile"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Lpc",
+      "city": "Traverse City",
+      "state": "MI",
+      "company": "Multiple",
+      "website": "http://www.bay-area-counseling.com/MeetourProviders.en.html"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Curry",
+      "city": "Liberty Lake",
+      "state": "WA",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/DCURRY92"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Budget",
+      "city": "Houston",
+      "state": "TX",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/ybejaran",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Rita",
+      "last_name": "Belleza",
+      "city": "Katy",
+      "state": "TX",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/rmontesano/es-US/"
+    },
+    {
+      "first_name": "Consultora",
+      "last_name": "Kay",
+      "city": "West Orange",
+      "state": "NJ",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/APerez78731"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Kay",
+      "city": "Coral Gables",
+      "state": "FL",
+      "company": "Multiple",
+      "website": "http://marykay.com/epadron1"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Fleming",
+      "city": "Fort Wayne",
+      "state": "IN",
+      "company": "Multiple"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Cosmetics",
+      "city": "Dayton",
+      "state": "OH",
+      "company": "Multiple"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Abby",
+      "city": "Goshen",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/aheist",
+      "rating": 1.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Karantonis",
+      "city": "Hershey",
+      "state": "PA",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/mkarantonis/en-us/",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Cosmetics",
+      "city": "Philadelphia",
+      "state": "PA",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/oohlalagorgeous"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Potochny",
+      "city": "Hummelstown",
+      "state": "PA",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/tpotochny",
+      "rating": 5.0
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Cosmetics",
+      "city": "Harrisburg",
+      "state": "PA",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/en-us/"
+    },
+    {
+      "first_name": "Monica",
+      "last_name": "Kay",
+      "city": "District Heights",
+      "state": "MD",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/Mspann"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Kay",
+      "city": "Harrisburg",
+      "state": "PA",
+      "company": "Multiple",
+      "website": "http://marykay.com/FMorales34"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Care",
+      "city": "Wellsville",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "http://www.marykay.com/bobbibryson"
+    },
+    {
+      "first_name": "Mary",
+      "last_name": "Bonfini",
+      "city": "Bellaire",
+      "state": "OH",
+      "company": "Multiple",
+      "website": "https://www.marykay.com/tbonfini"
+    }
+  ]
+}

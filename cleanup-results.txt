@@ -1,0 +1,1178 @@
+﻿[dotenv@17.2.3] injecting env (4) from ..\.env.local -- tip: ΓÜÖ∩╕Å  write to custom object with { processEnv: myObject }
+≡ƒº╣ Starting data cleanup...
+
+Found 408 total profiles
+
+
+≡ƒôè CLEANUP SUMMARY:
+Total profiles: 408
+Profiles with issues: 232
+Missing locations: 180
+
+Γ¥î INVALID PROFILES:
+
+ID: 5c98071a-aa20-4f1e-a99b-129fe44d0afa
+Name: Michelle Schutzeus
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 4f5c22a5-fe20-49d9-a3fb-2c7f50e48524
+Name: and skin care
+Location: Wellsville, OH
+Issues: Invalid first_name: "and"
+
+ID: 9a6ece19-a85b-476f-bb45-9e43a4e6b6cd
+Name: Indep MK Consultant
+Location: Manahawkin, NJ
+Issues: Invalid last_name: "MK Consultant"
+
+ID: f109f8c3-f470-4b15-b6cd-0a18e03b076f
+Name: Monica and
+Location: District Heights, MD
+Issues: Invalid last_name: "and"
+
+ID: ad413f48-e031-46a3-9387-47c7ca78202b
+Name: Products by Yamiliz
+Location: Lancaster, PA
+Issues: Invalid last_name: "by Yamiliz"
+
+ID: e0afad08-1fc2-4638-a3a4-bd96103121e9
+Name: by Maria Karantonis
+Location: Hershey, PA
+Issues: Invalid first_name: "by"
+
+ID: 3d5dabf5-1d49-436e-84ff-56a8ddc65094
+Name: Kristen Howard
+Location: N/A, N/A
+Issues: Missing location
+
+ID: aa265996-71bc-4a5f-a33d-a544cdb5b9a8
+Name: by Abby
+Location: Goshen, OH
+Issues: Invalid first_name: "by"
+
+ID: a38eaddb-e50a-424b-9a44-78a785b5e9f0
+Name: -Nichole Fleming
+Location: Fort Wayne, IN
+Issues: Invalid first_name: "-Nichole"
+
+ID: e4a3720c-6c16-49a9-b073-662d4b19e92a
+Name: Aracely Garcia
+Location: N/A, N/A
+Issues: Missing location
+
+ID: b1f4a6e8-b49f-435e-b4c7-f65c00e6e173
+Name: Savela MK Consultant
+Location: Corona, CA
+Issues: Invalid last_name: "MK Consultant"
+
+ID: 0d0b0d4e-f500-4707-a8b6-83993f013b32
+Name: Consultora Independiente
+Location: N/A, N/A
+Issues: Missing location
+
+ID: f4ba4097-8bec-4d07-9e24-6a932582a5a2
+Name: Shelley Bottiaux Director
+Location: Spanish Fort, AL
+Issues: Invalid last_name: "Bottiaux Director"
+
+ID: 79c563af-868a-41ec-a169-1b1acc073e40
+Name: By Danielle Curry
+Location: Liberty Lake, WA
+Issues: Invalid first_name: "By"
+
+ID: dc4a3ff4-86f3-46d0-a304-4cecb161def9
+Name: Marilyn Patrick-
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 107c1f68-a4ea-456b-bbcf-66010526cee4
+Name: Associate MK Consultant
+Location: Syracuse, NY
+Issues: Invalid last_name: "MK Consultant"
+
+ID: 13b74db9-fe83-477e-b948-dcc891297464
+Name: Sarah's MK Consultant
+Location: Endicott, NY
+Issues: Invalid last_name: "MK Consultant"
+
+ID: 806e39d8-56f7-4b17-9f4a-2474f63e742d
+Name: Online MK Consultant
+Location: Dothan, AL
+Issues: Invalid last_name: "MK Consultant"
+
+ID: 5c69896c-d905-4ee3-9fed-956cb93a541f
+Name: Latisha Price Skincare Expert
+Location: Biloxi, MS
+Issues: Invalid last_name: "Price Skincare Expert"
+
+ID: c924c643-9f26-466a-b68a-f80185314bf5
+Name: Roz Okeke Skincare
+Location: Rockford, IL
+Issues: Invalid last_name: "Okeke Skincare"
+
+ID: a1d6c685-b735-433b-8466-79f9aa4f5e8e
+Name: Araceli Gutierrez Directora de Ventas 
+Location: Madison, WI
+Issues: Invalid last_name: "Gutierrez Directora de Ventas "
+
+ID: 28f50aa1-8f6f-40e2-8795-d676072f2228
+Name: Dawn Mallery with
+Location: Covington, KY
+Issues: Invalid last_name: "Mallery with"
+
+ID: 0c7197bc-1c66-4d00-969f-f2a3d5ef6448
+Name: with MK Consultant
+Location: N/A, N/A
+Issues: Invalid first_name: "with", Invalid last_name: "MK Consultant", Missing location
+
+ID: 65c73fef-447d-4c15-b300-78c4441cc839
+Name: ZAYRA'S MK Consultant
+Location: Smithfield, VA
+Issues: Invalid last_name: "MK Consultant"
+
+ID: aa98de0d-caec-4c8d-9d43-64e8b5b15c85
+Name: Veronica Espinoza-
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 37db8b2f-938c-41ef-9198-ceeeaa37cf0f
+Name: -Heather Daniel-Kent
+Location: N/A, N/A
+Issues: Invalid first_name: "-Heather", Missing location
+
+ID: 27c703e9-a421-4b2e-a13c-f72d60e04f08
+Name: Vickie Coates
+Location: N/A, N/A
+Issues: Missing location
+
+ID: a32b2612-d170-417c-a9cb-20b28e3f3bdf
+Name: Brittany Boose-
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 8716e3a0-89af-4e36-a28c-56f8632dfc41
+Name: Pat Arnold
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 4f1bcd21-4c57-44df-b634-e075536c8b16
+Name: by Maria Rodriguez
+Location: N/A, N/A
+Issues: Invalid first_name: "by", Missing location
+
+ID: 66501998-0bb6-42cb-915b-5ffe501cef6f
+Name: Fredlaina Chatman
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 6a43023b-b561-461d-a09a-e75bd5502502
+Name: Stephanie MK Consultant
+Location: Spring Hill, FL
+Issues: Invalid last_name: "MK Consultant"
+
+ID: 58617ac8-959a-4c42-b5bd-3a8cd5493695
+Name: Susan Craven
+Location: N/A, N/A
+Issues: Missing location
+
+ID: fa1a6cd5-32be-4cd4-9987-bfa56db73df8
+Name: Tammy Stedman
+Location: N/A, N/A
+Issues: Missing location
+
+ID: aa51f900-2133-4206-8097-6e18aebf6e94
+Name: with MK Consultant
+Location: N/A, N/A
+Issues: Invalid first_name: "with", Invalid last_name: "MK Consultant", Missing location
+
+ID: 5d90dd4a-760b-4ba8-a96a-a28615989a58
+Name: Crystal Rich
+Location: N/A, N/A
+Issues: Missing location
+
+ID: ab1a1e87-6e3a-44c2-bd1a-ec99032b2d91
+Name: TayShun Woods
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 77007a61-9231-4eec-9d10-c4e959f0447f
+Name: ;Kimeco Green
+Location: N/A, N/A
+Issues: Invalid first_name: ";Kimeco", Missing location
+
+ID: 1c7e591b-cac6-479e-b4ab-19658f0dca67
+Name: Wanda Elaine
+Location: N/A, N/A
+Issues: Missing location
+
+ID: b69705e5-f9ef-4fe6-9335-22ca1a8459fc
+Name: Krystyl Sank with
+Location: Arcade, NY
+Issues: Invalid last_name: "Sank with"
+
+ID: 328ea3d0-4e1c-4f3c-86b2-c29d195e7ab2
+Name: KTD MK Consultant
+Location: Lancaster, NY
+Issues: Invalid last_name: "MK Consultant"
+
+ID: 29e301e8-0254-4d88-9b0e-1dcc9b4d76b4
+Name: Georgia Atwell-
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 680c2c40-8971-4090-a614-2735dd0ef616
+Name: by Margot
+Location: Cleveland, OH
+Issues: Invalid first_name: "by"
+
+ID: 703670a2-9321-44e2-9deb-8d39742e1632
+Name: Consulrant MK Consultant
+Location: San Antonio, TX
+Issues: Invalid last_name: "MK Consultant"
+
+ID: e90684e7-eecd-4536-8531-5fb0bd423639
+Name: Misti Norfleet
+Location: N/A, N/A
+Issues: Missing location
+
+ID: e5c8ae3e-9f94-486e-9bd0-9b4a475472ad
+Name: -Jessica Black
+Location: Maywood, IL
+Issues: Invalid first_name: "-Jessica"
+
+ID: a0c0983a-9aec-4fb2-b71a-b8f98a0857d0
+Name: by Allosene
+Location: Brooklyn, NY
+Issues: Invalid first_name: "by"
+
+ID: 3f37199b-12cc-48ae-9657-4b3dac07824e
+Name: Enma Vasquez
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 7ecff192-9f73-4f90-bfcf-379d5f7f1193
+Name: with Tay
+Location: N/A, N/A
+Issues: Invalid first_name: "with", Missing location
+
+ID: 9d8e02e8-8bba-4301-b5aa-373ec77ba4be
+Name: Sales MK Consultant
+Location: N/A, N/A
+Issues: Invalid first_name: "Sales", Invalid last_name: "MK Consultant", Missing location
+
+ID: 31c8043f-ac4f-4c66-bb86-ee0544d49fb7
+Name: Skincare with Erica-
+Location: N/A, N/A
+Issues: Invalid first_name: "Skincare", Invalid last_name: "with Erica-", Missing location
+
+ID: 309d69d8-16dc-46aa-b186-460c079ac07d
+Name: April Scott
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 21ac7bc2-1d0f-4675-b27d-5c1ad0fd9444
+Name: Maricela Rodriguez
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 017641fd-2b97-4886-a475-69f028f74d60
+Name: ZAYRA'S MK Consultant
+Location: N/A, N/A
+Issues: Invalid last_name: "MK Consultant", Missing location
+
+ID: 2d49aea2-a530-400e-b778-83b91b3e4364
+Name: Rachael Nowicki
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 024186dc-c1ff-40a6-96e8-16e70acc35a3
+Name: Laura Ind
+Location: N/A, N/A
+Issues: Missing location
+
+ID: bdb63987-6561-4725-b26c-beab8d9e8beb
+Name: Kimberly Brown
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 6ffc61dc-7629-4fd2-a848-2650d82fc9fe
+Name: Teresa Bailey
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 9258a2b9-a377-42fa-913e-5c8d5f7664d8
+Name: Diane Kuciel
+Location: N/A, N/A
+Issues: Missing location
+
+ID: e427e470-f896-4d54-8f3c-3449a1816df8
+Name: Lupita Rabago
+Location: N/A, N/A
+Issues: Missing location
+
+ID: cac2e40b-4b9c-444f-b681-2eb2174829c2
+Name: Veronica Espinoza-
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 33559566-f9c4-4b3c-bab9-ce0d85344fc9
+Name: -Heather Daniel-Kent
+Location: N/A, N/A
+Issues: Invalid first_name: "-Heather", Missing location
+
+ID: 2f6ceae3-4269-469d-a989-2f3cbdd0814b
+Name: Cordell Harding
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 4ea34cd5-fe22-499e-90ad-bf23e0a77e9f
+Name: Becky Conway
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 28a2d08c-6ea2-4564-ad21-d94c98253851
+Name: Lori Hawthorne
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 4b563d82-9e5e-4743-b3c4-2afd034da883
+Name: Marty Beach
+Location: N/A, N/A
+Issues: Missing location
+
+ID: a2788053-bbe4-4bc7-ae58-87d72fb90aa2
+Name: Vickie Coates
+Location: N/A, N/A
+Issues: Missing location
+
+ID: f1ad8e32-dda6-4a3a-a0e0-cc7ec872f972
+Name: Anna Sempeles
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 50843fac-9218-42a4-82f9-c960eab1fc71
+Name: Brittany Boose-
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 2345f6e6-7ce7-427b-a3eb-2611c39f91fd
+Name: Elizabeth Mendez
+Location: N/A, N/A
+Issues: Missing location
+
+ID: f941b7fa-4d1b-44ae-8363-242c69b94228
+Name: Elizabeth Alvarez
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 4f3058c1-3768-4498-b8fe-963f33818186
+Name: Claudia Flores. Hablo Espa├▒ol
+Location: N/A, N/A
+Issues: Missing location
+
+ID: d197bd2c-d93e-4ef6-a1a8-7215754b8f07
+Name: Pat Arnold
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 08a5d426-353a-48ca-9d76-07efb7e34253
+Name: by Maria Rodriguez
+Location: N/A, N/A
+Issues: Invalid first_name: "by", Missing location
+
+ID: 4ec7e588-085c-499a-92e6-b0f3681713e7
+Name: Chris Cartaya
+Location: N/A, N/A
+Issues: Missing location
+
+ID: e9eb6fab-0805-4237-b4a2-13cacdbb3c6c
+Name: Diane Carbajal
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 3075a50f-b153-4333-8558-129641626f3b
+Name: Fredlaina Chatman
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 904cfc32-a6ec-4eb2-bdeb-30c7f7bafb58
+Name: Stephanie MK Consultant
+Location: N/A, N/A
+Issues: Invalid last_name: "MK Consultant", Missing location
+
+ID: c3e03bc9-ed8c-45e0-be66-de57d1105118
+Name: Susan Craven
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 1924106d-afaf-4131-9d42-c5468ca4871d
+Name: Elma Balboa
+Location: N/A, N/A
+Issues: Missing location
+
+ID: a1b9b248-176e-4733-be98-2ed8219cddc3
+Name: Debbie Reedy
+Location: N/A, N/A
+Issues: Missing location
+
+ID: dfdcd3b9-4fc9-4f41-a272-80d1f98dbaf5
+Name: Tammy Stedman
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 549f98ac-e9ad-4f2a-918b-4965d340fe6b
+Name: with MK Consultant
+Location: N/A, N/A
+Issues: Invalid first_name: "with", Invalid last_name: "MK Consultant", Missing location
+
+ID: 97ba2bb0-eba5-4f47-aa5f-269f8bb0db91
+Name: Jessica Galasso
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 3c23365f-155c-4b65-90bb-9df3c5ec1d63
+Name: Crystal Rich
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 89b7e3ab-07f2-4b81-85d4-8876aac6a928
+Name: Anny Randel
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 26d68c13-0d6c-4ffc-8c75-3a5e399ad000
+Name: TayShun Woods
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 0b389a2b-78a1-4177-bff8-40892b03eba6
+Name: ;Kimeco Green
+Location: N/A, N/A
+Issues: Invalid first_name: ";Kimeco", Missing location
+
+ID: 5268f0a2-fb65-47a7-b9ca-b4d667e8e512
+Name: Wanda Elaine
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 59ce5fde-b4f4-4a21-8576-67f1762ffa20
+Name: Krystyl Sank with
+Location: N/A, N/A
+Issues: Invalid last_name: "Sank with", Missing location
+
+ID: 89796bd0-2df6-41a1-8821-ae7e38d4cb13
+Name: KTD MK Consultant
+Location: N/A, N/A
+Issues: Invalid last_name: "MK Consultant", Missing location
+
+ID: 5d68219a-2b12-4142-b61c-9aa55e75c7f1
+Name: Georgia Atwell-
+Location: N/A, N/A
+Issues: Missing location
+
+ID: bb0907a2-dadb-42dd-b3db-d781ff533291
+Name: Heather Richardson
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 9052f24d-9d0b-4e2a-8dd0-a9c2d24ddd4c
+Name: Elizabeth reyes Consultora independiente
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 5a69cfa6-d65a-4c26-a940-f4ecd099bd0c
+Name: Olga Morrow
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 279c0a95-9955-4951-950b-a28114460f36
+Name: Jenny Ludke
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 3aeb2f7c-8378-4532-a700-9a894e4eb8aa
+Name: by Margot
+Location: N/A, N/A
+Issues: Invalid first_name: "by", Missing location
+
+ID: 7ad62d1f-d626-43e7-a970-ad85e727e86a
+Name: Consulrant MK Consultant
+Location: N/A, N/A
+Issues: Invalid last_name: "MK Consultant", Missing location
+
+ID: 14c4b4ed-a2b5-4baa-8e85-a740dbf09c1c
+Name: Misti Norfleet
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 962a89ca-eac0-4f4e-b5ba-8e7f64b39173
+Name: Patricia's Skin Care For All
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 53e171b6-6fb3-4ccf-8987-5678ce132aa7
+Name: Veronica Boe
+Location: N/A, N/A
+Issues: Missing location
+
+ID: daf0e23f-51b2-42ec-ae8c-1eea45a75570
+Name: Chelsey DeBruin-Colbert
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 78adb6d4-f817-4231-a9ad-53ef7e3b4ac1
+Name: Trish Pacheco
+Location: N/A, N/A
+Issues: Missing location
+
+ID: d8efddd4-8133-4e3d-a308-c10f6aaf124f
+Name: Agata Zienkiewicz
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 9f367490-7bf1-4e5c-97e2-0f6208f43b6a
+Name: -Jessica Black
+Location: N/A, N/A
+Issues: Invalid first_name: "-Jessica", Missing location
+
+ID: 82b57cfe-a47c-4da5-892d-43230bba4b0d
+Name: consultora independiente en Boston Massac
+Location: N/A, N/A
+Issues: Missing location
+
+ID: baa50322-9da8-4a78-b8a0-986a27bc0d32
+Name: by Allosene
+Location: N/A, N/A
+Issues: Invalid first_name: "by", Missing location
+
+ID: 9bd99208-4294-4bf2-ab31-f10642f9ac44
+Name: Enma Vasquez
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 9c32ae8b-b4f8-45d3-bb82-27c4d7e4b629
+Name: with Tay
+Location: N/A, N/A
+Issues: Invalid first_name: "with", Missing location
+
+ID: d066ef96-08e2-4cbd-88da-6931707144c8
+Name: Robin Janetos
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 39ff4e94-7968-411a-b3a4-45005e472f18
+Name: Sales MK Consultant
+Location: N/A, N/A
+Issues: Invalid first_name: "Sales", Invalid last_name: "MK Consultant", Missing location
+
+ID: 3298d0d6-2d78-4037-ad25-786e1e8aad34
+Name: Anna Cole
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 2bf62230-b506-4716-ad1e-80a64fefa2d9
+Name: Jane Geen
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 046f0c00-a890-400f-b6f8-4d0330b38c30
+Name: Alesia C. Dickerson
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 5b944851-aee1-47e1-af9a-b7406263339a
+Name: Skincare with Erica-
+Location: N/A, N/A
+Issues: Invalid first_name: "Skincare", Invalid last_name: "with Erica-", Missing location
+
+ID: 58a47428-e3d9-40ec-88df-90aa94236003
+Name: April Scott
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 279dbfc1-b0f2-42d6-bdcc-08759de2c694
+Name: Renee Robinson
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 3ab153f6-8029-4f29-a8c9-1728cac921ed
+Name: Cassie Johnson
+Location: N/A, N/A
+Issues: Missing location
+
+ID: e9e2517b-6126-4b1e-85f0-076bd3d605f1
+Name: Maricela Rodriguez
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 9af6ee93-c074-4c55-8789-bd9043f5262e
+Name: Courtney Penhallegon
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 23d7b503-d9bb-4314-8efa-d170e5423580
+Name: Kathleen Koclanes
+Location: N/A, N/A
+Issues: Missing location
+
+ID: e608827e-59f9-4339-b3aa-7d1400e5be2b
+Name: Corrina Warwick
+Location: N/A, N/A
+Issues: Missing location
+
+ID: d59974ad-d60f-4a0f-a400-0209e2121786
+Name: Magical Scents by Karina
+Location: Princeton, IN
+Issues: Invalid last_name: "Scents by Karina"
+
+ID: 16bb3d48-6352-49a1-9b8f-d5e298ff8b7c
+Name: by Shannon
+Location: Knoxville, TN
+Issues: Invalid first_name: "by"
+
+ID: dd774df2-9309-4631-822f-60493a1ac2bc
+Name: Jackie Vierra
+Location: N/A, N/A
+Issues: Missing location
+
+ID: fe42b470-70d0-48df-9d22-8b1d492f0945
+Name: Nelly and Jose s
+Location: Houston, TX
+Issues: Invalid last_name: "and Jose s"
+
+ID: 00b9f326-183d-4c4a-b6ac-76915a0efa1d
+Name: Kira Carr Estes
+Location: N/A, N/A
+Issues: Missing location
+
+ID: b354415e-a071-4ff3-bc65-0d28fc4a046e
+Name: with Jessica Hefton Dillon
+Location: Erie, PA
+Issues: Invalid first_name: "with"
+
+ID: f7b210a9-296f-4755-a5af-57ba2a780b18
+Name: Arizona Guys
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 268255a1-0f5a-41e2-be75-3e9fd91f6922
+Name: Courtney Willard
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 24974920-1faa-4bfc-816c-269529b8a8a3
+Name: Lystra Longsworth
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 079eef46-2b5d-45a0-b82f-601d5a45e6b8
+Name: Melissa Brown
+Location: N/A, N/A
+Issues: Missing location
+
+ID: b5238bcc-8bae-4678-8273-15a5baf38fdf
+Name: Mike and Becky
+Location: Glendale, AZ
+Issues: Invalid last_name: "and Becky"
+
+ID: 4d1493f7-e095-414e-b18f-857c29019d5f
+Name: Trisha Kuiee
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 502fd2c1-5545-46a7-8fe7-90e0cd54089b
+Name: Scented Living with Kris
+Location: N/A, N/A
+Issues: Invalid last_name: "Living with Kris", Missing location
+
+ID: f12741a3-7c6e-4abe-8a5d-7e4f3106090c
+Name: Patricia Capito
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 58d5fcc8-9c3d-42bd-81dd-f853a151ce3f
+Name: Karol Wheeler
+Location: N/A, N/A
+Issues: Missing location
+
+ID: f608d2d3-5a35-4274-a1ac-424e149f9017
+Name: Stephanie Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 9a59c02b-5a25-4e3c-9d42-0abe4c5ec004
+Name: Jessica Jensen
+Location: N/A, N/A
+Issues: Missing location
+
+ID: c301f0b3-ccab-4297-aed9-097ddd28580b
+Name: Victoria Mitchell
+Location: N/A, N/A
+Issues: Missing location
+
+ID: d4972c60-c205-4af9-a0e3-3ce01075a6ef
+Name: Sapphire Scents
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 25c511b3-8884-40a0-a7c6-52dce20a2ec6
+Name: Nikki Frey
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 75656626-e41f-4517-80d4-55c924cdc779
+Name: with Carrie Williams
+Location: Moneta, VA
+Issues: Invalid first_name: "with"
+
+ID: 6f9b07a6-9538-4de1-9c53-d181c4a3cbac
+Name: Ashley Kimbleton
+Location: N/A, N/A
+Issues: Missing location
+
+ID: cda3e0bd-e13e-42ea-9d0a-f93d24a1a659
+Name: Destiny Jackson
+Location: N/A, N/A
+Issues: Missing location
+
+ID: ac3522d6-d7a9-4558-b3d7-4451e8e4e2e8
+Name: Marianna Nichols
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 05c48cb2-f5ea-465a-b96a-df525a3759c5
+Name: Theresa Mahoney
+Location: N/A, N/A
+Issues: Missing location
+
+ID: c0065270-3581-457a-a827-c48688be6d29
+Name: by Linda M Doherty
+Location: Northbridge, MA
+Issues: Invalid first_name: "by"
+
+ID: 31d741d1-3916-48ad-a82c-6c8aa5fff7e3
+Name: Jennifer Hartzell
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 2da0a1e3-556e-4123-bf7b-08000d7b7a35
+Name: Pawsitively Scented Randi Hedges with
+Location: Gahanna, OH
+Issues: Invalid last_name: "Scented Randi Hedges with"
+
+ID: ce6823e5-7250-45de-86d2-8fbf337a898b
+Name: Samantha Lipscomb
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 82f40b5e-3c4d-47c0-bead-1f8c79251b8a
+Name: Chasity Robinson
+Location: N/A, N/A
+Issues: Missing location
+
+ID: ec372aad-9209-403f-9ad9-c86c56278b83
+Name: Vanessa Montoya
+Location: N/A, N/A
+Issues: Missing location
+
+ID: e6f94f49-8318-43b3-a649-78c1d27fc1e5
+Name: April Sohayda
+Location: N/A, N/A
+Issues: Missing location
+
+ID: a8abb44b-cd7f-4985-88ee-22f7c91c381c
+Name: Lacey Perkins
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 7d7af7e6-773b-4c0d-a087-1112d8e130b3
+Name: Courtney Stanley
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 42c938b2-180c-4f8e-b66d-bf75af1a8289
+Name: Lauren Handegard Beckwith
+Location: N/A, N/A
+Issues: Missing location
+
+ID: ae011b11-2ca7-4c78-acbe-5a77a8273c60
+Name: Toni Ridley
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 5a40ec4f-4c0d-4117-8ed3-d949eb320622
+Name: Michelle Brooks
+Location: N/A, N/A
+Issues: Missing location
+
+ID: ed537924-d7b3-4a7a-a842-157cc743304e
+Name: Jasmine Grocher
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 8e0b83ec-06ee-4f36-b219-77ae24d8ef39
+Name: Christal Bonnette
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 904a68c6-056f-47ca-b1ef-134a30db2135
+Name: Chelli Smith Texas
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 0770de5b-0945-4ff5-bbf3-67a58dc1611d
+Name: Jenny Hubbs
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 0dc2e78e-3f40-4cb1-8df8-116ffbe212ee
+Name: Gina Marioni Scented By Gina
+Location: Cibolo, TX
+Issues: Invalid last_name: "Marioni Scented By Gina"
+
+ID: 09eda33a-7642-4c6d-a079-e63311fc26af
+Name: Jana Bennett
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 384437b6-52a7-4e32-b431-9e0157451ba7
+Name: with Mrs Elliott
+Location: N/A, N/A
+Issues: Invalid first_name: "with", Missing location
+
+ID: 8e1f5aa5-8d54-4af8-ba80-f81f764a13ce
+Name: Scents by Crysta
+Location: N/A, N/A
+Issues: Invalid last_name: "by Crysta", Missing location
+
+ID: 3b04ff20-4eb9-43ab-a281-a725f29dc9dc
+Name: Angela and Sams
+Location: Morristown, NJ
+Issues: Invalid last_name: "and Sams"
+
+ID: 31ee485e-816f-4b86-8732-0bbbf0e21baf
+Name: Eileen Scarton
+Location: N/A, N/A
+Issues: Missing location
+
+ID: f99777b5-dedb-4b02-b2c2-63cf2774492c
+Name: Eating Healthy Gayatri
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 7dc5f453-2e1c-4679-901e-4587a75a0230
+Name: Patty Quinn
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 2e07eb37-77a6-4670-8949-dfbd54a300ae
+Name: Sal Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 6a6a3add-72a0-4851-ab40-44bcf5fba445
+Name: Lynne Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 366b50b7-c305-486e-b75b-8f30952609c7
+Name: kjs Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: b7c2c802-f29a-4536-af27-df4c8fde5741
+Name: MHeincelman3 Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: d255e528-8915-4ec5-9664-ff5bcb609ba0
+Name: Revitalize My Rachel
+Location: N/A, N/A
+Issues: Missing location
+
+ID: dae98d9f-5ea5-4c62-96fd-46f452bc5d4c
+Name: Michele K
+Location: N/A, N/A
+Issues: Missing location
+
+ID: bc4609a2-5cb1-4f76-963c-94dc6d511db7
+Name: Robbin Bocchini
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 9468c3cf-e620-453f-a162-070a18136e87
+Name: Roseanna W
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 191b7cc7-2401-4410-9d99-fa36660c4b74
+Name: Laura Quiggle
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 59a75cb5-425b-43b6-97ad-6ad19e0d0cc7
+Name: Heart Full Woman Jessica Lee
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 066a5a1c-6c8f-42ad-ae9d-dcfdf2ab0dce
+Name: Donna Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: d7084f07-8939-4b7b-b215-8608f24d5aff
+Name: Jeanne Cherne
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 9451210a-5229-4245-b284-2a20fa1fd854
+Name: Robbie Thompson
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 9f99ed62-5090-46f4-af3f-cbcf13e6e6e8
+Name: Barbara Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 95f99eb8-95e0-42ce-a3db-cbec66dd6d04
+Name: Joanna Acker
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 7c655996-ceb8-48e6-b89b-cfc8f221573a
+Name: Janelle Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 63806ff1-9610-4be8-bd52-ce3feba4dec9
+Name: Scott Backus
+Location: N/A, N/A
+Issues: Missing location
+
+ID: c0634ab1-dd56-4761-8c96-521f5ab504b8
+Name: A Country Gals
+Location: N/A, N/A
+Issues: Missing location
+
+ID: bae3a465-67d8-490b-b0cc-dc00a96d0e40
+Name: Josie Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 3317a5a9-07ea-4ee6-910e-2d397bbb667d
+Name: FamilyStyle Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: cda3a836-39f9-46b6-a48d-cc41fc8f71d7
+Name: Making Easy
+Location: N/A, N/A
+Issues: Missing location
+
+ID: df085dea-0f19-482a-a443-9b7b2600cc0e
+Name: Irma Rodriguez
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 41fb38e2-4bac-4ab7-8382-42325c9f75fb
+Name: Tamaras Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 8397c426-928c-4788-a4e3-ac3c1adb0ce6
+Name: Lilly Norris
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 6c3a44f1-2361-466d-b63f-6a70f222de6a
+Name: Avon Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: e181930a-934b-4424-a05b-deedd90d22e2
+Name: Monica Naegele
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 4fc67a58-bbae-4bc1-91c3-3218e19aea33
+Name: SELL EVELYN
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 4ebc5f87-5941-4beb-ac3c-7fe8b7266bda
+Name: Maisha Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: f24c202d-714e-40d6-a786-32a5f29d78f0
+Name: Celeste Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 8555c016-12bc-4c03-b19a-f5093f72010f
+Name: Products/Health & Beauty
+Location: Parma, OH
+Issues: Invalid last_name: "& Beauty"
+
+ID: a55535dd-ee6a-431f-8300-149001d96654
+Name: Beauty Bound Dawn
+Location: Parma, OH
+Issues: Invalid first_name: "Beauty"
+
+ID: f659598c-0a7b-4774-9d15-5f4dd40ba5dc
+Name: stephj720 MK Rep
+Location: N/A, N/A
+Issues: Invalid last_name: "MK Rep", Missing location
+
+ID: a21a2a53-15dd-4ce3-ba61-4a52debd55bc
+Name: HEATHERDEBTER MK Rep
+Location: N/A, N/A
+Issues: Invalid last_name: "MK Rep", Missing location
+
+ID: 67398059-3efe-44a1-b507-49d392cca1cf
+Name: AWolford MK Rep
+Location: Hardy, KY
+Issues: Invalid last_name: "MK Rep"
+
+ID: 1b17da40-e0ff-4ef7-add9-860d1f16c53b
+Name: jwalker2019 MK Rep
+Location: Elizabeth, NJ
+Issues: Invalid last_name: "MK Rep"
+
+ID: 19965c0b-69f3-4031-85ec-578f3f300d1c
+Name: FMorales34 MK Rep
+Location: Harrisburg, PA
+Issues: Invalid last_name: "MK Rep"
+
+ID: 4a4862f9-4f43-421c-a19d-cb3a0410a199
+Name: en-us MK Rep
+Location: Harrisburg, PA
+Issues: Invalid last_name: "MK Rep"
+
+ID: 9338b662-80fc-4309-ba28-301ee00f4f65
+Name: sabrina.stewart MK Rep
+Location: Carterville, IL
+Issues: Invalid last_name: "MK Rep"
+
+ID: f1690b6b-a6f9-4ed5-a76b-2d541962a2c9
+Name: jwaggoner4 MK Rep
+Location: White Bluff, TN
+Issues: Invalid last_name: "MK Rep"
+
+ID: d51fba56-50cc-470b-af20-bcebe3ac88a8
+Name: feliciasfacials MK Rep
+Location: N/A, N/A
+Issues: Invalid last_name: "MK Rep", Missing location
+
+ID: afc597da-ad99-426c-8c9c-68107322740f
+Name: EIsac MK Rep
+Location: Plainfield, IL
+Issues: Invalid last_name: "MK Rep"
+
+ID: c8a43239-a463-4ac6-b99f-e5dd67a78b46
+Name: April McBride
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 4f61d661-e28a-41c9-b270-34a159b8ba93
+Name: Debbie Young
+Location: N/A, N/A
+Issues: Missing location
+
+ID: c7593f04-15ee-4c94-8e07-3fe1b30b02fa
+Name: Wanda Elaine
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 170b6180-1b5c-44e4-add5-b16c8f166de6
+Name: Chyannes Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 6f31680f-40a2-4b07-9773-8e0c84421801
+Name: Beauty Products Jeannie Flowers
+Location: N/A, N/A
+Issues: Invalid first_name: "Beauty", Missing location
+
+ID: afb091dd-0171-469e-ba5f-33c4e2a5efc9
+Name: / Representative
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 2c70086d-ea30-4f4a-b367-5abefcd922ae
+Name: Heather Martin
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 0df77375-288f-465e-8f7f-7f8dc58f4154
+Name: Jessica Kilday
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 1b4a5713-a649-4372-9efc-2bbd21f5f772
+Name: Pink Diamonds Tierra Nicole Independent Sales Director Fishers Noblesville Westfield Carmel
+Location: N/A, N/A
+Issues: Invalid last_name: "Diamonds Tierra Nicole Independent Sales Director Fishers Noblesville Westfield Carmel", Missing location
+
+ID: ba6e01d4-1568-454c-925c-4b0277cff95a
+Name: Beauty Loretta Long
+Location: Bath, PA
+Issues: Invalid first_name: "Beauty"
+
+ID: 6aeea8a2-21ed-473e-9cb4-825528b8c0a0
+Name: Patty Zannino
+Location: N/A, N/A
+Issues: Missing location
+
+ID: d32be5cd-8fe3-4ade-b13c-9cb1c7f56666
+Name: beauty Kristina Dunaway
+Location: Hopkinsville, KY
+Issues: Invalid first_name: "beauty"
+
+ID: c01d984f-63ab-453c-9ced-bb931afe4c9f
+Name: Michelle Willis Independent
+Location: Sandy, UT
+Issues: Invalid last_name: "Willis Independent"
+
+ID: 4de3de4c-e15a-4467-b01c-035d51e00474
+Name: Renee Schreiner Independent
+Location: Lakewood, CO
+Issues: Invalid last_name: "Schreiner Independent"
+
+ID: 7589cf4f-1290-4ec3-8945-74aa24c43604
+Name: Shop Luxurious Kathleen
+Location: N/A, N/A
+Issues: Missing location
+
+ID: 41f66512-e197-4322-b00e-5541a7404f4e
+Name: Darnika Smith Beauty
+Location: N/A, N/A
+Issues: Invalid last_name: "Smith Beauty", Missing location
+
+ID: beb5b675-a88c-4bd3-a542-bbe699407e2a
+Name: Stacy Welch Beauty
+Location: Lakewood, CO
+Issues: Invalid last_name: "Welch Beauty"
+
+ID: 4fe91734-6e1d-430c-b8e2-5b263e303d70
+Name: Marykay beauty
+Location: Grand Prairie, TX
+Issues: Invalid last_name: "beauty"
+
+ID: acb4d67a-db13-458c-b28e-3f0c3d70924a
+Name: Beauty Diana Lopez
+Location: Laredo, TX
+Issues: Invalid first_name: "Beauty"
+
+ID: d35d1563-feb1-47a0-9e9b-2455ee2c8a27
+Name: Renee Robinson Independent Beauty
+Location: Ontario, CA
+Issues: Invalid last_name: "Robinson Independent Beauty"
+
+
+≡ƒùæ∩╕Å  DELETE THESE PROFILES? (y/n)
+Run this script with --delete flag to remove invalid profiles
+
+To delete these profiles, run: node scripts/cleanup-rep-data.js --delete
