@@ -15,19 +15,22 @@
   }
 
   /* Elegant heading styles */
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     @apply font-serif;
   }
 }
 
 @layer components {
+
   /* Elegant button base */
   .btn {
     @apply px-6 py-2.5 rounded-sm font-medium transition-all duration-300 tracking-wide text-sm uppercase;
   }
 
   .btn-primary {
-    @apply bg-primary-600 text-white hover:bg-primary-700 border border-primary-600 shadow-sm hover:shadow-md;
+    @apply bg-primary-700 text-white hover:bg-primary-800 border border-primary-700 shadow-sm hover:shadow-md;
   }
 
   .btn-secondary {

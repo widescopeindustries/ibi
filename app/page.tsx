@@ -100,7 +100,7 @@ export default async function Home() {
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <p className="text-xs uppercase tracking-[0.3em] text-primary-600 mb-3">
+              <p className="text-xs uppercase tracking-[0.3em] text-primary-700 mb-3">
                 Browse By Brand
               </p>
               <h2 className="section-title mb-4">
@@ -143,7 +143,7 @@ export default async function Home() {
         <section className="py-20 bg-cream-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <p className="text-xs uppercase tracking-[0.3em] text-primary-600 mb-3">
+              <p className="text-xs uppercase tracking-[0.3em] text-primary-700 mb-3">
                 Premium Members
               </p>
               <h2 className="section-title mb-4">
