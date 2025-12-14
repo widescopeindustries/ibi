@@ -75,16 +75,13 @@ export async function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     /*
-     * Match all request paths except for the ones starting with:
+     * Match all request paths except:
      * - _next/static (static files)
-     * - _next/image (image optimization files)
-     * - favicon.ico (favicon file)
-     * - site.webmanifest (PWA manifest)
-     * - .well-known (well-known URIs)
-     * - sitemap.xml (SEO)
-     * - robots.txt (SEO)
-     * - Static file extensions (svg, png, jpg, etc)
+     * - _next/image (image optimization)
+     * - favicon.ico, site.webmanifest
+     * - sitemap.xml, robots.txt (SEO files)
+     * - images and other static assets
      */
-    '/((?!_next/static|_next/image|favicon\\.ico|site\\.webmanifest|\\.well-known|sitemap\\.xml|robots\\.txt|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|json|xml|txt|webmanifest)$).*)',
+    '/((?!_next/static|_next/image|favicon.ico|site.webmanifest|sitemap.xml|robots.txt|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|json|xml|txt)$).*)',
   ],
 }

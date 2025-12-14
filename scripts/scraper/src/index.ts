@@ -25,6 +25,7 @@ import {
   exportEmailsOnly,
 } from './utils/storage.js';
 import { ScraperResult, SalesRep, ScraperOptions } from './types.js';
+import { Actor } from 'apify'; // Import Apify SDK
 
 // Parse command line arguments
 function parseArgs(): ScraperOptions {
@@ -183,7 +184,27 @@ async function main(): Promise<void> {
 ╚═══════════════════════════════════════════════════════════╝
 `);
 
-  const options = parseArgs();
+  // Initialize Apify
+  await Actor.init();
+
+  let options = parseArgs();
+
+  // Check if running on Apify Platform
+  if (Actor.isAtHome()) {
+    console.log('☁️ Running on Apify Platform');
+    const input = await Actor.getInput() as any;
+
+    if (input) {
+      options = {
+        ...options,
+        companies: input.companies,
+        maxRepsPerCompany: input.maxReps || 100,
+        states: input.states,
+        testMode: input.testMode || false,
+      };
+    }
+  }
+
   const startTime = Date.now();
 
   // Determine which companies to scrape
@@ -310,6 +331,10 @@ async function main(): Promise<void> {
   console.log(`\n${'═'.repeat(60)}`);
   console.log('🎉 Done! Check the output directory for your results.');
   console.log(`${'═'.repeat(60)}\n`);
+  console.log(`${'═'.repeat(60)}\n`);
+
+  // Exit cleanly
+  await Actor.exit();
 }
 
 // Run the scraper

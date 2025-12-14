@@ -2,11 +2,13 @@ import { MetadataRoute } from 'next'
 import { createClient } from '@/lib/supabase/server'
 import { defaultSEO } from '@/lib/seo'
 
+// Revalidate every hour to ensure fresh sitemap without impacting performance
+export const revalidate = 3600
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = defaultSEO.siteUrl
-  const supabase = await createClient()
 
-  // Static routes
+  // Static routes (always include these)
   const staticRoutes: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
@@ -46,37 +48,65 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ]
 
-  // Fetch all companies
-  const { data: companies } = await supabase
-    .from('companies')
-    .select('slug, created_at')
-    .order('name')
+  let companyRoutes: MetadataRoute.Sitemap = []
+  let repRoutes: MetadataRoute.Sitemap = []
 
-  const companyRoutes: MetadataRoute.Sitemap =
-    companies?.map(company => ({
-      url: `${baseUrl}/${company.slug}`,
-      lastModified: new Date(company.created_at),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    })) || []
+  try {
+    const supabase = await createClient()
 
-  // Fetch all rep profiles
-  const { data: profiles } = await supabase
-    .from('profiles')
-    .select('id, created_at')
-    .order('created_at', { ascending: false })
+    // Fetch companies with timeout protection
+    const companiesPromise = supabase
+      .from('companies')
+      .select('slug, created_at')
+      .order('name')
 
-  const repRoutes: MetadataRoute.Sitemap =
-    profiles?.map(profile => ({
-      url: `${baseUrl}/rep/${profile.id}`,
-      lastModified: new Date(profile.created_at),
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    })) || []
+    const { data: companies, error: companiesError } = await Promise.race([
+      companiesPromise,
+      new Promise<{ data: null; error: Error }>((resolve) =>
+        setTimeout(() => resolve({ data: null, error: new Error('Timeout') }), 5000)
+      ),
+    ])
+
+    if (!companiesError && companies) {
+      companyRoutes = companies.map((company) => ({
+        url: `${baseUrl}/${company.slug}`,
+        lastModified: new Date(company.created_at),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+      }))
+    }
+
+    // Fetch profiles with timeout protection
+    const profilesPromise = supabase
+      .from('profiles')
+      .select('id, created_at')
+      .order('created_at', { ascending: false })
+      .limit(1000) // Limit to prevent excessive sitemap size
+
+    const { data: profiles, error: profilesError } = await Promise.race([
+      profilesPromise,
+      new Promise<{ data: null; error: Error }>((resolve) =>
+        setTimeout(() => resolve({ data: null, error: new Error('Timeout') }), 5000)
+      ),
+    ])
+
+    if (!profilesError && profiles) {
+      repRoutes = profiles.map((profile) => ({
+        url: `${baseUrl}/rep/${profile.id}`,
+        lastModified: new Date(profile.created_at),
+        changeFrequency: 'weekly' as const,
+        priority: 0.7,
+      }))
+    }
+  } catch (error) {
+    // Log error but don't fail the entire sitemap
+    console.error('Sitemap generation error:', error)
+    // Return static routes at minimum to prevent redirect errors
+  }
 
   // Note: Removed state and company+state search URLs with query parameters
   // Google Search Console has issues parsing sitemaps with query parameter URLs
-  // This was causing the "Parsing error" at line 400
+  // This was causing the \"Parsing error\" at line 400
   //
   // Query parameter URLs that were removed:
   //   - /search?location=CA (50 state URLs)

@@ -4,11 +4,14 @@
   "description": "Web scraping agent to find direct sales rep emails for IBI outreach",
   "type": "module",
   "scripts": {
+    "start": "npx tsx src/index.ts",
+    "build:ts": "tsc",
     "scrape": "npx tsx src/index.ts",
     "scrape:test": "npx tsx src/index.ts --test",
     "scrape:company": "npx tsx src/index.ts --company"
   },
   "dependencies": {
+    "apify": "^3.5.2",
     "axios": "^1.6.8",
     "cheerio": "^1.0.0-rc.12",
     "csv-writer": "^1.6.0",
@@ -17,11 +20,11 @@
     "puppeteer": "^22.8.0",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2",
-    "user-agents": "^1.1.227"
+    "user-agents": "^1.1.227",
+    "tsx": "^4.10.5"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
-    "tsx": "^4.10.5",
     "typescript": "^5.4.5"
   }
 }

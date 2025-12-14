@@ -1,0 +1,40 @@
+{
+    "title": "Scraper Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "companies": {
+            "title": "Companies",
+            "type": "array",
+            "description": "List of companies to scrape (e.g. 'mary-kay', 'arbonne')",
+            "editor": "stringList",
+            "prefill": [
+                "mary-kay"
+            ]
+        },
+        "maxReps": {
+            "title": "Max Reps per Company",
+            "type": "integer",
+            "description": "Maximum number of representatives to scrape per company",
+            "default": 100,
+            "minimum": 1,
+            "maximum": 10000
+        },
+        "states": {
+            "title": "States (Optional)",
+            "type": "array",
+            "description": "Limit search to specific US states (e.g. 'CA', 'TX')",
+            "editor": "stringList",
+            "default": []
+        },
+        "testMode": {
+            "title": "Test Mode",
+            "type": "boolean",
+            "description": "Run in test mode (scrapes fewer pages)",
+            "default": false
+        }
+    },
+    "required": [
+        "companies"
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "actorSpecification": 1,
+    "name": "ibi-sales-rep-scraper",
+    "title": "Universal Sales Rep Scraper (IBI)",
+    "description": "Scrapes Find-a-Consultant pages for Mary Kay, Arbonne, etc. to find sales reps.",
+    "version": "1.0.0",
+    "dockerfile": "./Dockerfile",
+    "input": "./input_schema.json"
+}

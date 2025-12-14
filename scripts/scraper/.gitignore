@@ -10,6 +10,9 @@ output/
 *.json
 !package.json
 !tsconfig.json
+!actor.json
+!input_schema.json
+!apify.json
 
 # Logs
 *.log
