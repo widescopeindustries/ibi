@@ -34,3 +34,13 @@ export async function createClient() {
     }
   )
 }
+
+export async function createSitemapClient() {
+  // Use direct supabase-js client for sitemap generation to avoid cookie dependencies
+  // which cause "Dynamic server usage" errors during build
+  const { createClient } = await import('@supabase/supabase-js')
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  )
+}
