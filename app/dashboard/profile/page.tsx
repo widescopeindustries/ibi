@@ -3,12 +3,14 @@
 import { useState, useEffect } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import { useRouter } from 'next/navigation'
+import AvatarUpload from '@/components/AvatarUpload'
 
 export default function ProfileEditPage() {
   const router = useRouter()
   const [loading, setLoading] = useState(true)
   const [saving, setSaving] = useState(false)
   const [message, setMessage] = useState<{ type: 'success' | 'error', text: string } | null>(null)
+  const [userId, setUserId] = useState<string | null>(null)
 
   const [profile, setProfile] = useState({
     first_name: '',
@@ -18,6 +20,7 @@ export default function ProfileEditPage() {
     state: '',
     zip_code: '',
     personal_website_url: '',
+    profile_picture_url: '',
   })
 
   useEffect(() => {
@@ -34,6 +37,8 @@ export default function ProfileEditPage() {
       return
     }
 
+    setUserId(user.id)
+
     const { data } = await supabase
       .from('profiles')
       .select('*')
@@ -49,6 +54,7 @@ export default function ProfileEditPage() {
         state: data.state || '',
         zip_code: data.zip_code || '',
         personal_website_url: data.personal_website_url || '',
+        profile_picture_url: data.profile_picture_url || '',
       })
     }
 
@@ -61,9 +67,8 @@ export default function ProfileEditPage() {
     setMessage(null)
 
     const supabase = createClient()
-    const { data: { user } } = await supabase.auth.getUser()
 
-    if (!user) {
+    if (!userId) {
       router.push('/auth/login')
       return
     }
@@ -71,12 +76,13 @@ export default function ProfileEditPage() {
     const { error } = await supabase
       .from('profiles')
       .update(profile)
-      .eq('id', user.id)
+      .eq('id', userId)
 
     if (error) {
       setMessage({ type: 'error', text: 'Failed to update profile' })
     } else {
       setMessage({ type: 'success', text: 'Profile updated successfully!' })
+      router.refresh()
     }
 
     setSaving(false)
@@ -106,6 +112,16 @@ export default function ProfileEditPage() {
                 {message.text}
               </div>
             )}
+
+            <div className="flex justify-center mb-8">
+              {userId && (
+                <AvatarUpload
+                  uid={userId}
+                  url={profile.profile_picture_url}
+                  onUpload={(url) => setProfile({ ...profile, profile_picture_url: url })}
+                />
+              )}
+            </div>
 
             <div className="grid grid-cols-2 gap-4">
               <div>

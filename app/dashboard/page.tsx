@@ -28,6 +28,18 @@ export default async function DashboardPage() {
     .eq('id', user.id)
     .single()
 
+  // Onboarding Logic: Check if profile is incomplete
+  const isProfileComplete =
+    profile?.city &&
+    profile?.state &&
+    profile?.zip_code &&
+    profile?.rep_companies &&
+    profile?.rep_companies.length > 0
+
+  if (!isProfileComplete) {
+    redirect('/dashboard/onboarding')
+  }
+
   const fullName = `${profile?.first_name || ''} ${profile?.last_name || ''}`.trim() || 'Anonymous'
   const companies = profile?.rep_companies?.map((rc: any) => rc.companies) || []
 
