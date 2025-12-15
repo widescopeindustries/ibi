@@ -45,6 +45,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true, // Temporary fix for ESLint config conflict
   },
+  skipTrailingSlashRedirect: true, // Prevent automatic trailing slash redirects
 }
 
 module.exports = nextConfig
