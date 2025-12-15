@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next'
 import { createSitemapClient } from '@/lib/supabase/server'
 import { defaultSEO } from '@/lib/seo'
 
-// Revalidate every hour to ensure fresh sitemap without impacting performance
-export const revalidate = 3600
+// Force regeneration every 60 seconds temporarily to update sitemap
+export const revalidate = 60
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = defaultSEO.siteUrl
