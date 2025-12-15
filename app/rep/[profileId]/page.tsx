@@ -105,6 +105,12 @@ export default async function RepProfilePage({ params }: RepProfilePageProps) {
     notFound()
   }
 
+  // Redirect to new SEO-friendly URL structure
+  if (profile.slug && profile.city) {
+    const citySlug = profile.city.toLowerCase().replace(/\s+/g, '-')
+    redirect(`/companies/${citySlug}/${profile.slug}`)
+  }
+
   // Fetch approved reviews
   const { data: reviews } = await supabase
     .from('reviews')

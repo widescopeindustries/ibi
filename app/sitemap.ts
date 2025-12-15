@@ -76,10 +76,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       }))
     }
 
-    // Fetch profiles with timeout protection
+    // Fetch profiles with timeout protection - using new URL structure
     const profilesPromise = supabase
       .from('profiles')
-      .select('id, created_at')
+      .select('slug, city, created_at')
+      .not('slug', 'is', null)
+      .not('city', 'is', null)
       .order('created_at', { ascending: false })
       .limit(1000) // Limit to prevent excessive sitemap size
 
@@ -91,12 +93,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ])
 
     if (!profilesError && profiles) {
-      repRoutes = profiles.map((profile) => ({
-        url: `${baseUrl}/rep/${profile.id}`,
-        lastModified: new Date(profile.created_at),
-        changeFrequency: 'weekly' as const,
-        priority: 0.7,
-      }))
+      repRoutes = profiles.map((profile) => {
+        // Convert city to URL-friendly slug (e.g., "Dallas" -> "dallas", "New York" -> "new-york")
+        const citySlug = profile.city.toLowerCase().replace(/\s+/g, '-')
+
+        return {
+          url: `${baseUrl}/companies/${citySlug}/${profile.slug}`,
+          lastModified: new Date(profile.created_at),
+          changeFrequency: 'weekly' as const,
+          priority: 0.7,
+        }
+      })
     }
   } catch (error) {
     // Log error but don't fail the entire sitemap
