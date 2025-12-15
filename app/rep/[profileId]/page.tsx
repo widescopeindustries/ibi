@@ -1,6 +1,6 @@
 import { createClient } from '@/lib/supabase/server'
 import { createAdminClient } from '@/lib/supabase/admin'
-import { notFound } from 'next/navigation'
+import { notFound, redirect } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import SubmitReviewForm from '@/components/SubmitReviewForm'
